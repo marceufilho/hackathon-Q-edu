@@ -30,6 +30,218 @@
       "mastered_topics": [],
       "current_path": null,
       "diagnostic_completed": false
+    },
+    "aluno_001": {
+      "created_at": "2025-11-08T13:52:48.395445",
+      "topics": {
+        "operacoes_basicas": {
+          "attempts": [
+            {
+              "question_id": "551d48a8-ade6-488d-9d76-56a9ebef4365",
+              "timestamp": "2025-11-08T13:52:48.395463",
+              "is_correct": false,
+              "concepts_tested": [
+                "adicao",
+                "subtracao",
+                "multiplicacao",
+                "divisao",
+                "ordem_operacoes"
+              ],
+              "error_concepts": [
+                "adicao",
+                "subtracao",
+                "multiplicacao",
+                "divisao",
+                "ordem_operacoes"
+              ]
+            },
+            {
+              "question_id": "99774945-7f1c-441e-85e9-85db67585ac8",
+              "timestamp": "2025-11-08T13:52:53.364791",
+              "is_correct": true,
+              "concepts_tested": [
+                "adicao",
+                "subtracao",
+                "multiplicacao",
+                "divisao",
+                "ordem_operacoes"
+              ],
+              "error_concepts": []
+            }
+          ],
+          "total_questions": 2,
+          "correct_answers": 1,
+          "concept_errors": {
+            "adicao": 1,
+            "subtracao": 1,
+            "multiplicacao": 1,
+            "divisao": 1,
+            "ordem_operacoes": 1
+          },
+          "last_attempt": "2025-11-08T13:52:53.364803",
+          "mastery_achieved": false,
+          "mastery_date": null
+        },
+        "numeros_inteiros": {
+          "attempts": [
+            {
+              "question_id": "5d7584ea-5799-43da-8bff-0e2cc5421ebf",
+              "timestamp": "2025-11-08T13:53:02.653238",
+              "is_correct": true,
+              "concepts_tested": [
+                "numeros_negativos",
+                "valor_absoluto",
+                "comparacao",
+                "operacoes_com_negativos"
+              ],
+              "error_concepts": []
+            },
+            {
+              "question_id": "e3bf4b7b-0f3f-4963-8709-65e7af521321",
+              "timestamp": "2025-11-08T13:53:06.769073",
+              "is_correct": true,
+              "concepts_tested": [
+                "numeros_negativos",
+                "valor_absoluto",
+                "comparacao",
+                "operacoes_com_negativos"
+              ],
+              "error_concepts": []
+            }
+          ],
+          "total_questions": 2,
+          "correct_answers": 2,
+          "concept_errors": {},
+          "last_attempt": "2025-11-08T13:53:06.769087",
+          "mastery_achieved": false,
+          "mastery_date": null
+        },
+        "variaveis_expressoes": {
+          "attempts": [
+            {
+              "question_id": "a64b19d6-a780-4db4-971e-ad40eca64a6c",
+              "timestamp": "2025-11-08T13:53:14.299991",
+              "is_correct": false,
+              "concepts_tested": [
+                "variaveis",
+                "expressoes_algebricas",
+                "substituicao",
+                "avaliacao_expressoes"
+              ],
+              "error_concepts": [
+                "variaveis",
+                "expressoes_algebricas",
+                "substituicao",
+                "avaliacao_expressoes"
+              ]
+            },
+            {
+              "question_id": "cc43b97a-73ef-40ff-a75e-9975c7fb6502",
+              "timestamp": "2025-11-08T13:53:23.679257",
+              "is_correct": true,
+              "concepts_tested": [
+                "variaveis",
+                "expressoes_algebricas",
+                "substituicao",
+                "avaliacao_expressoes"
+              ],
+              "error_concepts": []
+            }
+          ],
+          "total_questions": 2,
+          "correct_answers": 1,
+          "concept_errors": {
+            "variaveis": 1,
+            "expressoes_algebricas": 1,
+            "substituicao": 1,
+            "avaliacao_expressoes": 1
+          },
+          "last_attempt": "2025-11-08T13:53:23.679271",
+          "mastery_achieved": false,
+          "mastery_date": null
+        },
+        "operacoes_inversas": {
+          "attempts": [
+            {
+              "question_id": "bed0c97a-b1e1-489a-8252-b55cd67c4ffc",
+              "timestamp": "2025-11-08T13:53:31.238766",
+              "is_correct": true,
+              "concepts_tested": [
+                "inverso_aditivo",
+                "inverso_multiplicativo",
+                "cancelamento",
+                "isolamento"
+              ],
+              "error_concepts": []
+            },
+            {
+              "question_id": "d65b5109-f34d-44b0-8095-052eaeda4e95",
+              "timestamp": "2025-11-08T13:53:37.565933",
+              "is_correct": true,
+              "concepts_tested": [
+                "inverso_aditivo",
+                "inverso_multiplicativo",
+                "cancelamento",
+                "isolamento"
+              ],
+              "error_concepts": []
+            }
+          ],
+          "total_questions": 2,
+          "correct_answers": 2,
+          "concept_errors": {},
+          "last_attempt": "2025-11-08T13:53:37.565966",
+          "mastery_achieved": false,
+          "mastery_date": null
+        },
+        "simplificacao_algebrica": {
+          "attempts": [
+            {
+              "question_id": "6c6fde76-de30-42f5-a293-a35e96523e50",
+              "timestamp": "2025-11-08T13:53:51.661234",
+              "is_correct": true,
+              "concepts_tested": [
+                "termos_semelhantes",
+                "propriedade_distributiva",
+                "fatoracao_simples",
+                "simplificacao"
+              ],
+              "error_concepts": []
+            },
+            {
+              "question_id": "edb0a292-e569-408f-896e-3b2a62a0b960",
+              "timestamp": "2025-11-08T13:53:56.007439",
+              "is_correct": false,
+              "concepts_tested": [
+                "termos_semelhantes",
+                "propriedade_distributiva",
+                "fatoracao_simples",
+                "simplificacao"
+              ],
+              "error_concepts": [
+                "termos_semelhantes",
+                "propriedade_distributiva",
+                "fatoracao_simples",
+                "simplificacao"
+              ]
+            }
+          ],
+          "total_questions": 2,
+          "correct_answers": 1,
+          "concept_errors": {
+            "termos_semelhantes": 1,
+            "propriedade_distributiva": 1,
+            "fatoracao_simples": 1,
+            "simplificacao": 1
+          },
+          "last_attempt": "2025-11-08T13:53:56.007455",
+          "mastery_achieved": false,
+          "mastery_date": null
+        }
+      },
+      "mastered_topics": [],
+      "current_path": "beginner",
+      "diagnostic_completed": true
     }
   }
 }

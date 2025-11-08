@@ -9,4 +9,5 @@ dependencies = [
     "python-dotenv==1.1.0",
     "flask>=3.0.0",
     "flasgger>=0.9.7",
+    "flask-cors>=4.0.0",
 ]

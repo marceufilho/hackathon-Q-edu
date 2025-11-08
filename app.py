@@ -6,6 +6,7 @@ Flask API for the Socratic teaching system using Polya's method.
 
 import os
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 from dotenv import load_dotenv
 from flasgger import Swagger
 
@@ -18,6 +19,7 @@ from adaptive_engine import AdaptiveEngine
 from diagnostic_test import DiagnosticTest
 from knowledge_graph_manager import KnowledgeGraphManager
 from mastery_tracker import MasteryTracker
+from tutor_commentary import TutorCommentary
 
 # Load environment variables
 load_dotenv()
@@ -25,6 +27,9 @@ load_dotenv()
 # Initialize Flask app
 app = Flask(__name__)
 app.config['JSON_SORT_KEYS'] = False
+
+# Enable CORS for all routes
+CORS(app)
 
 # Swagger configuration
 swagger_config = {
@@ -107,9 +112,9 @@ def get_teacher():
     return teacher
 
 
-@app.route('/', methods=['GET'])
-def home():
-    """Health check and API info
+@app.route('/api', methods=['GET'])
+def api_info():
+    """API information
     ---
     tags:
       - Teaching Sessions
@@ -131,16 +136,26 @@ def home():
               type: object
     """
     return jsonify({
-        "service": "Q-Edu Socratic Math Teacher",
+        "service": "Q-Edu Socratic Math Teacher API",
         "version": "1.0.0",
-        "description": "AI-powered Socratic teaching system using Polya's method",
+        "description": "AI-powered Socratic teaching system using Polya's method with adaptive learning",
         "swagger_ui": "http://localhost:5000/docs",
+        "documentation": "http://localhost:5000/apispec.json",
+        "main_features": {
+            "diagnostic_test": "Initial assessment to determine student level",
+            "adaptive_learning": "Personalized adaptive learning system",
+            "progress_tracking": "Track student progress and mastery",
+            "socratic_teaching": "Learn through guided questions",
+            "progressive_hints": "3-level hint system (gentle, specific, directive)"
+        },
         "endpoints": {
-            "POST /start": "Start a new teaching session",
+            "POST /start": "Start a new Socratic teaching session",
             "POST /respond": "Submit student response and get next question",
-            "GET /session/<id>": "Get session details",
-            "DELETE /session/<id>": "End a teaching session",
-            "GET /sessions": "List all sessions"
+            "POST /diagnostic/start": "Start diagnostic test",
+            "POST /adaptive/start": "Start adaptive learning session",
+            "GET /progress/<student_id>": "Get student progress",
+            "GET /topics/available": "Get all available topics",
+            "POST /adaptive/<student_id>/hint": "Get progressive hints"
         }
     })
 
@@ -896,6 +911,128 @@ def change_adaptive_topic(student_id):
         return jsonify({"error": str(e)}), 500
 
 
+@app.route('/topics/available', methods=['GET'])
+def get_available_topics():
+    """Get list of available topics with question generators
+    ---
+    tags:
+      - Adaptive Learning
+    responses:
+      200:
+        description: List of available topics
+        schema:
+          type: object
+          properties:
+            topics:
+              type: array
+              items:
+                type: object
+                properties:
+                  topic_id:
+                    type: string
+                  name:
+                    type: string
+                  description:
+                    type: string
+                  difficulty:
+                    type: integer
+                  has_questions:
+                    type: boolean
+      500:
+        description: Error
+    """
+    try:
+        # Get all topics from knowledge graph
+        topics_list = []
+
+        for topic_id, topic_data in knowledge_graph.topics.items():
+            topics_list.append({
+                "topic_id": topic_id,
+                "name": topic_data["name"],
+                "description": topic_data["description"],
+                "difficulty": topic_data["difficulty"],
+                "prerequisites": topic_data.get("prerequisites", []),
+                "has_questions": True  # All topics have question generators now
+            })
+
+        # Sort by difficulty
+        topics_list.sort(key=lambda t: t["difficulty"])
+
+        return jsonify({"topics": topics_list}), 200
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+@app.route('/adaptive/<student_id>/hint', methods=['POST'])
+def get_adaptive_hint(student_id):
+    """Get progressive hint for current question
+    ---
+    tags:
+      - Adaptive Learning
+    parameters:
+      - name: student_id
+        in: path
+        type: string
+        required: true
+      - name: body
+        in: body
+        required: true
+        schema:
+          type: object
+          required:
+            - question
+            - hint_level
+          properties:
+            question:
+              type: object
+              description: Current question data
+            hint_level:
+              type: integer
+              description: Hint level (1, 2, or 3)
+              minimum: 1
+              maximum: 3
+    responses:
+      200:
+        description: Hint generated
+        schema:
+          type: object
+          properties:
+            hint:
+              type: string
+            level:
+              type: integer
+            level_name:
+              type: string
+            max_level:
+              type: integer
+      400:
+        description: Bad request
+      500:
+        description: Error
+    """
+    try:
+        data = request.get_json()
+
+        if not data or 'question' not in data or 'hint_level' not in data:
+            return jsonify({"error": "question and hint_level are required"}), 400
+
+        question = data['question']
+        hint_level = data['hint_level']
+
+        # Validate hint level
+        if hint_level not in [1, 2, 3]:
+            return jsonify({"error": "hint_level must be 1, 2, or 3"}), 400
+
+        # Generate progressive hint
+        hint_data = TutorCommentary.generate_progressive_hint(question, hint_level)
+
+        return jsonify(hint_data), 200
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
 # ============================================================================
 # PROGRESS TRACKING ENDPOINTS
 # ============================================================================
@@ -1479,18 +1616,20 @@ if __name__ == '__main__':
     print("=" * 60)
     print("Q-Edu Socratic Math Teacher API")
     print("=" * 60)
-    print("\nAPI is starting...")
-    print(f"\nAPI Base URL:    http://localhost:5000")
-    print(f"Swagger UI:      http://localhost:5000/docs")
-    print(f"OpenAPI Spec:    http://localhost:5000/apispec.json")
-    print("\nEndpoints:")
-    print("  POST   /start              - Start new teaching session")
-    print("  POST   /respond            - Submit student response")
-    print("  GET    /session/<id>       - Get session details")
-    print("  DELETE /session/<id>       - Delete session")
-    print("  GET    /sessions           - List all sessions")
+    print("\nServer is starting...")
+    print(f"\n📚 Swagger UI:   http://localhost:5000/docs")
+    print(f"🔧 API Info:     http://localhost:5000/api")
+    print(f"📖 OpenAPI:      http://localhost:5000/apispec.json")
+    print("\nAPI Features:")
+    print("  📋 Diagnostic Test      - Initial assessment")
+    print("  🎯 Adaptive Learning    - Personalized practice")
+    print("  📊 Progress Tracking    - Student progress monitoring")
+    print("  💬 Socratic Chat        - Learn through guided questions")
+    print("  💡 Progressive Hints    - 3-level hint system")
+    print("  🎓 AI Tutor             - Contextual feedback and guidance")
     print("\n" + "=" * 60)
-    print("Visit http://localhost:5000/docs to try the API interactively!")
+    print("🚀 API is ready at http://localhost:5000")
+    print("📖 View API docs at http://localhost:5000/docs")
     print("=" * 60 + "\n")
 
     app.run(debug=True, host='0.0.0.0', port=5000)
