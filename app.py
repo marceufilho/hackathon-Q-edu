@@ -20,6 +20,8 @@ from diagnostic_test import DiagnosticTest
 from knowledge_graph_manager import KnowledgeGraphManager
 from mastery_tracker import MasteryTracker
 from tutor_commentary import TutorCommentary
+from solution_generator import SolutionGenerator
+from eq_ocr_easyocr import easyocr_math_ocr
 
 # Load environment variables
 load_dotenv()
@@ -78,6 +80,10 @@ swagger_template = {
             "description": "Track student progress and mastery"
         },
         {
+            "name": "OCR and Solutions",
+            "description": "Extract equations from images and generate step-by-step solutions"
+        },
+        {
             "name": "Teaching Sessions",
             "description": "Manage teaching sessions and interactions"
         },
@@ -95,6 +101,7 @@ session_manager = SessionManager()
 question_manager = QuestionManager()
 knowledge_graph = KnowledgeGraphManager()
 teacher = None  # Will initialize per request to handle API key
+solution_generator = None  # Will initialize per request to handle API key
 
 # Diagnostic and adaptive instances per student (stored in memory)
 diagnostic_sessions = {}
@@ -110,6 +117,17 @@ def get_teacher():
             raise ValueError("GEMINI_API_KEY not found in environment")
         teacher = SocraticTeacher(api_key)
     return teacher
+
+
+def get_solution_generator():
+    """Get or create solution generator instance"""
+    global solution_generator
+    if solution_generator is None:
+        api_key = os.environ.get("GEMINI_API_KEY")
+        if not api_key:
+            raise ValueError("GEMINI_API_KEY not found in environment")
+        solution_generator = SolutionGenerator(api_key)
+    return solution_generator
 
 
 @app.route('/api', methods=['GET'])
@@ -146,7 +164,9 @@ def api_info():
             "adaptive_learning": "Personalized adaptive learning system",
             "progress_tracking": "Track student progress and mastery",
             "socratic_teaching": "Learn through guided questions",
-            "progressive_hints": "3-level hint system (gentle, specific, directive)"
+            "progressive_hints": "3-level hint system (gentle, specific, directive)",
+            "ocr_extraction": "Extract math equations from images",
+            "solution_generation": "Generate step-by-step solutions with AI"
         },
         "endpoints": {
             "POST /start": "Start a new Socratic teaching session",
@@ -155,7 +175,9 @@ def api_info():
             "POST /adaptive/start": "Start adaptive learning session",
             "GET /progress/<student_id>": "Get student progress",
             "GET /topics/available": "Get all available topics",
-            "POST /adaptive/<student_id>/hint": "Get progressive hints"
+            "POST /adaptive/<student_id>/hint": "Get progressive hints",
+            "POST /ocr/extract": "Extract equation from image using OCR",
+            "POST /solution/generate": "Generate step-by-step solution"
         }
     })
 
@@ -1143,6 +1165,173 @@ def get_topic_progress(student_id, topic_id):
             "progress": topic_progress,
             "mastery": mastery_info
         }), 200
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+# ============================================================================
+# OCR AND SOLUTION GENERATION ENDPOINTS
+# ============================================================================
+
+@app.route('/ocr/extract', methods=['POST'])
+def extract_equation_ocr():
+    """Extract math equation from image using OCR
+    ---
+    tags:
+      - OCR and Solutions
+    consumes:
+      - multipart/form-data
+    parameters:
+      - name: image
+        in: formData
+        type: file
+        required: true
+        description: Image file containing math equation
+    responses:
+      200:
+        description: Equation extracted successfully
+        schema:
+          type: object
+          properties:
+            text:
+              type: string
+              example: "2x + 5 = 13"
+              description: Extracted equation text
+            backend:
+              type: string
+              example: "easyocr"
+            confidence:
+              type: number
+              example: 0.95
+              description: OCR confidence score (0-1)
+      400:
+        description: Bad request - no image provided
+        schema:
+          type: object
+          properties:
+            error:
+              type: string
+      500:
+        description: Internal server error
+        schema:
+          type: object
+          properties:
+            error:
+              type: string
+    """
+    try:
+        # Check if image file is in request
+        if 'image' not in request.files:
+            return jsonify({"error": "No image file provided. Use 'image' field in multipart/form-data"}), 400
+
+        image_file = request.files['image']
+
+        if image_file.filename == '':
+            return jsonify({"error": "Empty filename"}), 400
+
+        # Read image bytes
+        image_bytes = image_file.read()
+
+        if not image_bytes:
+            return jsonify({"error": "Empty image file"}), 400
+
+        # Perform OCR
+        ocr_result = easyocr_math_ocr(image_bytes)
+
+        return jsonify({
+            "text": ocr_result.text,
+            "backend": ocr_result.backend,
+            "confidence": ocr_result.confidence
+        }), 200
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+@app.route('/solution/generate', methods=['POST'])
+def generate_solution():
+    """Generate step-by-step solution for a math problem
+    ---
+    tags:
+      - OCR and Solutions
+    parameters:
+      - name: body
+        in: body
+        required: true
+        description: Math problem to solve
+        schema:
+          type: object
+          required:
+            - problem
+          properties:
+            problem:
+              type: string
+              example: "Resolva para x: 2x + 5 = 13"
+              description: Math problem in Portuguese or English
+    responses:
+      200:
+        description: Solution generated successfully
+        schema:
+          type: object
+          properties:
+            problem:
+              type: string
+              example: "Resolva para x: 2x + 5 = 13"
+            answer:
+              type: string
+              example: "x = 4"
+            steps:
+              type: array
+              items:
+                type: string
+              example: ["Passo 1: Subtraia 5 de ambos os lados", "Passo 2: Divida por 2"]
+            concepts:
+              type: array
+              items:
+                type: string
+              example: ["Equações lineares", "Operações inversas"]
+            explanation:
+              type: string
+              example: "Para resolver uma equação linear, isolamos a variável aplicando operações inversas."
+      400:
+        description: Bad request - invalid problem
+        schema:
+          type: object
+          properties:
+            error:
+              type: string
+      500:
+        description: Internal server error
+        schema:
+          type: object
+          properties:
+            error:
+              type: string
+    """
+    try:
+        data = request.get_json()
+
+        if not data or 'problem' not in data:
+            return jsonify({"error": "Missing 'problem' in request body"}), 400
+
+        problem = data['problem'].strip()
+
+        # Validate problem
+        generator = get_solution_generator()
+        is_valid, message = generator.validate_problem(problem)
+
+        if not is_valid:
+            return jsonify({"error": message}), 400
+
+        # Generate solution
+        solution = generator.generate_solution(problem)
+
+        # Check if there was an error during generation
+        if 'error' in solution:
+            return jsonify(solution), 500
+
+        return jsonify(solution), 200
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500

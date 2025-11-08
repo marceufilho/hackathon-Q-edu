@@ -24,6 +24,8 @@ An AI-powered adaptive learning system that provides personalized math education
 - **RESTful API**: Complete backend API with Swagger documentation
 - **Session Persistence**: All progress and conversations saved
 - **Question Generation**: Dynamic question creation for all topics and difficulty levels
+- **OCR Equation Extraction**: Extract math equations from images using EasyOCR
+- **AI Solution Generator**: Generate complete step-by-step solutions with explanations
 
 ## Prerequisites
 
@@ -524,6 +526,83 @@ curl http://localhost:5000/progress/aluno_001/recommendations
 ```bash
 curl http://localhost:5000/topics/available
 ```
+
+---
+
+## 🔍 OCR and Solution Generation Endpoints
+
+### `POST /ocr/extract`
+**Description**: Extract math equation from an image using OCR (Optical Character Recognition)
+
+**Request:** (multipart/form-data)
+- `image`: Image file containing math equation (PNG, JPG, etc.)
+
+**Response:**
+```json
+{
+  "text": "2x + 5 = 13",
+  "backend": "easyocr",
+  "confidence": 0.95
+}
+```
+
+**Example:**
+```bash
+curl -X POST http://localhost:5000/ocr/extract \
+  -F "image=@equation.jpg"
+```
+
+**Notes:**
+- Supports handwritten and printed math equations
+- Uses EasyOCR with math notation normalization
+- Returns confidence score (0-1)
+- Best results with clear, well-lit images
+
+---
+
+### `POST /solution/generate`
+**Description**: Generate complete step-by-step solution for any math problem using AI
+
+**Request:**
+```json
+{
+  "problem": "Resolva para x: 2x + 5 = 13"
+}
+```
+
+**Response:**
+```json
+{
+  "problem": "Resolva para x: 2x + 5 = 13",
+  "answer": "x = 4",
+  "steps": [
+    "Passo 1: Subtraia 5 de ambos os lados da equação: 2x + 5 - 5 = 13 - 5",
+    "Passo 2: Simplifique: 2x = 8",
+    "Passo 3: Divida ambos os lados por 2: 2x / 2 = 8 / 2",
+    "Passo 4: Simplifique para obter a resposta: x = 4"
+  ],
+  "concepts": [
+    "Operações inversas",
+    "Propriedade de igualdade",
+    "Isolamento de variável"
+  ],
+  "explanation": "Para resolver uma equação linear, isolamos a variável aplicando operações inversas em ambos os lados da equação, mantendo a igualdade."
+}
+```
+
+**Example:**
+```bash
+curl -X POST http://localhost:5000/solution/generate \
+  -H "Content-Type: application/json" \
+  -d '{"problem": "Resolva para x: 2x + 5 = 13"}'
+```
+
+**Notes:**
+- Accepts problems in Portuguese or English
+- Returns detailed step-by-step solutions
+- Identifies mathematical concepts used
+- Provides educational explanations
+- Problem must be 3-1000 characters
 
 ---
 
