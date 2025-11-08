@@ -6,9 +6,9 @@ Flask API for the Socratic teaching system using Polya's method.
 
 import os
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 from dotenv import load_dotenv
 from flasgger import Swagger
-from flask_cors import CORS
 
 from socratic_solver import SocraticTeacher
 from conversation_manager import SessionManager
@@ -19,6 +19,9 @@ from adaptive_engine import AdaptiveEngine
 from diagnostic_test import DiagnosticTest
 from knowledge_graph_manager import KnowledgeGraphManager
 from mastery_tracker import MasteryTracker
+from tutor_commentary import TutorCommentary
+from solution_generator import SolutionGenerator
+from eq_ocr_easyocr import easyocr_math_ocr
 
 # Load environment variables
 load_dotenv()
@@ -77,6 +80,10 @@ swagger_template = {
             "description": "Track student progress and mastery"
         },
         {
+            "name": "OCR and Solutions",
+            "description": "Extract equations from images and generate step-by-step solutions"
+        },
+        {
             "name": "Teaching Sessions",
             "description": "Manage teaching sessions and interactions"
         },
@@ -94,6 +101,7 @@ session_manager = SessionManager()
 question_manager = QuestionManager()
 knowledge_graph = KnowledgeGraphManager()
 teacher = None  # Will initialize per request to handle API key
+solution_generator = None  # Will initialize per request to handle API key
 
 # Diagnostic and adaptive instances per student (stored in memory)
 diagnostic_sessions = {}
@@ -111,9 +119,20 @@ def get_teacher():
     return teacher
 
 
-@app.route('/', methods=['GET'])
-def home():
-    """Health check and API info
+def get_solution_generator():
+    """Get or create solution generator instance"""
+    global solution_generator
+    if solution_generator is None:
+        api_key = os.environ.get("GEMINI_API_KEY")
+        if not api_key:
+            raise ValueError("GEMINI_API_KEY not found in environment")
+        solution_generator = SolutionGenerator(api_key)
+    return solution_generator
+
+
+@app.route('/api', methods=['GET'])
+def api_info():
+    """API information
     ---
     tags:
       - Teaching Sessions
@@ -135,16 +154,30 @@ def home():
               type: object
     """
     return jsonify({
-        "service": "Q-Edu Socratic Math Teacher",
+        "service": "Q-Edu Socratic Math Teacher API",
         "version": "1.0.0",
-        "description": "AI-powered Socratic teaching system using Polya's method",
+        "description": "AI-powered Socratic teaching system using Polya's method with adaptive learning",
         "swagger_ui": "http://localhost:5000/docs",
+        "documentation": "http://localhost:5000/apispec.json",
+        "main_features": {
+            "diagnostic_test": "Initial assessment to determine student level",
+            "adaptive_learning": "Personalized adaptive learning system",
+            "progress_tracking": "Track student progress and mastery",
+            "socratic_teaching": "Learn through guided questions",
+            "progressive_hints": "3-level hint system (gentle, specific, directive)",
+            "ocr_extraction": "Extract math equations from images",
+            "solution_generation": "Generate step-by-step solutions with AI"
+        },
         "endpoints": {
-            "POST /start": "Start a new teaching session",
+            "POST /start": "Start a new Socratic teaching session",
             "POST /respond": "Submit student response and get next question",
-            "GET /session/<id>": "Get session details",
-            "DELETE /session/<id>": "End a teaching session",
-            "GET /sessions": "List all sessions"
+            "POST /diagnostic/start": "Start diagnostic test",
+            "POST /adaptive/start": "Start adaptive learning session",
+            "GET /progress/<student_id>": "Get student progress",
+            "GET /topics/available": "Get all available topics",
+            "POST /adaptive/<student_id>/hint": "Get progressive hints",
+            "POST /ocr/extract": "Extract equation from image using OCR",
+            "POST /solution/generate": "Generate step-by-step solution"
         }
     })
 
@@ -900,6 +933,128 @@ def change_adaptive_topic(student_id):
         return jsonify({"error": str(e)}), 500
 
 
+@app.route('/topics/available', methods=['GET'])
+def get_available_topics():
+    """Get list of available topics with question generators
+    ---
+    tags:
+      - Adaptive Learning
+    responses:
+      200:
+        description: List of available topics
+        schema:
+          type: object
+          properties:
+            topics:
+              type: array
+              items:
+                type: object
+                properties:
+                  topic_id:
+                    type: string
+                  name:
+                    type: string
+                  description:
+                    type: string
+                  difficulty:
+                    type: integer
+                  has_questions:
+                    type: boolean
+      500:
+        description: Error
+    """
+    try:
+        # Get all topics from knowledge graph
+        topics_list = []
+
+        for topic_id, topic_data in knowledge_graph.topics.items():
+            topics_list.append({
+                "topic_id": topic_id,
+                "name": topic_data["name"],
+                "description": topic_data["description"],
+                "difficulty": topic_data["difficulty"],
+                "prerequisites": topic_data.get("prerequisites", []),
+                "has_questions": True  # All topics have question generators now
+            })
+
+        # Sort by difficulty
+        topics_list.sort(key=lambda t: t["difficulty"])
+
+        return jsonify({"topics": topics_list}), 200
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+@app.route('/adaptive/<student_id>/hint', methods=['POST'])
+def get_adaptive_hint(student_id):
+    """Get progressive hint for current question
+    ---
+    tags:
+      - Adaptive Learning
+    parameters:
+      - name: student_id
+        in: path
+        type: string
+        required: true
+      - name: body
+        in: body
+        required: true
+        schema:
+          type: object
+          required:
+            - question
+            - hint_level
+          properties:
+            question:
+              type: object
+              description: Current question data
+            hint_level:
+              type: integer
+              description: Hint level (1, 2, or 3)
+              minimum: 1
+              maximum: 3
+    responses:
+      200:
+        description: Hint generated
+        schema:
+          type: object
+          properties:
+            hint:
+              type: string
+            level:
+              type: integer
+            level_name:
+              type: string
+            max_level:
+              type: integer
+      400:
+        description: Bad request
+      500:
+        description: Error
+    """
+    try:
+        data = request.get_json()
+
+        if not data or 'question' not in data or 'hint_level' not in data:
+            return jsonify({"error": "question and hint_level are required"}), 400
+
+        question = data['question']
+        hint_level = data['hint_level']
+
+        # Validate hint level
+        if hint_level not in [1, 2, 3]:
+            return jsonify({"error": "hint_level must be 1, 2, or 3"}), 400
+
+        # Generate progressive hint
+        hint_data = TutorCommentary.generate_progressive_hint(question, hint_level)
+
+        return jsonify(hint_data), 200
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
 # ============================================================================
 # PROGRESS TRACKING ENDPOINTS
 # ============================================================================
@@ -1010,6 +1165,173 @@ def get_topic_progress(student_id, topic_id):
             "progress": topic_progress,
             "mastery": mastery_info
         }), 200
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+# ============================================================================
+# OCR AND SOLUTION GENERATION ENDPOINTS
+# ============================================================================
+
+@app.route('/ocr/extract', methods=['POST'])
+def extract_equation_ocr():
+    """Extract math equation from image using OCR
+    ---
+    tags:
+      - OCR and Solutions
+    consumes:
+      - multipart/form-data
+    parameters:
+      - name: image
+        in: formData
+        type: file
+        required: true
+        description: Image file containing math equation
+    responses:
+      200:
+        description: Equation extracted successfully
+        schema:
+          type: object
+          properties:
+            text:
+              type: string
+              example: "2x + 5 = 13"
+              description: Extracted equation text
+            backend:
+              type: string
+              example: "easyocr"
+            confidence:
+              type: number
+              example: 0.95
+              description: OCR confidence score (0-1)
+      400:
+        description: Bad request - no image provided
+        schema:
+          type: object
+          properties:
+            error:
+              type: string
+      500:
+        description: Internal server error
+        schema:
+          type: object
+          properties:
+            error:
+              type: string
+    """
+    try:
+        # Check if image file is in request
+        if 'image' not in request.files:
+            return jsonify({"error": "No image file provided. Use 'image' field in multipart/form-data"}), 400
+
+        image_file = request.files['image']
+
+        if image_file.filename == '':
+            return jsonify({"error": "Empty filename"}), 400
+
+        # Read image bytes
+        image_bytes = image_file.read()
+
+        if not image_bytes:
+            return jsonify({"error": "Empty image file"}), 400
+
+        # Perform OCR
+        ocr_result = easyocr_math_ocr(image_bytes)
+
+        return jsonify({
+            "text": ocr_result.text,
+            "backend": ocr_result.backend,
+            "confidence": ocr_result.confidence
+        }), 200
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+@app.route('/solution/generate', methods=['POST'])
+def generate_solution():
+    """Generate step-by-step solution for a math problem
+    ---
+    tags:
+      - OCR and Solutions
+    parameters:
+      - name: body
+        in: body
+        required: true
+        description: Math problem to solve
+        schema:
+          type: object
+          required:
+            - problem
+          properties:
+            problem:
+              type: string
+              example: "Resolva para x: 2x + 5 = 13"
+              description: Math problem in Portuguese or English
+    responses:
+      200:
+        description: Solution generated successfully
+        schema:
+          type: object
+          properties:
+            problem:
+              type: string
+              example: "Resolva para x: 2x + 5 = 13"
+            answer:
+              type: string
+              example: "x = 4"
+            steps:
+              type: array
+              items:
+                type: string
+              example: ["Passo 1: Subtraia 5 de ambos os lados", "Passo 2: Divida por 2"]
+            concepts:
+              type: array
+              items:
+                type: string
+              example: ["Equações lineares", "Operações inversas"]
+            explanation:
+              type: string
+              example: "Para resolver uma equação linear, isolamos a variável aplicando operações inversas."
+      400:
+        description: Bad request - invalid problem
+        schema:
+          type: object
+          properties:
+            error:
+              type: string
+      500:
+        description: Internal server error
+        schema:
+          type: object
+          properties:
+            error:
+              type: string
+    """
+    try:
+        data = request.get_json()
+
+        if not data or 'problem' not in data:
+            return jsonify({"error": "Missing 'problem' in request body"}), 400
+
+        problem = data['problem'].strip()
+
+        # Validate problem
+        generator = get_solution_generator()
+        is_valid, message = generator.validate_problem(problem)
+
+        if not is_valid:
+            return jsonify({"error": message}), 400
+
+        # Generate solution
+        solution = generator.generate_solution(problem)
+
+        # Check if there was an error during generation
+        if 'error' in solution:
+            return jsonify(solution), 500
+
+        return jsonify(solution), 200
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500
@@ -1483,18 +1805,20 @@ if __name__ == '__main__':
     print("=" * 60)
     print("Q-Edu Socratic Math Teacher API")
     print("=" * 60)
-    print("\nAPI is starting...")
-    print(f"\nAPI Base URL:    http://localhost:5000")
-    print(f"Swagger UI:      http://localhost:5000/docs")
-    print(f"OpenAPI Spec:    http://localhost:5000/apispec.json")
-    print("\nEndpoints:")
-    print("  POST   /start              - Start new teaching session")
-    print("  POST   /respond            - Submit student response")
-    print("  GET    /session/<id>       - Get session details")
-    print("  DELETE /session/<id>       - Delete session")
-    print("  GET    /sessions           - List all sessions")
+    print("\nServer is starting...")
+    print(f"\n📚 Swagger UI:   http://localhost:5000/docs")
+    print(f"🔧 API Info:     http://localhost:5000/api")
+    print(f"📖 OpenAPI:      http://localhost:5000/apispec.json")
+    print("\nAPI Features:")
+    print("  📋 Diagnostic Test      - Initial assessment")
+    print("  🎯 Adaptive Learning    - Personalized practice")
+    print("  📊 Progress Tracking    - Student progress monitoring")
+    print("  💬 Socratic Chat        - Learn through guided questions")
+    print("  💡 Progressive Hints    - 3-level hint system")
+    print("  🎓 AI Tutor             - Contextual feedback and guidance")
     print("\n" + "=" * 60)
-    print("Visit http://localhost:5000/docs to try the API interactively!")
+    print("🚀 API is ready at http://localhost:5000")
+    print("📖 View API docs at http://localhost:5000/docs")
     print("=" * 60 + "\n")
 
     app.run(debug=True, host='0.0.0.0', port=5000)

@@ -31,14 +31,14 @@
       "current_path": null,
       "diagnostic_completed": false
     },
-    "student_123": {
-      "created_at": "2025-11-08T14:17:56.610654",
+    "aluno_001": {
+      "created_at": "2025-11-08T13:52:48.395445",
       "topics": {
         "operacoes_basicas": {
           "attempts": [
             {
-              "question_id": "2fc9f2a6-56fa-4550-8ac9-4e792d018698",
-              "timestamp": "2025-11-08T14:17:56.610667",
+              "question_id": "551d48a8-ade6-488d-9d76-56a9ebef4365",
+              "timestamp": "2025-11-08T13:52:48.395463",
               "is_correct": false,
               "concepts_tested": [
                 "adicao",
@@ -56,8 +56,8 @@
               ]
             },
             {
-              "question_id": "249f3e6f-6c51-4185-9816-2db62189ddf4",
-              "timestamp": "2025-11-08T14:23:01.841213",
+              "question_id": "99774945-7f1c-441e-85e9-85db67585ac8",
+              "timestamp": "2025-11-08T13:52:53.364791",
               "is_correct": true,
               "concepts_tested": [
                 "adicao",
@@ -67,313 +67,26 @@
                 "ordem_operacoes"
               ],
               "error_concepts": []
-            },
-            {
-              "question_id": "7924010d-bc35-426c-9a5d-88d9882550ee",
-              "timestamp": "2025-11-08T14:23:07.291834",
-              "is_correct": false,
-              "concepts_tested": [
-                "adicao",
-                "subtracao",
-                "multiplicacao",
-                "divisao",
-                "ordem_operacoes"
-              ],
-              "error_concepts": [
-                "adicao",
-                "subtracao",
-                "multiplicacao",
-                "divisao",
-                "ordem_operacoes"
-              ]
-            },
-            {
-              "question_id": "0418c38d-d4c5-4e18-858e-b69fe075d607",
-              "timestamp": "2025-11-08T14:23:10.940531",
-              "is_correct": true,
-              "concepts_tested": [
-                "adicao",
-                "subtracao",
-                "multiplicacao",
-                "divisao",
-                "ordem_operacoes"
-              ],
-              "error_concepts": []
-            },
-            {
-              "question_id": "73265746-055e-47a1-bdaa-73c53f30f228",
-              "timestamp": "2025-11-08T14:25:12.439636",
-              "is_correct": false,
-              "concepts_tested": [
-                "adicao",
-                "subtracao",
-                "multiplicacao",
-                "divisao",
-                "ordem_operacoes"
-              ],
-              "error_concepts": [
-                "adicao",
-                "subtracao",
-                "multiplicacao",
-                "divisao",
-                "ordem_operacoes"
-              ]
-            },
-            {
-              "question_id": "31d88e49-dcd2-4adf-8951-8febbe96ca30",
-              "timestamp": "2025-11-08T14:25:17.244558",
-              "is_correct": true,
-              "concepts_tested": [
-                "adicao",
-                "subtracao",
-                "multiplicacao",
-                "divisao",
-                "ordem_operacoes"
-              ],
-              "error_concepts": []
-            },
-            {
-              "question_id": "f5978626-8970-41f8-a04a-f14337d4eb51",
-              "timestamp": "2025-11-08T14:29:06.954026",
-              "is_correct": true,
-              "concepts_tested": [
-                "adicao",
-                "subtracao",
-                "multiplicacao",
-                "divisao",
-                "ordem_operacoes"
-              ],
-              "error_concepts": []
-            },
-            {
-              "question_id": "f3071220-0ac6-4f63-8384-34e8b12da6e1",
-              "timestamp": "2025-11-08T14:29:26.927368",
-              "is_correct": true,
-              "concepts_tested": [
-                "adicao",
-                "subtracao",
-                "multiplicacao",
-                "divisao",
-                "ordem_operacoes"
-              ],
-              "error_concepts": []
-            },
-            {
-              "question_id": "53cffeb6-953f-4407-b0de-1c89eb1b952e",
-              "timestamp": "2025-11-08T14:29:36.645420",
-              "is_correct": true,
-              "concepts_tested": [
-                "adicao",
-                "subtracao",
-                "multiplicacao",
-                "divisao",
-                "ordem_operacoes"
-              ],
-              "error_concepts": []
-            },
-            {
-              "question_id": "a059d44e-a3c1-47b8-863a-0bfba1ae5786",
-              "timestamp": "2025-11-08T14:45:16.158864",
-              "is_correct": false,
-              "concepts_tested": [
-                "adicao",
-                "subtracao",
-                "multiplicacao",
-                "divisao",
-                "ordem_operacoes"
-              ],
-              "error_concepts": [
-                "adicao",
-                "subtracao",
-                "multiplicacao",
-                "divisao",
-                "ordem_operacoes"
-              ]
-            },
-            {
-              "question_id": "53e6a7f4-ea43-4802-b316-c2f229f83543",
-              "timestamp": "2025-11-08T14:45:30.257608",
-              "is_correct": false,
-              "concepts_tested": [
-                "adicao",
-                "subtracao",
-                "multiplicacao",
-                "divisao",
-                "ordem_operacoes"
-              ],
-              "error_concepts": [
-                "adicao",
-                "subtracao",
-                "multiplicacao",
-                "divisao",
-                "ordem_operacoes"
-              ]
-            },
-            {
-              "question_id": "71b653bc-ba96-4b38-9deb-0bf73062e532",
-              "timestamp": "2025-11-08T14:45:47.392450",
-              "is_correct": true,
-              "concepts_tested": [
-                "adicao",
-                "subtracao",
-                "multiplicacao",
-                "divisao",
-                "ordem_operacoes"
-              ],
-              "error_concepts": []
-            },
-            {
-              "question_id": "1e21a905-3610-4437-ae57-faefb0a23de3",
-              "timestamp": "2025-11-08T14:50:03.422428",
-              "is_correct": false,
-              "concepts_tested": [
-                "adicao",
-                "subtracao",
-                "multiplicacao",
-                "divisao",
-                "ordem_operacoes"
-              ],
-              "error_concepts": [
-                "adicao",
-                "subtracao",
-                "multiplicacao",
-                "divisao",
-                "ordem_operacoes"
-              ]
-            },
-            {
-              "question_id": "12a33d7b-7248-4dfc-b98a-6ea54264c8ee",
-              "timestamp": "2025-11-08T14:51:21.690049",
-              "is_correct": false,
-              "concepts_tested": [
-                "adicao",
-                "subtracao",
-                "multiplicacao",
-                "divisao",
-                "ordem_operacoes"
-              ],
-              "error_concepts": [
-                "adicao",
-                "subtracao",
-                "multiplicacao",
-                "divisao",
-                "ordem_operacoes"
-              ]
-            },
-            {
-              "question_id": "c28429a6-3075-4662-a8d3-c24d6880d5ab",
-              "timestamp": "2025-11-08T14:51:22.589333",
-              "is_correct": false,
-              "concepts_tested": [
-                "adicao",
-                "subtracao",
-                "multiplicacao",
-                "divisao",
-                "ordem_operacoes"
-              ],
-              "error_concepts": [
-                "adicao",
-                "subtracao",
-                "multiplicacao",
-                "divisao",
-                "ordem_operacoes"
-              ]
-            },
-            {
-              "question_id": "396b6da6-72a3-4789-909b-c79e072270a5",
-              "timestamp": "2025-11-08T14:51:25.627603",
-              "is_correct": false,
-              "concepts_tested": [
-                "adicao",
-                "subtracao",
-                "multiplicacao",
-                "divisao",
-                "ordem_operacoes"
-              ],
-              "error_concepts": [
-                "adicao",
-                "subtracao",
-                "multiplicacao",
-                "divisao",
-                "ordem_operacoes"
-              ]
-            },
-            {
-              "question_id": "1f60c9e5-1d2a-402e-bc51-7b6f0314b9e3",
-              "timestamp": "2025-11-08T14:53:05.254866",
-              "is_correct": false,
-              "concepts_tested": [
-                "adicao",
-                "subtracao",
-                "multiplicacao",
-                "divisao",
-                "ordem_operacoes"
-              ],
-              "error_concepts": [
-                "adicao",
-                "subtracao",
-                "multiplicacao",
-                "divisao",
-                "ordem_operacoes"
-              ]
-            },
-            {
-              "question_id": "30aa3c95-978b-4b3d-8b4d-e3ebbcc93f07",
-              "timestamp": "2025-11-08T14:53:06.215589",
-              "is_correct": false,
-              "concepts_tested": [
-                "adicao",
-                "subtracao",
-                "multiplicacao",
-                "divisao",
-                "ordem_operacoes"
-              ],
-              "error_concepts": [
-                "adicao",
-                "subtracao",
-                "multiplicacao",
-                "divisao",
-                "ordem_operacoes"
-              ]
-            },
-            {
-              "question_id": "4cfd9ff7-d2f4-44d7-bd21-efd71699e935",
-              "timestamp": "2025-11-08T14:53:07.171464",
-              "is_correct": false,
-              "concepts_tested": [
-                "adicao",
-                "subtracao",
-                "multiplicacao",
-                "divisao",
-                "ordem_operacoes"
-              ],
-              "error_concepts": [
-                "adicao",
-                "subtracao",
-                "multiplicacao",
-                "divisao",
-                "ordem_operacoes"
-              ]
             }
           ],
-          "total_questions": 19,
-          "correct_answers": 7,
+          "total_questions": 2,
+          "correct_answers": 1,
           "concept_errors": {
-            "adicao": 12,
-            "subtracao": 12,
-            "multiplicacao": 12,
-            "divisao": 12,
-            "ordem_operacoes": 12
+            "adicao": 1,
+            "subtracao": 1,
+            "multiplicacao": 1,
+            "divisao": 1,
+            "ordem_operacoes": 1
           },
-          "last_attempt": "2025-11-08T14:53:07.171477",
+          "last_attempt": "2025-11-08T13:52:53.364803",
           "mastery_achieved": false,
           "mastery_date": null
         },
         "numeros_inteiros": {
           "attempts": [
             {
-              "question_id": "8d0bbe46-db7d-4d7e-b0b1-b0106c928c76",
-              "timestamp": "2025-11-08T14:23:20.975572",
+              "question_id": "5d7584ea-5799-43da-8bff-0e2cc5421ebf",
+              "timestamp": "2025-11-08T13:53:02.653238",
               "is_correct": true,
               "concepts_tested": [
                 "numeros_negativos",
@@ -384,194 +97,8 @@
               "error_concepts": []
             },
             {
-              "question_id": "880b503f-13cd-4b5e-9cd8-04699d03a624",
-              "timestamp": "2025-11-08T14:23:26.415935",
-              "is_correct": true,
-              "concepts_tested": [
-                "numeros_negativos",
-                "valor_absoluto",
-                "comparacao",
-                "operacoes_com_negativos"
-              ],
-              "error_concepts": []
-            },
-            {
-              "question_id": "60585173-4fe1-4e6e-b6fd-2ae8f3ad01ca",
-              "timestamp": "2025-11-08T14:23:30.539911",
-              "is_correct": false,
-              "concepts_tested": [
-                "numeros_negativos",
-                "valor_absoluto",
-                "comparacao",
-                "operacoes_com_negativos"
-              ],
-              "error_concepts": [
-                "numeros_negativos",
-                "valor_absoluto",
-                "comparacao",
-                "operacoes_com_negativos"
-              ]
-            },
-            {
-              "question_id": "c60f67d5-bcd6-49d0-8e30-fac2c17d73eb",
-              "timestamp": "2025-11-08T14:29:48.345116",
-              "is_correct": false,
-              "concepts_tested": [
-                "numeros_negativos",
-                "valor_absoluto",
-                "comparacao",
-                "operacoes_com_negativos"
-              ],
-              "error_concepts": [
-                "numeros_negativos",
-                "valor_absoluto",
-                "comparacao",
-                "operacoes_com_negativos"
-              ]
-            },
-            {
-              "question_id": "770a380e-86d7-45cb-b72b-fbe004a68071",
-              "timestamp": "2025-11-08T14:30:48.653588",
-              "is_correct": true,
-              "concepts_tested": [
-                "numeros_negativos",
-                "valor_absoluto",
-                "comparacao",
-                "operacoes_com_negativos"
-              ],
-              "error_concepts": []
-            },
-            {
-              "question_id": "6360a860-d63e-489e-a296-a348ceea17d2",
-              "timestamp": "2025-11-08T14:31:15.151492",
-              "is_correct": true,
-              "concepts_tested": [
-                "numeros_negativos",
-                "valor_absoluto",
-                "comparacao",
-                "operacoes_com_negativos"
-              ],
-              "error_concepts": []
-            },
-            {
-              "question_id": "8f818508-2974-401b-82d5-92227e453b82",
-              "timestamp": "2025-11-08T14:46:00.842369",
-              "is_correct": true,
-              "concepts_tested": [
-                "numeros_negativos",
-                "valor_absoluto",
-                "comparacao",
-                "operacoes_com_negativos"
-              ],
-              "error_concepts": []
-            },
-            {
-              "question_id": "e9a64d26-9520-4add-ac6c-2da77850bf91",
-              "timestamp": "2025-11-08T14:46:13.616457",
-              "is_correct": true,
-              "concepts_tested": [
-                "numeros_negativos",
-                "valor_absoluto",
-                "comparacao",
-                "operacoes_com_negativos"
-              ],
-              "error_concepts": []
-            },
-            {
-              "question_id": "07aac0b2-9930-46fd-b3c2-c073863e6dbd",
-              "timestamp": "2025-11-08T14:46:17.440106",
-              "is_correct": true,
-              "concepts_tested": [
-                "numeros_negativos",
-                "valor_absoluto",
-                "comparacao",
-                "operacoes_com_negativos"
-              ],
-              "error_concepts": []
-            },
-            {
-              "question_id": "215df8ed-b2e1-4019-b42a-fc508ab54f6b",
-              "timestamp": "2025-11-08T14:51:28.397449",
-              "is_correct": true,
-              "concepts_tested": [
-                "numeros_negativos",
-                "valor_absoluto",
-                "comparacao",
-                "operacoes_com_negativos"
-              ],
-              "error_concepts": []
-            },
-            {
-              "question_id": "1e5f5be0-fe30-45e1-a9fc-514a9aa394e9",
-              "timestamp": "2025-11-08T14:51:30.439364",
-              "is_correct": false,
-              "concepts_tested": [
-                "numeros_negativos",
-                "valor_absoluto",
-                "comparacao",
-                "operacoes_com_negativos"
-              ],
-              "error_concepts": [
-                "numeros_negativos",
-                "valor_absoluto",
-                "comparacao",
-                "operacoes_com_negativos"
-              ]
-            },
-            {
-              "question_id": "c6585168-e7d3-4967-9425-e8f567d13904",
-              "timestamp": "2025-11-08T14:51:30.828585",
-              "is_correct": false,
-              "concepts_tested": [
-                "numeros_negativos",
-                "valor_absoluto",
-                "comparacao",
-                "operacoes_com_negativos"
-              ],
-              "error_concepts": [
-                "numeros_negativos",
-                "valor_absoluto",
-                "comparacao",
-                "operacoes_com_negativos"
-              ]
-            },
-            {
-              "question_id": "79bab3d1-49f1-43de-850b-d2278f0bf53c",
-              "timestamp": "2025-11-08T14:53:09.106253",
-              "is_correct": false,
-              "concepts_tested": [
-                "numeros_negativos",
-                "valor_absoluto",
-                "comparacao",
-                "operacoes_com_negativos"
-              ],
-              "error_concepts": [
-                "numeros_negativos",
-                "valor_absoluto",
-                "comparacao",
-                "operacoes_com_negativos"
-              ]
-            },
-            {
-              "question_id": "94f8f0e3-6360-4817-87c6-bb78f27c0cd0",
-              "timestamp": "2025-11-08T14:53:10.304629",
-              "is_correct": false,
-              "concepts_tested": [
-                "numeros_negativos",
-                "valor_absoluto",
-                "comparacao",
-                "operacoes_com_negativos"
-              ],
-              "error_concepts": [
-                "numeros_negativos",
-                "valor_absoluto",
-                "comparacao",
-                "operacoes_com_negativos"
-              ]
-            },
-            {
-              "question_id": "52cdf9ec-8d19-4151-aef6-2aebdc8da350",
-              "timestamp": "2025-11-08T14:53:13.523541",
+              "question_id": "e3bf4b7b-0f3f-4963-8709-65e7af521321",
+              "timestamp": "2025-11-08T13:53:06.769073",
               "is_correct": true,
               "concepts_tested": [
                 "numeros_negativos",
@@ -582,23 +109,35 @@
               "error_concepts": []
             }
           ],
-          "total_questions": 15,
-          "correct_answers": 9,
-          "concept_errors": {
-            "numeros_negativos": 6,
-            "valor_absoluto": 6,
-            "comparacao": 6,
-            "operacoes_com_negativos": 6
-          },
-          "last_attempt": "2025-11-08T14:53:13.523553",
+          "total_questions": 2,
+          "correct_answers": 2,
+          "concept_errors": {},
+          "last_attempt": "2025-11-08T13:53:06.769087",
           "mastery_achieved": false,
           "mastery_date": null
         },
         "variaveis_expressoes": {
           "attempts": [
             {
-              "question_id": "a8b3fdd1-70fc-4ad7-8197-867583199b82",
-              "timestamp": "2025-11-08T14:31:45.918038",
+              "question_id": "a64b19d6-a780-4db4-971e-ad40eca64a6c",
+              "timestamp": "2025-11-08T13:53:14.299991",
+              "is_correct": false,
+              "concepts_tested": [
+                "variaveis",
+                "expressoes_algebricas",
+                "substituicao",
+                "avaliacao_expressoes"
+              ],
+              "error_concepts": [
+                "variaveis",
+                "expressoes_algebricas",
+                "substituicao",
+                "avaliacao_expressoes"
+              ]
+            },
+            {
+              "question_id": "cc43b97a-73ef-40ff-a75e-9975c7fb6502",
+              "timestamp": "2025-11-08T13:53:23.679257",
               "is_correct": true,
               "concepts_tested": [
                 "variaveis",
@@ -607,207 +146,25 @@
                 "avaliacao_expressoes"
               ],
               "error_concepts": []
-            },
-            {
-              "question_id": "1b5f9a0d-6787-47d3-b070-a7032a5afa12",
-              "timestamp": "2025-11-08T14:32:04.928287",
-              "is_correct": false,
-              "concepts_tested": [
-                "variaveis",
-                "expressoes_algebricas",
-                "substituicao",
-                "avaliacao_expressoes"
-              ],
-              "error_concepts": [
-                "variaveis",
-                "expressoes_algebricas",
-                "substituicao",
-                "avaliacao_expressoes"
-              ]
-            },
-            {
-              "question_id": "d4542f96-292d-451a-b648-c02e201b95e2",
-              "timestamp": "2025-11-08T14:32:33.541127",
-              "is_correct": true,
-              "concepts_tested": [
-                "variaveis",
-                "expressoes_algebricas",
-                "substituicao",
-                "avaliacao_expressoes"
-              ],
-              "error_concepts": []
-            },
-            {
-              "question_id": "9fdcd2a6-5fde-49cf-b865-0bcb09cda855",
-              "timestamp": "2025-11-08T14:46:22.308852",
-              "is_correct": false,
-              "concepts_tested": [
-                "variaveis",
-                "expressoes_algebricas",
-                "substituicao",
-                "avaliacao_expressoes"
-              ],
-              "error_concepts": [
-                "variaveis",
-                "expressoes_algebricas",
-                "substituicao",
-                "avaliacao_expressoes"
-              ]
-            },
-            {
-              "question_id": "bf2918d7-9196-4eed-958d-b2e60fe665ab",
-              "timestamp": "2025-11-08T14:46:24.824900",
-              "is_correct": false,
-              "concepts_tested": [
-                "variaveis",
-                "expressoes_algebricas",
-                "substituicao",
-                "avaliacao_expressoes"
-              ],
-              "error_concepts": [
-                "variaveis",
-                "expressoes_algebricas",
-                "substituicao",
-                "avaliacao_expressoes"
-              ]
-            },
-            {
-              "question_id": "a3e69a25-04f2-4aa3-91ed-39213d8d46b0",
-              "timestamp": "2025-11-08T14:46:27.684187",
-              "is_correct": false,
-              "concepts_tested": [
-                "variaveis",
-                "expressoes_algebricas",
-                "substituicao",
-                "avaliacao_expressoes"
-              ],
-              "error_concepts": [
-                "variaveis",
-                "expressoes_algebricas",
-                "substituicao",
-                "avaliacao_expressoes"
-              ]
-            },
-            {
-              "question_id": "4e35bf2f-64fe-46cc-baa1-5cbbf742eacf",
-              "timestamp": "2025-11-08T14:51:31.696496",
-              "is_correct": false,
-              "concepts_tested": [
-                "variaveis",
-                "expressoes_algebricas",
-                "substituicao",
-                "avaliacao_expressoes"
-              ],
-              "error_concepts": [
-                "variaveis",
-                "expressoes_algebricas",
-                "substituicao",
-                "avaliacao_expressoes"
-              ]
-            },
-            {
-              "question_id": "22ee523c-1b15-44a2-8662-cea10dfaa1be",
-              "timestamp": "2025-11-08T14:51:32.264288",
-              "is_correct": false,
-              "concepts_tested": [
-                "variaveis",
-                "expressoes_algebricas",
-                "substituicao",
-                "avaliacao_expressoes"
-              ],
-              "error_concepts": [
-                "variaveis",
-                "expressoes_algebricas",
-                "substituicao",
-                "avaliacao_expressoes"
-              ]
-            },
-            {
-              "question_id": "1b51acf8-e52c-47bb-9b4a-450ebbf8b08a",
-              "timestamp": "2025-11-08T14:51:32.577336",
-              "is_correct": false,
-              "concepts_tested": [
-                "variaveis",
-                "expressoes_algebricas",
-                "substituicao",
-                "avaliacao_expressoes"
-              ],
-              "error_concepts": [
-                "variaveis",
-                "expressoes_algebricas",
-                "substituicao",
-                "avaliacao_expressoes"
-              ]
-            },
-            {
-              "question_id": "d8a29bf6-ba7c-44ca-bcad-86edb696433c",
-              "timestamp": "2025-11-08T14:53:15.867175",
-              "is_correct": false,
-              "concepts_tested": [
-                "variaveis",
-                "expressoes_algebricas",
-                "substituicao",
-                "avaliacao_expressoes"
-              ],
-              "error_concepts": [
-                "variaveis",
-                "expressoes_algebricas",
-                "substituicao",
-                "avaliacao_expressoes"
-              ]
-            },
-            {
-              "question_id": "610c7960-127e-4431-b279-fe573557f83b",
-              "timestamp": "2025-11-08T14:53:16.245232",
-              "is_correct": false,
-              "concepts_tested": [
-                "variaveis",
-                "expressoes_algebricas",
-                "substituicao",
-                "avaliacao_expressoes"
-              ],
-              "error_concepts": [
-                "variaveis",
-                "expressoes_algebricas",
-                "substituicao",
-                "avaliacao_expressoes"
-              ]
-            },
-            {
-              "question_id": "e000cb2f-3010-4c03-a974-9af46c7149a7",
-              "timestamp": "2025-11-08T14:53:17.021398",
-              "is_correct": false,
-              "concepts_tested": [
-                "variaveis",
-                "expressoes_algebricas",
-                "substituicao",
-                "avaliacao_expressoes"
-              ],
-              "error_concepts": [
-                "variaveis",
-                "expressoes_algebricas",
-                "substituicao",
-                "avaliacao_expressoes"
-              ]
             }
           ],
-          "total_questions": 12,
-          "correct_answers": 2,
+          "total_questions": 2,
+          "correct_answers": 1,
           "concept_errors": {
-            "variaveis": 10,
-            "expressoes_algebricas": 10,
-            "substituicao": 10,
-            "avaliacao_expressoes": 10
+            "variaveis": 1,
+            "expressoes_algebricas": 1,
+            "substituicao": 1,
+            "avaliacao_expressoes": 1
           },
-          "last_attempt": "2025-11-08T14:53:17.021407",
+          "last_attempt": "2025-11-08T13:53:23.679271",
           "mastery_achieved": false,
           "mastery_date": null
         },
         "operacoes_inversas": {
           "attempts": [
             {
-              "question_id": "391cb656-e38d-4fe7-835b-eb658458343a",
-              "timestamp": "2025-11-08T14:33:04.300902",
+              "question_id": "bed0c97a-b1e1-489a-8252-b55cd67c4ffc",
+              "timestamp": "2025-11-08T13:53:31.238766",
               "is_correct": true,
               "concepts_tested": [
                 "inverso_aditivo",
@@ -818,25 +175,8 @@
               "error_concepts": []
             },
             {
-              "question_id": "7fa21f3d-dde9-4cce-b27f-67bd58661992",
-              "timestamp": "2025-11-08T14:33:20.958159",
-              "is_correct": false,
-              "concepts_tested": [
-                "inverso_aditivo",
-                "inverso_multiplicativo",
-                "cancelamento",
-                "isolamento"
-              ],
-              "error_concepts": [
-                "inverso_aditivo",
-                "inverso_multiplicativo",
-                "cancelamento",
-                "isolamento"
-              ]
-            },
-            {
-              "question_id": "28426e8b-5ce6-4a69-909c-499488576132",
-              "timestamp": "2025-11-08T14:33:42.943853",
+              "question_id": "d65b5109-f34d-44b0-8095-052eaeda4e95",
+              "timestamp": "2025-11-08T13:53:37.565933",
               "is_correct": true,
               "concepts_tested": [
                 "inverso_aditivo",
@@ -845,355 +185,32 @@
                 "isolamento"
               ],
               "error_concepts": []
-            },
-            {
-              "question_id": "5e4716db-7f24-40f6-90ea-55b55515b009",
-              "timestamp": "2025-11-08T14:46:31.283228",
-              "is_correct": true,
-              "concepts_tested": [
-                "inverso_aditivo",
-                "inverso_multiplicativo",
-                "cancelamento",
-                "isolamento"
-              ],
-              "error_concepts": []
-            },
-            {
-              "question_id": "e3ac8853-1e07-4fa2-a40e-2eb5384733d9",
-              "timestamp": "2025-11-08T14:46:35.892428",
-              "is_correct": true,
-              "concepts_tested": [
-                "inverso_aditivo",
-                "inverso_multiplicativo",
-                "cancelamento",
-                "isolamento"
-              ],
-              "error_concepts": []
-            },
-            {
-              "question_id": "9c7f189d-b71c-4268-ad39-772a1e2255db",
-              "timestamp": "2025-11-08T14:46:38.351472",
-              "is_correct": false,
-              "concepts_tested": [
-                "inverso_aditivo",
-                "inverso_multiplicativo",
-                "cancelamento",
-                "isolamento"
-              ],
-              "error_concepts": [
-                "inverso_aditivo",
-                "inverso_multiplicativo",
-                "cancelamento",
-                "isolamento"
-              ]
-            },
-            {
-              "question_id": "f2d2451e-4636-4fb0-a762-b7d9359ecc9b",
-              "timestamp": "2025-11-08T14:51:32.989586",
-              "is_correct": false,
-              "concepts_tested": [
-                "inverso_aditivo",
-                "inverso_multiplicativo",
-                "cancelamento",
-                "isolamento"
-              ],
-              "error_concepts": [
-                "inverso_aditivo",
-                "inverso_multiplicativo",
-                "cancelamento",
-                "isolamento"
-              ]
-            },
-            {
-              "question_id": "c742b627-4a49-4a6d-992b-136363b2339a",
-              "timestamp": "2025-11-08T14:51:33.872087",
-              "is_correct": false,
-              "concepts_tested": [
-                "inverso_aditivo",
-                "inverso_multiplicativo",
-                "cancelamento",
-                "isolamento"
-              ],
-              "error_concepts": [
-                "inverso_aditivo",
-                "inverso_multiplicativo",
-                "cancelamento",
-                "isolamento"
-              ]
-            },
-            {
-              "question_id": "75d30770-dc2c-4b1f-bbf3-d8fd778b1e59",
-              "timestamp": "2025-11-08T14:51:34.472174",
-              "is_correct": false,
-              "concepts_tested": [
-                "inverso_aditivo",
-                "inverso_multiplicativo",
-                "cancelamento",
-                "isolamento"
-              ],
-              "error_concepts": [
-                "inverso_aditivo",
-                "inverso_multiplicativo",
-                "cancelamento",
-                "isolamento"
-              ]
-            },
-            {
-              "question_id": "c9993c6e-286a-4e85-8fe7-f050e2dddc8d",
-              "timestamp": "2025-11-08T14:53:17.607672",
-              "is_correct": false,
-              "concepts_tested": [
-                "inverso_aditivo",
-                "inverso_multiplicativo",
-                "cancelamento",
-                "isolamento"
-              ],
-              "error_concepts": [
-                "inverso_aditivo",
-                "inverso_multiplicativo",
-                "cancelamento",
-                "isolamento"
-              ]
-            },
-            {
-              "question_id": "3885cf49-ec06-4b24-9681-10722fc6148c",
-              "timestamp": "2025-11-08T14:53:18.269103",
-              "is_correct": false,
-              "concepts_tested": [
-                "inverso_aditivo",
-                "inverso_multiplicativo",
-                "cancelamento",
-                "isolamento"
-              ],
-              "error_concepts": [
-                "inverso_aditivo",
-                "inverso_multiplicativo",
-                "cancelamento",
-                "isolamento"
-              ]
-            },
-            {
-              "question_id": "38086d27-8193-47f4-ba9b-41861380832d",
-              "timestamp": "2025-11-08T14:53:18.891170",
-              "is_correct": false,
-              "concepts_tested": [
-                "inverso_aditivo",
-                "inverso_multiplicativo",
-                "cancelamento",
-                "isolamento"
-              ],
-              "error_concepts": [
-                "inverso_aditivo",
-                "inverso_multiplicativo",
-                "cancelamento",
-                "isolamento"
-              ]
             }
           ],
-          "total_questions": 12,
-          "correct_answers": 4,
-          "concept_errors": {
-            "inverso_aditivo": 8,
-            "inverso_multiplicativo": 8,
-            "cancelamento": 8,
-            "isolamento": 8
-          },
-          "last_attempt": "2025-11-08T14:53:18.891181",
+          "total_questions": 2,
+          "correct_answers": 2,
+          "concept_errors": {},
+          "last_attempt": "2025-11-08T13:53:37.565966",
           "mastery_achieved": false,
           "mastery_date": null
         },
         "simplificacao_algebrica": {
           "attempts": [
             {
-              "question_id": "0b3cebc9-c8d3-4b8f-adee-8fce5099adce",
-              "timestamp": "2025-11-08T14:35:12.592068",
-              "is_correct": false,
+              "question_id": "6c6fde76-de30-42f5-a293-a35e96523e50",
+              "timestamp": "2025-11-08T13:53:51.661234",
+              "is_correct": true,
               "concepts_tested": [
                 "termos_semelhantes",
                 "propriedade_distributiva",
                 "fatoracao_simples",
                 "simplificacao"
               ],
-              "error_concepts": [
-                "termos_semelhantes",
-                "propriedade_distributiva",
-                "fatoracao_simples",
-                "simplificacao"
-              ]
+              "error_concepts": []
             },
             {
-              "question_id": "04268b56-ba74-47ab-a9a0-7b4c6cce396f",
-              "timestamp": "2025-11-08T14:35:48.956733",
-              "is_correct": false,
-              "concepts_tested": [
-                "termos_semelhantes",
-                "propriedade_distributiva",
-                "fatoracao_simples",
-                "simplificacao"
-              ],
-              "error_concepts": [
-                "termos_semelhantes",
-                "propriedade_distributiva",
-                "fatoracao_simples",
-                "simplificacao"
-              ]
-            },
-            {
-              "question_id": "e67ebe8f-128b-447c-9158-4beb9ac5bf54",
-              "timestamp": "2025-11-08T14:36:30.991940",
-              "is_correct": false,
-              "concepts_tested": [
-                "termos_semelhantes",
-                "propriedade_distributiva",
-                "fatoracao_simples",
-                "simplificacao"
-              ],
-              "error_concepts": [
-                "termos_semelhantes",
-                "propriedade_distributiva",
-                "fatoracao_simples",
-                "simplificacao"
-              ]
-            },
-            {
-              "question_id": "68f3fc62-9e99-4409-b112-1cba777c884c",
-              "timestamp": "2025-11-08T14:46:41.399033",
-              "is_correct": false,
-              "concepts_tested": [
-                "termos_semelhantes",
-                "propriedade_distributiva",
-                "fatoracao_simples",
-                "simplificacao"
-              ],
-              "error_concepts": [
-                "termos_semelhantes",
-                "propriedade_distributiva",
-                "fatoracao_simples",
-                "simplificacao"
-              ]
-            },
-            {
-              "question_id": "e7bd6f54-c078-4562-8725-4eaa848d170f",
-              "timestamp": "2025-11-08T14:46:44.351784",
-              "is_correct": false,
-              "concepts_tested": [
-                "termos_semelhantes",
-                "propriedade_distributiva",
-                "fatoracao_simples",
-                "simplificacao"
-              ],
-              "error_concepts": [
-                "termos_semelhantes",
-                "propriedade_distributiva",
-                "fatoracao_simples",
-                "simplificacao"
-              ]
-            },
-            {
-              "question_id": "e9c6ab55-2638-4a3f-aad7-d69538e62dc4",
-              "timestamp": "2025-11-08T14:46:46.975698",
-              "is_correct": false,
-              "concepts_tested": [
-                "termos_semelhantes",
-                "propriedade_distributiva",
-                "fatoracao_simples",
-                "simplificacao"
-              ],
-              "error_concepts": [
-                "termos_semelhantes",
-                "propriedade_distributiva",
-                "fatoracao_simples",
-                "simplificacao"
-              ]
-            },
-            {
-              "question_id": "08c1c7d3-8f01-44b4-aa0a-9f37caa137cf",
-              "timestamp": "2025-11-08T14:51:35.067350",
-              "is_correct": false,
-              "concepts_tested": [
-                "termos_semelhantes",
-                "propriedade_distributiva",
-                "fatoracao_simples",
-                "simplificacao"
-              ],
-              "error_concepts": [
-                "termos_semelhantes",
-                "propriedade_distributiva",
-                "fatoracao_simples",
-                "simplificacao"
-              ]
-            },
-            {
-              "question_id": "847c6875-8972-4986-8010-20419e0e001c",
-              "timestamp": "2025-11-08T14:51:36.018609",
-              "is_correct": false,
-              "concepts_tested": [
-                "termos_semelhantes",
-                "propriedade_distributiva",
-                "fatoracao_simples",
-                "simplificacao"
-              ],
-              "error_concepts": [
-                "termos_semelhantes",
-                "propriedade_distributiva",
-                "fatoracao_simples",
-                "simplificacao"
-              ]
-            },
-            {
-              "question_id": "3064544d-e44b-4aea-abb5-87ae48694a6f",
-              "timestamp": "2025-11-08T14:51:36.878805",
-              "is_correct": false,
-              "concepts_tested": [
-                "termos_semelhantes",
-                "propriedade_distributiva",
-                "fatoracao_simples",
-                "simplificacao"
-              ],
-              "error_concepts": [
-                "termos_semelhantes",
-                "propriedade_distributiva",
-                "fatoracao_simples",
-                "simplificacao"
-              ]
-            },
-            {
-              "question_id": "d5fcbcc8-e720-4775-9d71-66b694c722a6",
-              "timestamp": "2025-11-08T14:53:19.542212",
-              "is_correct": false,
-              "concepts_tested": [
-                "termos_semelhantes",
-                "propriedade_distributiva",
-                "fatoracao_simples",
-                "simplificacao"
-              ],
-              "error_concepts": [
-                "termos_semelhantes",
-                "propriedade_distributiva",
-                "fatoracao_simples",
-                "simplificacao"
-              ]
-            },
-            {
-              "question_id": "6ac5a240-f3fb-4be9-93a4-f60afb53e69c",
-              "timestamp": "2025-11-08T14:53:20.245786",
-              "is_correct": false,
-              "concepts_tested": [
-                "termos_semelhantes",
-                "propriedade_distributiva",
-                "fatoracao_simples",
-                "simplificacao"
-              ],
-              "error_concepts": [
-                "termos_semelhantes",
-                "propriedade_distributiva",
-                "fatoracao_simples",
-                "simplificacao"
-              ]
-            },
-            {
-              "question_id": "8d866928-94ee-4da5-b7e3-976a29416486",
-              "timestamp": "2025-11-08T14:53:23.336470",
+              "question_id": "edb0a292-e569-408f-896e-3b2a62a0b960",
+              "timestamp": "2025-11-08T13:53:56.007439",
               "is_correct": false,
               "concepts_tested": [
                 "termos_semelhantes",
@@ -1209,15 +226,15 @@
               ]
             }
           ],
-          "total_questions": 12,
-          "correct_answers": 0,
+          "total_questions": 2,
+          "correct_answers": 1,
           "concept_errors": {
-            "termos_semelhantes": 12,
-            "propriedade_distributiva": 12,
-            "fatoracao_simples": 12,
-            "simplificacao": 12
+            "termos_semelhantes": 1,
+            "propriedade_distributiva": 1,
+            "fatoracao_simples": 1,
+            "simplificacao": 1
           },
-          "last_attempt": "2025-11-08T14:53:23.336479",
+          "last_attempt": "2025-11-08T13:53:56.007455",
           "mastery_achieved": false,
           "mastery_date": null
         }
