@@ -764,40 +764,128 @@ curl http://localhost:5000/sessions
 ## 📝 Practice Question Endpoints
 
 ### `POST /questions/generate`
-**Description**: Generate practice questions for specific topic
+**Description**: Generate practice questions (optionally for a specific topic)
+
+**Request Parameters:**
+- `count` (integer, optional): Number of questions to generate (default: 10)
+- `difficulty` (string, optional): "easy", "medium", or "hard" (default: mixed)
+- `topic` (string, optional): Topic name in Portuguese (e.g., "Equações Lineares", "Operações Básicas")
 
 **Request:**
 ```json
 {
-  "topic": "linear_equations",
+  "count": 5,
   "difficulty": "medium",
-  "count": 5
+  "topic": "Equações Lineares"
 }
 ```
 
 **Response:**
 ```json
 {
+  "count": 5,
+  "message": "Generated 5 questions successfully",
   "questions": [
     {
       "id": "q_001",
-      "topic": "linear_equations",
+      "topic": "Equações Lineares",
       "difficulty": "medium",
-      "problem": "Solve for x: 3x - 7 = 14",
-      "answer": "7",
-      "steps": ["Add 7 to both sides...", "..."],
-      "concepts": ["inverse_operations", "one_step_equations"]
+      "type": "two_step",
+      "problem": "Resolva para x: 3x + 7 = 19",
+      "equation": "3x + 7 = 19",
+      "answer": 4,
+      "steps": ["Subtraia 7 de ambos os lados", "3x = 12", "Divida ambos os lados por 3", "x = 4"],
+      "attempts": 0,
+      "completed": false,
+      "created_at": "2025-11-08T15:20:16.802610",
+      "session_ids": []
     }
   ]
 }
 ```
 
-**Example:**
+**Examples:**
 ```bash
+# Generate 5 linear equation questions
 curl -X POST http://localhost:5000/questions/generate \
   -H "Content-Type: application/json" \
-  -d '{"topic": "linear_equations", "difficulty": "medium", "count": 5}'
+  -d '{"count": 5, "topic": "Equações Lineares", "difficulty": "medium"}'
+
+# Generate 3 basic operations questions
+curl -X POST http://localhost:5000/questions/generate \
+  -H "Content-Type: application/json" \
+  -d '{"count": 3, "topic": "Operações Básicas"}'
+
+# Generate 10 mixed questions (no topic filter)
+curl -X POST http://localhost:5000/questions/generate \
+  -H "Content-Type: application/json" \
+  -d '{"count": 10, "difficulty": "easy"}'
 ```
+
+**Available Topics:**
+- "Operações Básicas"
+- "Números Inteiros"
+- "Variáveis e Expressões"
+- "Simplificação Algébrica"
+- "Operações Inversas"
+- "Equações Lineares - Uma Etapa"
+- "Equações Lineares - Duas Etapas"
+- "Equações com Variáveis em Ambos os Lados"
+- "Equações Lineares"
+
+---
+
+### `GET /questions`
+**Description**: List practice questions with optional filtering
+
+**Query Parameters:**
+- `difficulty` (string, optional): Filter by "easy", "medium", or "hard"
+- `completed` (boolean, optional): Filter by completion status (true/false)
+- `limit` (integer, optional): Maximum number of questions to return
+- `topic` (string, optional): Filter by topic (e.g., "Equações Lineares")
+
+**Response:**
+```json
+{
+  "count": 3,
+  "questions": [
+    {
+      "id": "q_001",
+      "topic": "Equações Lineares",
+      "difficulty": "easy",
+      "type": "two_step",
+      "problem": "Resolva para x: 5x + 3 = 8",
+      "equation": "5x + 3 = 8",
+      "answer": 1,
+      "steps": ["Subtraia 3 de ambos os lados", "5x = 5", "Divida ambos os lados por 5", "x = 1"],
+      "attempts": 0,
+      "completed": false,
+      "created_at": "2025-11-08T15:20:16.802610",
+      "session_ids": []
+    }
+  ]
+}
+```
+
+**Examples:**
+```bash
+# Get all linear equation questions
+curl "http://localhost:5000/questions?topic=Equações%20Lineares"
+
+# Get all easy questions
+curl "http://localhost:5000/questions?difficulty=easy"
+
+# Get completed questions for basic operations
+curl "http://localhost:5000/questions?topic=Operações%20Básicas&completed=true"
+
+# Get first 5 medium difficulty questions
+curl "http://localhost:5000/questions?difficulty=medium&limit=5"
+
+# Combine filters: get first 3 uncompleted linear equation questions
+curl "http://localhost:5000/questions?topic=Equações%20Lineares&completed=false&limit=3"
+```
+
+**Note:** Remember to URL-encode spaces and special characters in topic names (e.g., "Equações Lineares" becomes "Equações%20Lineares").
 
 ---
 

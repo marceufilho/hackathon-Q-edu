@@ -209,6 +209,10 @@ def generate_questions():
               example: "medium"
               enum: [easy, medium, hard]
               description: Difficulty level (default mixed)
+            topic:
+              type: string
+              example: "Equações Lineares"
+              description: Topic to generate questions for (e.g., "Equações Lineares", "Operações Básicas")
     responses:
       201:
         description: Questions generated successfully
@@ -235,6 +239,13 @@ def generate_questions():
                     type: string
                   topic:
                     type: string
+      400:
+        description: Bad request - invalid topic
+        schema:
+          type: object
+          properties:
+            error:
+              type: string
       500:
         description: Internal server error
         schema:
@@ -247,8 +258,9 @@ def generate_questions():
         data = request.get_json() or {}
         count = data.get('count', 10)
         difficulty = data.get('difficulty')
+        topic = data.get('topic')
 
-        questions = question_manager.generate_questions(count, difficulty)
+        questions = question_manager.generate_questions(count, difficulty, topic)
 
         return jsonify({
             "message": f"Generated {len(questions)} questions successfully",
@@ -256,6 +268,9 @@ def generate_questions():
             "questions": questions
         }), 201
 
+    except ValueError as e:
+        # Catch invalid topic errors
+        return jsonify({"error": str(e)}), 400
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
@@ -283,6 +298,11 @@ def list_questions():
         type: integer
         required: false
         description: Maximum number of questions to return
+      - name: topic
+        in: query
+        type: string
+        required: false
+        description: Filter by topic (e.g., "Equações Lineares", "Operações Básicas")
     responses:
       200:
         description: List of questions
@@ -302,6 +322,8 @@ def list_questions():
                     type: string
                   type:
                     type: string
+                  topic:
+                    type: string
                   attempts:
                     type: integer
                   completed:
@@ -320,12 +342,13 @@ def list_questions():
         difficulty = request.args.get('difficulty')
         completed = request.args.get('completed')
         limit = request.args.get('limit', type=int)
+        topic = request.args.get('topic')
 
         # Convert completed string to boolean
         if completed is not None:
             completed = completed.lower() in ['true', '1', 'yes']
 
-        questions = question_manager.list_questions(difficulty, completed, limit)
+        questions = question_manager.list_questions(difficulty, completed, limit, topic)
 
         return jsonify({
             "questions": questions,

@@ -52,13 +52,27 @@ class QuestionManager:
         with open(self.questions_file, 'w') as f:
             json.dump(data, f, indent=2)
 
-    def generate_questions(self, count: int = 10, difficulty: str = None) -> List[Dict]:
+    # Topic mapping: maps topic display names to question types
+    TOPIC_TO_QUESTION_TYPE = {
+        "operações básicas": "basic_operations",
+        "números inteiros": "integers",
+        "variáveis e expressões": "variables_expressions",
+        "simplificação algébrica": "algebraic_simplification",
+        "operações inversas": "inverse_operations",
+        "equações lineares - uma etapa": "one_step",
+        "equações lineares - duas etapas": "two_step",
+        "equações com variáveis em ambos os lados": "variables_both_sides",
+        "equações lineares": "two_step"  # Default to two_step for general linear equations
+    }
+
+    def generate_questions(self, count: int = 10, difficulty: str = None, topic: str = None) -> List[Dict]:
         """
         Generate and store new practice questions
 
         Args:
             count: Number of questions to generate
             difficulty: Difficulty level (easy, medium, hard, or None for mixed)
+            topic: Topic to generate questions for (e.g., "Equações Lineares" or "Operações Básicas")
 
         Returns:
             List of generated questions with IDs
@@ -70,8 +84,21 @@ class QuestionManager:
         if difficulty:
             diff_enum = Difficulty(difficulty.lower())
 
+        # Determine question type from topic
+        question_type = None
+        if topic:
+            question_type = self.TOPIC_TO_QUESTION_TYPE.get(topic.lower())
+            if question_type is None:
+                raise ValueError(
+                    f"Unknown or unsupported topic: '{topic}'. "
+                    f"Available topics: {', '.join(self.TOPIC_TO_QUESTION_TYPE.keys())}"
+                )
+
         # Generate questions
-        generated = LinearEquationGenerator.generate_batch(count, diff_enum)
+        generated = []
+        for _ in range(count):
+            q = LinearEquationGenerator.generate_question(diff_enum, question_type)
+            generated.append(q)
 
         # Add metadata and IDs
         questions_with_metadata = []
@@ -121,7 +148,8 @@ class QuestionManager:
         self,
         difficulty: str = None,
         completed: bool = None,
-        limit: int = None
+        limit: int = None,
+        topic: str = None
     ) -> List[Dict]:
         """
         List questions with optional filtering
@@ -130,6 +158,7 @@ class QuestionManager:
             difficulty: Filter by difficulty level
             completed: Filter by completion status
             limit: Maximum number of questions to return
+            topic: Filter by topic (e.g., "Equações Lineares" or "Operações Básicas")
 
         Returns:
             List of questions matching criteria
@@ -143,6 +172,10 @@ class QuestionManager:
 
         if completed is not None:
             questions = [q for q in questions if q["completed"] == completed]
+
+        if topic:
+            # Case-insensitive topic matching
+            questions = [q for q in questions if q.get("topic", "").lower() == topic.lower()]
 
         # Sort by created_at (newest first)
         questions = sorted(questions, key=lambda x: x["created_at"], reverse=True)
