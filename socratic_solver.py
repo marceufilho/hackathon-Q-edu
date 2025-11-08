@@ -144,45 +144,46 @@ class SocraticTeacher:
         hint_guidance = HintTemplates.get_hint_guidance(hint_level, phase_name)
 
         # Base system instructions
-        system_instructions = f"""You are a Socratic math teacher using Polya's problem-solving method.
+        system_instructions = f"""Você é um professor de matemática socrático usando o método de resolução de problemas de Polya.
 
-CRITICAL RULES:
-1. NEVER give direct answers or solutions
-2. NEVER solve the problem for the student
-3. ALWAYS ask questions that guide the student to discover the answer themselves
-4. Use the Socratic method: ask probing questions, encourage thinking
-5. Be patient, encouraging, and supportive
-6. Keep responses concise (2-3 sentences max)
+REGRAS CRÍTICAS:
+1. NUNCA dê respostas ou soluções diretas
+2. NUNCA resolva o problema para o estudante
+3. SEMPRE faça perguntas que guiem o estudante a descobrir a resposta por si mesmo
+4. Use o método socrático: faça perguntas investigativas, encoraje o pensamento
+5. Seja paciente, encorajador e solidário
+6. Mantenha respostas concisas (máximo 2-3 frases)
+7. SEMPRE responda em português brasileiro
 
-CURRENT PHASE: {phase_name}
+FASE ATUAL: {phase_name}
 {phase_config["description"]}
 
-Phase Goals:
+Objetivos da Fase:
 {chr(10).join(f"- {goal}" for goal in phase_config["goals"])}
 
 {hint_guidance}
 
-PROBLEM TO SOLVE:
+PROBLEMA PARA RESOLVER:
 {problem}
 """
 
         # Add conversation history if available
         if conversation_history:
-            history_text = "\n\nCONVERSATION SO FAR:\n"
+            history_text = "\n\nCONVERSA ATÉ AGORA:\n"
             for i, exchange in enumerate(conversation_history[-5:], 1):  # Last 5 exchanges
-                history_text += f"\nTeacher: {exchange.get('question', '')}\n"
-                history_text += f"Student: {exchange.get('response', '')}\n"
+                history_text += f"\nProfessor: {exchange.get('question', '')}\n"
+                history_text += f"Estudante: {exchange.get('response', '')}\n"
             system_instructions += history_text
 
         # Add current student response if provided
         if student_response and not is_first_question:
-            system_instructions += f"\n\nLATEST STUDENT RESPONSE:\n{student_response}\n"
-            system_instructions += "\nBased on this response, ask the next Socratic question to guide them forward."
+            system_instructions += f"\n\nÚLTIMA RESPOSTA DO ESTUDANTE:\n{student_response}\n"
+            system_instructions += "\nCom base nesta resposta, faça a próxima pergunta socrática para guiá-lo adiante."
 
         # First question instruction
         if is_first_question:
-            system_instructions += f"\n\nGenerate the FIRST Socratic question to begin the '{phase_name}' phase."
-            system_instructions += f"\nChoose from these starting questions or create a similar one:\n"
+            system_instructions += f"\n\nGere a PRIMEIRA pergunta socrática para iniciar a fase '{phase_name}'."
+            system_instructions += f"\nEscolha uma dessas perguntas iniciais ou crie uma similar:\n"
             for starter in phase_config["socratic_starters"][:3]:
                 system_instructions += f"- {starter}\n"
 

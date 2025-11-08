@@ -48,7 +48,7 @@ class LinearEquationGenerator:
             b = answer + constant
             problem = f"x + {constant} = {b}"
             steps = [
-                f"Subtract {constant} from both sides",
+                f"Subtraia {constant} de ambos os lados",
                 f"x = {b} - {constant}",
                 f"x = {answer}"
             ]
@@ -58,7 +58,7 @@ class LinearEquationGenerator:
             b = answer - constant
             problem = f"x - {constant} = {b}"
             steps = [
-                f"Add {constant} to both sides",
+                f"Adicione {constant} a ambos os lados",
                 f"x = {b} + {constant}",
                 f"x = {answer}"
             ]
@@ -69,7 +69,7 @@ class LinearEquationGenerator:
             b = answer * coefficient
             problem = f"{coefficient}x = {b}"
             steps = [
-                f"Divide both sides by {coefficient}",
+                f"Divida ambos os lados por {coefficient}",
                 f"x = {b} / {coefficient}",
                 f"x = {answer}"
             ]
@@ -80,20 +80,20 @@ class LinearEquationGenerator:
             problem = f"x / {divisor} = {answer}"
             b = answer * divisor
             steps = [
-                f"Multiply both sides by {divisor}",
+                f"Multiplique ambos os lados por {divisor}",
                 f"x = {answer} × {divisor}",
                 f"x = {b}"
             ]
             answer = b
 
         return {
-            "problem": f"Solve for x: {problem}",
+            "problem": f"Resolva para x: {problem}",
             "equation": problem,
             "answer": answer,
             "steps": steps,
             "difficulty": difficulty.value,
             "type": "one_step",
-            "topic": "Linear Equations"
+            "topic": "Equações Lineares"
         }
 
     @staticmethod
@@ -130,21 +130,21 @@ class LinearEquationGenerator:
             problem = f"{coefficient}x - {abs(constant)} = {c}"
 
         steps = [
-            f"Subtract {constant} from both sides" if constant >= 0 else f"Add {abs(constant)} to both sides",
+            f"Subtraia {constant} de ambos os lados" if constant >= 0 else f"Adicione {abs(constant)} a ambos os lados",
             f"{coefficient}x = {c - constant}",
-            f"Divide both sides by {coefficient}",
+            f"Divida ambos os lados por {coefficient}",
             f"x = {(c - constant) / coefficient}",
             f"x = {answer}"
         ]
 
         return {
-            "problem": f"Solve for x: {problem}",
+            "problem": f"Resolva para x: {problem}",
             "equation": problem,
             "answer": answer,
             "steps": steps,
             "difficulty": difficulty.value,
             "type": "two_step",
-            "topic": "Linear Equations"
+            "topic": "Equações Lineares"
         }
 
     @staticmethod
@@ -183,22 +183,22 @@ class LinearEquationGenerator:
         problem = f"{left} = {right}"
 
         steps = [
-            f"Subtract {c}x from both sides",
+            f"Subtraia {c}x de ambos os lados",
             f"{a - c}x + {b if b >= 0 else f'- {abs(b)}'} = {d}",
-            f"Subtract {b} from both sides" if b >= 0 else f"Add {abs(b)} to both sides",
+            f"Subtraia {b} de ambos os lados" if b >= 0 else f"Adicione {abs(b)} a ambos os lados",
             f"{a - c}x = {d - b}",
-            f"Divide both sides by {a - c}",
+            f"Divida ambos os lados por {a - c}",
             f"x = {answer}"
         ]
 
         return {
-            "problem": f"Solve for x: {problem}",
+            "problem": f"Resolva para x: {problem}",
             "equation": problem,
             "answer": answer,
             "steps": steps,
             "difficulty": difficulty.value,
             "type": "variables_both_sides",
-            "topic": "Linear Equations"
+            "topic": "Equações Lineares"
         }
 
     @staticmethod

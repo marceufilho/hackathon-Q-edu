@@ -25,95 +25,95 @@ class PhaseConfig:
 
     PHASES = {
         PolyaPhase.UNDERSTANDING: {
-            "name": "Understanding the Problem",
-            "description": "Help the student understand what the problem is asking",
+            "name": "Compreendendo o Problema",
+            "description": "Ajudar o estudante a entender o que o problema está pedindo",
             "goals": [
-                "Identify what is being asked for",
-                "Identify what information is given",
-                "Understand the problem constraints",
-                "Restate the problem in own words"
+                "Identificar o que está sendo pedido",
+                "Identificar quais informações são dadas",
+                "Entender as restrições do problema",
+                "Reformular o problema com suas próprias palavras"
             ],
             "socratic_starters": [
-                "What is this problem asking you to find?",
-                "What information does the problem give you?",
-                "Can you explain in your own words what we need to do?",
-                "What does the equation mean?",
-                "What are we trying to solve for?"
+                "O que este problema está pedindo para você encontrar?",
+                "Quais informações o problema te dá?",
+                "Você pode explicar com suas próprias palavras o que precisamos fazer?",
+                "O que significa esta equação?",
+                "O que estamos tentando resolver?"
             ],
             "completion_indicators": [
-                "identified unknown variable",
-                "stated what to find",
-                "restated problem",
-                "identified given information"
+                "identificou a variável desconhecida",
+                "disse o que encontrar",
+                "reformulou o problema",
+                "identificou as informações dadas"
             ]
         },
         PolyaPhase.PLANNING: {
-            "name": "Devising a Plan",
-            "description": "Help the student develop a strategy to solve the problem",
+            "name": "Planejando a Solução",
+            "description": "Ajudar o estudante a desenvolver uma estratégia para resolver o problema",
             "goals": [
-                "Choose an appropriate solving strategy",
-                "Identify the mathematical operations needed",
-                "Determine the sequence of steps",
-                "Consider similar problems solved before"
+                "Escolher uma estratégia de resolução apropriada",
+                "Identificar as operações matemáticas necessárias",
+                "Determinar a sequência de passos",
+                "Considerar problemas similares resolvidos anteriormente"
             ],
             "socratic_starters": [
-                "What strategy could you use to solve this?",
-                "What mathematical operation might help here?",
-                "Have you solved a similar problem before?",
-                "What would be your first step?",
-                "How can we isolate the variable?"
+                "Que estratégia você poderia usar para resolver isso?",
+                "Que operação matemática pode ajudar aqui?",
+                "Você já resolveu um problema parecido antes?",
+                "Qual seria seu primeiro passo?",
+                "Como podemos isolar a variável?"
             ],
             "completion_indicators": [
-                "identified strategy",
-                "named operations needed",
-                "described first step",
-                "have a plan"
+                "identificou uma estratégia",
+                "nomeou as operações necessárias",
+                "descreveu o primeiro passo",
+                "tem um plano"
             ]
         },
         PolyaPhase.EXECUTION: {
-            "name": "Carrying Out the Plan",
-            "description": "Guide the student through executing their plan step by step",
+            "name": "Executando o Plano",
+            "description": "Guiar o estudante através da execução do plano passo a passo",
             "goals": [
-                "Execute each step carefully",
-                "Show all work clearly",
-                "Check each step as you go",
-                "Adjust plan if needed"
+                "Executar cada passo com cuidado",
+                "Mostrar todo o trabalho claramente",
+                "Verificar cada passo conforme avança",
+                "Ajustar o plano se necessário"
             ],
             "socratic_starters": [
-                "What do you get when you do that operation?",
-                "Can you show me the next step?",
-                "What happens when you [operation]?",
-                "Does that look right to you?",
-                "What should we do next?"
+                "O que você obtém quando faz essa operação?",
+                "Pode me mostrar o próximo passo?",
+                "O que acontece quando você faz isso?",
+                "Isso parece certo para você?",
+                "O que devemos fazer a seguir?"
             ],
             "completion_indicators": [
-                "found solution",
-                "calculated answer",
-                "solved for variable",
-                "got final answer"
+                "encontrou a solução",
+                "calculou a resposta",
+                "resolveu para a variável",
+                "obteve a resposta final"
             ]
         },
         PolyaPhase.REVIEW: {
-            "name": "Looking Back",
-            "description": "Help the student verify and reflect on their solution",
+            "name": "Revisando a Solução",
+            "description": "Ajudar o estudante a verificar e refletir sobre sua solução",
             "goals": [
-                "Check if the answer makes sense",
-                "Verify the solution by substituting back",
-                "Reflect on the problem-solving process",
-                "Consider alternative methods"
+                "Verificar se a resposta faz sentido",
+                "Verificar a solução substituindo de volta",
+                "Refletir sobre o processo de resolução",
+                "Considerar métodos alternativos"
             ],
             "socratic_starters": [
-                "Does your answer make sense?",
-                "How can you check if your answer is correct?",
-                "What happens if you substitute your answer back into the original equation?",
-                "Did you answer the original question?",
-                "Could you have solved this a different way?"
+                "Sua resposta faz sentido?",
+                "Como você pode verificar se sua resposta está correta?",
+                "O que acontece se você substituir sua resposta de volta na equação original?",
+                "Você respondeu a pergunta original?",
+                "Você poderia ter resolvido isso de outra forma?"
             ],
             "completion_indicators": [
-                "verified answer",
-                "checked solution",
-                "substituted back",
-                "confirmed correct"
+                "verificou a resposta",
+                "checou a solução",
+                "substituiu de volta",
+                "confirmou que está correto"
             ]
         }
     }

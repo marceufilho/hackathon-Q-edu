@@ -25,28 +25,35 @@ class StruggleDetector:
     """Detects when a student is struggling and needs more help"""
 
     STRUGGLE_INDICATORS = [
+        "não sei",
+        "não tenho certeza",
+        "estou preso",
+        "estou travado",
+        "não entendo",
+        "estou confuso",
+        "sem ideia",
+        "pode me ajudar",
+        "me ajuda",
+        "desisto",
+        "o que eu faço",
+        "não consigo",
+        "não sei como",
         "i don't know",
         "i'm not sure",
         "i'm stuck",
-        "i don't understand",
-        "i'm confused",
-        "no idea",
-        "can you help",
-        "i give up",
-        "help me",
-        "what do i do",
-        "i can't",
-        "don't know how"
+        "i don't understand"
     ]
 
     VAGUE_RESPONSES = [
-        "idk",
-        "umm",
-        "uh",
+        "sei lá",
+        "tipo",
+        "né",
         "hmm",
-        "maybe",
-        "i think",
-        "not sure"
+        "talvez",
+        "acho que",
+        "não sei bem",
+        "idk",
+        "umm"
     ]
 
     @staticmethod
@@ -177,37 +184,37 @@ class HintTemplates:
         """
         if level == HintLevel.GENTLE:
             return f"""
-You are in the "{phase_name}" phase. Ask open-ended Socratic questions that encourage the student to think deeply.
-Examples:
-- "What do you notice about this equation?"
-- "What does this part mean to you?"
-- "How might you approach this?"
+Você está na fase "{phase_name}". Faça perguntas socráticas abertas que encorajam o estudante a pensar profundamente.
+Exemplos:
+- "O que você observa sobre esta equação?"
+- "O que essa parte significa para você?"
+- "Como você poderia abordar isso?"
 
-Do NOT give direct answers or explicit steps yet.
+NÃO dê respostas diretas ou passos explícitos ainda.
 """
 
         elif level == HintLevel.SPECIFIC:
             return f"""
-You are in the "{phase_name}" phase. The student needs more specific guidance.
-Ask pointed questions that narrow down the approach:
-Examples:
-- "What would happen if you [specific operation]?"
-- "Which operation would help isolate the variable?"
-- "Have you considered using [specific technique]?"
+Você está na fase "{phase_name}". O estudante precisa de orientação mais específica.
+Faça perguntas direcionadas que estreitam a abordagem:
+Exemplos:
+- "O que aconteceria se você fizesse [operação específica]?"
+- "Qual operação ajudaria a isolar a variável?"
+- "Você já considerou usar [técnica específica]?"
 
-Provide more context, but still don't give the direct answer.
+Forneça mais contexto, mas ainda não dê a resposta direta.
 """
 
         elif level == HintLevel.DIRECTIVE:
             return f"""
-You are in the "{phase_name}" phase. The student is struggling and needs very explicit guidance.
-Provide step-by-step directive hints:
-Examples:
-- "Try subtracting 5 from both sides. What do you get?"
-- "Divide both sides by 2. Can you do that?"
-- "Let's start by isolating x on one side."
+Você está na fase "{phase_name}". O estudante está com dificuldade e precisa de orientação muito explícita.
+Forneça dicas diretivas passo a passo:
+Exemplos:
+- "Tente subtrair 5 de ambos os lados. O que você obtém?"
+- "Divida ambos os lados por 2. Você consegue fazer isso?"
+- "Vamos começar isolando x de um lado."
 
-Be very explicit about WHAT to do, but still let them DO the calculation.
+Seja muito explícito sobre O QUE fazer, mas ainda deixe eles FAZEREM o cálculo.
 """
 
         return ""
@@ -216,8 +223,8 @@ Be very explicit about WHAT to do, but still let them DO the calculation.
     def get_encouragement(level: HintLevel) -> str:
         """Get appropriate encouragement based on hint level"""
         if level == HintLevel.GENTLE:
-            return "You're on the right track! Keep thinking about it."
+            return "Você está no caminho certo! Continue pensando nisso."
         elif level == HintLevel.SPECIFIC:
-            return "Let me give you a bit more direction to help you out."
+            return "Deixe-me te dar um pouco mais de direção para te ajudar."
         elif level == HintLevel.DIRECTIVE:
-            return "No worries! Let me guide you step by step."
+            return "Sem problemas! Vou te guiar passo a passo."
