@@ -1,0 +1,12 @@
+[project]
+name = "q-edu"
+version = "0.1.0"
+description = "AI-powered math problem solver using Google Gemini"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "google-generativeai>=0.8.0",
+    "python-dotenv==1.1.0",
+    "flask>=3.0.0",
+    "flasgger>=0.9.7",
+]
