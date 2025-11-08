@@ -14,6 +14,10 @@ from conversation_manager import SessionManager
 from polya_phases import PolyaPhase
 from hint_system import HintLevel, HintEscalation
 from question_manager import QuestionManager
+from adaptive_engine import AdaptiveEngine
+from diagnostic_test import DiagnosticTest
+from knowledge_graph_manager import KnowledgeGraphManager
+from mastery_tracker import MasteryTracker
 
 # Load environment variables
 load_dotenv()
@@ -57,6 +61,18 @@ swagger_template = {
             "description": "Generate and manage practice problems"
         },
         {
+            "name": "Diagnostic Test",
+            "description": "Initial assessment to determine student level"
+        },
+        {
+            "name": "Adaptive Learning",
+            "description": "Personalized adaptive learning system"
+        },
+        {
+            "name": "Progress Tracking",
+            "description": "Track student progress and mastery"
+        },
+        {
             "name": "Teaching Sessions",
             "description": "Manage teaching sessions and interactions"
         },
@@ -72,7 +88,12 @@ swagger = Swagger(app, config=swagger_config, template=swagger_template)
 # Initialize components
 session_manager = SessionManager()
 question_manager = QuestionManager()
+knowledge_graph = KnowledgeGraphManager()
 teacher = None  # Will initialize per request to handle API key
+
+# Diagnostic and adaptive instances per student (stored in memory)
+diagnostic_sessions = {}
+adaptive_sessions = {}
 
 
 def get_teacher():
@@ -519,6 +540,472 @@ def delete_question(question_id):
             return jsonify({"error": f"Question {question_id} not found"}), 404
 
         return jsonify({"message": "Question deleted successfully"}), 200
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+# ============================================================================
+# DIAGNOSTIC TEST ENDPOINTS
+# ============================================================================
+
+@app.route('/diagnostic/start', methods=['POST'])
+def start_diagnostic():
+    """Start a diagnostic test for a student
+    ---
+    tags:
+      - Diagnostic Test
+    parameters:
+      - name: body
+        in: body
+        required: true
+        schema:
+          type: object
+          required:
+            - student_id
+          properties:
+            student_id:
+              type: string
+              example: "student_123"
+            questions_per_topic:
+              type: integer
+              example: 3
+              description: Number of questions per diagnostic topic
+    responses:
+      201:
+        description: Diagnostic test started
+      500:
+        description: Error starting diagnostic
+    """
+    try:
+        data = request.get_json()
+        student_id = data.get('student_id')
+
+        if not student_id:
+            return jsonify({"error": "student_id is required"}), 400
+
+        questions_per_topic = data.get('questions_per_topic', 3)
+
+        # Create diagnostic test instance
+        diagnostic = DiagnosticTest(student_id)
+        result = diagnostic.generate_diagnostic_test(questions_per_topic)
+
+        # Store in session
+        diagnostic_sessions[student_id] = diagnostic
+
+        return jsonify(result), 201
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+@app.route('/diagnostic/<student_id>/next', methods=['GET'])
+def get_diagnostic_question(student_id):
+    """Get next diagnostic question
+    ---
+    tags:
+      - Diagnostic Test
+    parameters:
+      - name: student_id
+        in: path
+        type: string
+        required: true
+    responses:
+      200:
+        description: Next question or completion message
+      404:
+        description: Diagnostic session not found
+      500:
+        description: Error
+    """
+    try:
+        diagnostic = diagnostic_sessions.get(student_id)
+
+        if not diagnostic:
+            return jsonify({"error": "Diagnostic session not found. Call /diagnostic/start first"}), 404
+
+        result = diagnostic.get_next_question()
+        return jsonify(result), 200
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+@app.route('/diagnostic/<student_id>/submit', methods=['POST'])
+def submit_diagnostic_answer(student_id):
+    """Submit answer to diagnostic question
+    ---
+    tags:
+      - Diagnostic Test
+    parameters:
+      - name: student_id
+        in: path
+        type: string
+        required: true
+      - name: body
+        in: body
+        required: true
+        schema:
+          type: object
+          required:
+            - question_id
+            - answer
+          properties:
+            question_id:
+              type: string
+            answer:
+              type: string
+    responses:
+      200:
+        description: Answer processed
+      404:
+        description: Diagnostic session not found
+      500:
+        description: Error
+    """
+    try:
+        diagnostic = diagnostic_sessions.get(student_id)
+
+        if not diagnostic:
+            return jsonify({"error": "Diagnostic session not found"}), 404
+
+        data = request.get_json()
+        question_id = data.get('question_id')
+        answer = data.get('answer')
+
+        if not question_id or answer is None:
+            return jsonify({"error": "question_id and answer are required"}), 400
+
+        result = diagnostic.submit_answer(question_id, answer)
+        return jsonify(result), 200
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+# ============================================================================
+# ADAPTIVE LEARNING ENDPOINTS
+# ============================================================================
+
+@app.route('/adaptive/start', methods=['POST'])
+def start_adaptive_session():
+    """Start an adaptive learning session
+    ---
+    tags:
+      - Adaptive Learning
+    parameters:
+      - name: body
+        in: body
+        required: true
+        schema:
+          type: object
+          required:
+            - student_id
+          properties:
+            student_id:
+              type: string
+              example: "student_123"
+            learning_path:
+              type: string
+              enum: [beginner, intermediate, advanced]
+              description: Optional learning path
+    responses:
+      201:
+        description: Adaptive session started
+      500:
+        description: Error
+    """
+    try:
+        data = request.get_json()
+        student_id = data.get('student_id')
+
+        if not student_id:
+            return jsonify({"error": "student_id is required"}), 400
+
+        learning_path = data.get('learning_path')
+
+        # Create adaptive engine
+        api_key = os.environ.get("GEMINI_API_KEY")
+        engine = AdaptiveEngine(student_id, api_key=api_key)
+
+        result = engine.start_new_session(learning_path)
+
+        # Store in session
+        adaptive_sessions[student_id] = engine
+
+        return jsonify(result), 201
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+@app.route('/adaptive/<student_id>/next', methods=['GET'])
+def get_adaptive_question(student_id):
+    """Get next adaptive question
+    ---
+    tags:
+      - Adaptive Learning
+    parameters:
+      - name: student_id
+        in: path
+        type: string
+        required: true
+    responses:
+      200:
+        description: Next adaptive question
+      404:
+        description: Adaptive session not found
+      500:
+        description: Error
+    """
+    try:
+        engine = adaptive_sessions.get(student_id)
+
+        if not engine:
+            return jsonify({"error": "Adaptive session not found. Call /adaptive/start first"}), 404
+
+        question = engine.get_next_question()
+        return jsonify(question), 200
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+@app.route('/adaptive/<student_id>/submit', methods=['POST'])
+def submit_adaptive_answer(student_id):
+    """Submit answer to adaptive question
+    ---
+    tags:
+      - Adaptive Learning
+    parameters:
+      - name: student_id
+        in: path
+        type: string
+        required: true
+      - name: body
+        in: body
+        required: true
+        schema:
+          type: object
+          required:
+            - question_id
+            - question
+            - student_answer
+            - correct_answer
+            - solution_steps
+            - concepts_tested
+          properties:
+            question_id:
+              type: string
+            question:
+              type: string
+            student_answer:
+              type: string
+            correct_answer:
+              type: string
+            solution_steps:
+              type: array
+              items:
+                type: string
+            concepts_tested:
+              type: array
+              items:
+                type: string
+    responses:
+      200:
+        description: Answer processed with feedback
+      404:
+        description: Adaptive session not found
+      500:
+        description: Error
+    """
+    try:
+        engine = adaptive_sessions.get(student_id)
+
+        if not engine:
+            return jsonify({"error": "Adaptive session not found"}), 404
+
+        data = request.get_json()
+
+        required_fields = ['question_id', 'question', 'student_answer', 'correct_answer', 'solution_steps', 'concepts_tested']
+        for field in required_fields:
+            if field not in data:
+                return jsonify({"error": f"{field} is required"}), 400
+
+        result = engine.submit_answer(
+            question_id=data['question_id'],
+            question=data['question'],
+            student_answer=data['student_answer'],
+            correct_answer=data['correct_answer'],
+            solution_steps=data['solution_steps'],
+            concepts_tested=data['concepts_tested']
+        )
+
+        return jsonify(result), 200
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+@app.route('/adaptive/<student_id>/change-topic', methods=['POST'])
+def change_adaptive_topic(student_id):
+    """Change to a different topic
+    ---
+    tags:
+      - Adaptive Learning
+    parameters:
+      - name: student_id
+        in: path
+        type: string
+        required: true
+      - name: body
+        in: body
+        required: true
+        schema:
+          type: object
+          required:
+            - topic_id
+          properties:
+            topic_id:
+              type: string
+              example: "equacoes_lineares_uma_etapa"
+    responses:
+      200:
+        description: Topic changed successfully
+      404:
+        description: Adaptive session not found
+      500:
+        description: Error
+    """
+    try:
+        engine = adaptive_sessions.get(student_id)
+
+        if not engine:
+            return jsonify({"error": "Adaptive session not found"}), 404
+
+        data = request.get_json()
+        topic_id = data.get('topic_id')
+
+        if not topic_id:
+            return jsonify({"error": "topic_id is required"}), 400
+
+        result = engine.advance_to_topic(topic_id)
+        return jsonify(result), 200
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+# ============================================================================
+# PROGRESS TRACKING ENDPOINTS
+# ============================================================================
+
+@app.route('/progress/<student_id>', methods=['GET'])
+def get_student_progress(student_id):
+    """Get overall student progress
+    ---
+    tags:
+      - Progress Tracking
+    parameters:
+      - name: student_id
+        in: path
+        type: string
+        required: true
+    responses:
+      200:
+        description: Student progress summary
+      500:
+        description: Error
+    """
+    try:
+        engine = adaptive_sessions.get(student_id)
+
+        if not engine:
+            # Create temporary engine just to get progress
+            api_key = os.environ.get("GEMINI_API_KEY")
+            engine = AdaptiveEngine(student_id, api_key=api_key)
+
+        progress = engine.get_progress_summary()
+        return jsonify(progress), 200
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+@app.route('/progress/<student_id>/recommendations', methods=['GET'])
+def get_recommended_topics(student_id):
+    """Get recommended topics for student
+    ---
+    tags:
+      - Progress Tracking
+    parameters:
+      - name: student_id
+        in: path
+        type: string
+        required: true
+    responses:
+      200:
+        description: Recommended topics
+      500:
+        description: Error
+    """
+    try:
+        engine = adaptive_sessions.get(student_id)
+
+        if not engine:
+            # Create temporary engine
+            api_key = os.environ.get("GEMINI_API_KEY")
+            engine = AdaptiveEngine(student_id, api_key=api_key)
+
+        recommendations = engine.get_recommended_topics()
+        return jsonify({"recommendations": recommendations}), 200
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+@app.route('/progress/<student_id>/topic/<topic_id>', methods=['GET'])
+def get_topic_progress(student_id, topic_id):
+    """Get progress for a specific topic
+    ---
+    tags:
+      - Progress Tracking
+    parameters:
+      - name: student_id
+        in: path
+        type: string
+        required: true
+      - name: topic_id
+        in: path
+        type: string
+        required: true
+    responses:
+      200:
+        description: Topic progress details
+      500:
+        description: Error
+    """
+    try:
+        tracker = MasteryTracker(student_id)
+        topic_progress = tracker.get_topic_progress(topic_id)
+
+        # Get mastery info
+        topic_data = knowledge_graph.get_topic(topic_id)
+        if topic_data:
+            mastery_info = tracker.calculate_mastery(
+                topic_id,
+                topic_data['mastery_threshold'],
+                topic_data['min_questions']
+            )
+        else:
+            mastery_info = {"error": "Topic not found"}
+
+        return jsonify({
+            "topic_id": topic_id,
+            "topic_name": topic_data['name'] if topic_data else "Unknown",
+            "progress": topic_progress,
+            "mastery": mastery_info
+        }), 200
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500

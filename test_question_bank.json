@@ -1,0 +1,4583 @@
+{
+  "metadata": {
+    "total_questions": 285,
+    "created_at": "2025-01-08",
+    "description": "Banco de questões completo para sistema adaptativo"
+  },
+  "questions_by_topic": {
+    "operacoes_basicas": {
+      "topic_id": "operacoes_basicas",
+      "topic_name": "Operações Básicas",
+      "questions": {
+        "easy": [
+          {
+            "problem": "Calcule: 9 - 7",
+            "equation": "9 - 7",
+            "answer": 2,
+            "steps": [
+              "9 - 7 = 2"
+            ],
+            "difficulty": "easy",
+            "type": "basic_operations",
+            "topic": "Operações Básicas",
+            "id": "operacoes_basicas_easy_1",
+            "topic_id": "operacoes_basicas"
+          },
+          {
+            "problem": "Calcule: 17 - 8",
+            "equation": "17 - 8",
+            "answer": 9,
+            "steps": [
+              "17 - 8 = 9"
+            ],
+            "difficulty": "easy",
+            "type": "basic_operations",
+            "topic": "Operações Básicas",
+            "id": "operacoes_basicas_easy_2",
+            "topic_id": "operacoes_basicas"
+          },
+          {
+            "problem": "Calcule: 8 + 2",
+            "equation": "8 + 2",
+            "answer": 10,
+            "steps": [
+              "8 + 2 = 10"
+            ],
+            "difficulty": "easy",
+            "type": "basic_operations",
+            "topic": "Operações Básicas",
+            "id": "operacoes_basicas_easy_3",
+            "topic_id": "operacoes_basicas"
+          },
+          {
+            "problem": "Calcule: 11 × 8",
+            "equation": "11 × 8",
+            "answer": 88,
+            "steps": [
+              "11 × 8 = 88"
+            ],
+            "difficulty": "easy",
+            "type": "basic_operations",
+            "topic": "Operações Básicas",
+            "id": "operacoes_basicas_easy_4",
+            "topic_id": "operacoes_basicas"
+          },
+          {
+            "problem": "Calcule: 10 - 9",
+            "equation": "10 - 9",
+            "answer": 1,
+            "steps": [
+              "10 - 9 = 1"
+            ],
+            "difficulty": "easy",
+            "type": "basic_operations",
+            "topic": "Operações Básicas",
+            "id": "operacoes_basicas_easy_5",
+            "topic_id": "operacoes_basicas"
+          },
+          {
+            "problem": "Calcule: 6 + 5",
+            "equation": "6 + 5",
+            "answer": 11,
+            "steps": [
+              "6 + 5 = 11"
+            ],
+            "difficulty": "easy",
+            "type": "basic_operations",
+            "topic": "Operações Básicas",
+            "id": "operacoes_basicas_easy_6",
+            "topic_id": "operacoes_basicas"
+          },
+          {
+            "problem": "Calcule: 15 + 1",
+            "equation": "15 + 1",
+            "answer": 16,
+            "steps": [
+              "15 + 1 = 16"
+            ],
+            "difficulty": "easy",
+            "type": "basic_operations",
+            "topic": "Operações Básicas",
+            "id": "operacoes_basicas_easy_7",
+            "topic_id": "operacoes_basicas"
+          },
+          {
+            "problem": "Calcule: 19 - 5",
+            "equation": "19 - 5",
+            "answer": 14,
+            "steps": [
+              "19 - 5 = 14"
+            ],
+            "difficulty": "easy",
+            "type": "basic_operations",
+            "topic": "Operações Básicas",
+            "id": "operacoes_basicas_easy_8",
+            "topic_id": "operacoes_basicas"
+          },
+          {
+            "problem": "Calcule: 20 - 5",
+            "equation": "20 - 5",
+            "answer": 15,
+            "steps": [
+              "20 - 5 = 15"
+            ],
+            "difficulty": "easy",
+            "type": "basic_operations",
+            "topic": "Operações Básicas",
+            "id": "operacoes_basicas_easy_9",
+            "topic_id": "operacoes_basicas"
+          },
+          {
+            "problem": "Calcule: 120 ÷ 10",
+            "equation": "120 ÷ 10",
+            "answer": 12,
+            "steps": [
+              "120 ÷ 10 = 12"
+            ],
+            "difficulty": "easy",
+            "type": "basic_operations",
+            "topic": "Operações Básicas",
+            "id": "operacoes_basicas_easy_10",
+            "topic_id": "operacoes_basicas"
+          }
+        ],
+        "medium": [
+          {
+            "problem": "Calcule: 378 ÷ 21",
+            "equation": "378 ÷ 21",
+            "answer": 18,
+            "steps": [
+              "378 ÷ 21 = 18"
+            ],
+            "difficulty": "medium",
+            "type": "basic_operations",
+            "topic": "Operações Básicas",
+            "id": "operacoes_basicas_medium_1",
+            "topic_id": "operacoes_basicas"
+          },
+          {
+            "problem": "Calcule: 209 ÷ 11",
+            "equation": "209 ÷ 11",
+            "answer": 19,
+            "steps": [
+              "209 ÷ 11 = 19"
+            ],
+            "difficulty": "medium",
+            "type": "basic_operations",
+            "topic": "Operações Básicas",
+            "id": "operacoes_basicas_medium_2",
+            "topic_id": "operacoes_basicas"
+          },
+          {
+            "problem": "Calcule: 10 × 8",
+            "equation": "10 × 8",
+            "answer": 80,
+            "steps": [
+              "10 × 8 = 80"
+            ],
+            "difficulty": "medium",
+            "type": "basic_operations",
+            "topic": "Operações Básicas",
+            "id": "operacoes_basicas_medium_3",
+            "topic_id": "operacoes_basicas"
+          },
+          {
+            "problem": "Calcule: 11 - 25",
+            "equation": "11 - 25",
+            "answer": -14,
+            "steps": [
+              "11 - 25 = -14"
+            ],
+            "difficulty": "medium",
+            "type": "basic_operations",
+            "topic": "Operações Básicas",
+            "id": "operacoes_basicas_medium_4",
+            "topic_id": "operacoes_basicas"
+          },
+          {
+            "problem": "Calcule: 37 + 7",
+            "equation": "37 + 7",
+            "answer": 44,
+            "steps": [
+              "37 + 7 = 44"
+            ],
+            "difficulty": "medium",
+            "type": "basic_operations",
+            "topic": "Operações Básicas",
+            "id": "operacoes_basicas_medium_5",
+            "topic_id": "operacoes_basicas"
+          },
+          {
+            "problem": "Calcule: 35 + 6",
+            "equation": "35 + 6",
+            "answer": 41,
+            "steps": [
+              "35 + 6 = 41"
+            ],
+            "difficulty": "medium",
+            "type": "basic_operations",
+            "topic": "Operações Básicas",
+            "id": "operacoes_basicas_medium_6",
+            "topic_id": "operacoes_basicas"
+          },
+          {
+            "problem": "Calcule: 36 + 5",
+            "equation": "36 + 5",
+            "answer": 41,
+            "steps": [
+              "36 + 5 = 41"
+            ],
+            "difficulty": "medium",
+            "type": "basic_operations",
+            "topic": "Operações Básicas",
+            "id": "operacoes_basicas_medium_7",
+            "topic_id": "operacoes_basicas"
+          },
+          {
+            "problem": "Calcule: 984 ÷ 24",
+            "equation": "984 ÷ 24",
+            "answer": 41,
+            "steps": [
+              "984 ÷ 24 = 41"
+            ],
+            "difficulty": "medium",
+            "type": "basic_operations",
+            "topic": "Operações Básicas",
+            "id": "operacoes_basicas_medium_8",
+            "topic_id": "operacoes_basicas"
+          },
+          {
+            "problem": "Calcule: 40 + 9",
+            "equation": "40 + 9",
+            "answer": 49,
+            "steps": [
+              "40 + 9 = 49"
+            ],
+            "difficulty": "medium",
+            "type": "basic_operations",
+            "topic": "Operações Básicas",
+            "id": "operacoes_basicas_medium_9",
+            "topic_id": "operacoes_basicas"
+          },
+          {
+            "problem": "Calcule: 441 ÷ 21",
+            "equation": "441 ÷ 21",
+            "answer": 21,
+            "steps": [
+              "441 ÷ 21 = 21"
+            ],
+            "difficulty": "medium",
+            "type": "basic_operations",
+            "topic": "Operações Básicas",
+            "id": "operacoes_basicas_medium_10",
+            "topic_id": "operacoes_basicas"
+          }
+        ],
+        "hard": [
+          {
+            "problem": "Calcule: 48 + 50",
+            "equation": "48 + 50",
+            "answer": 98,
+            "steps": [
+              "48 + 50 = 98"
+            ],
+            "difficulty": "hard",
+            "type": "basic_operations",
+            "topic": "Operações Básicas",
+            "id": "operacoes_basicas_hard_1",
+            "topic_id": "operacoes_basicas"
+          },
+          {
+            "problem": "Calcule: 20 + 27",
+            "equation": "20 + 27",
+            "answer": 47,
+            "steps": [
+              "20 + 27 = 47"
+            ],
+            "difficulty": "hard",
+            "type": "basic_operations",
+            "topic": "Operações Básicas",
+            "id": "operacoes_basicas_hard_2",
+            "topic_id": "operacoes_basicas"
+          },
+          {
+            "problem": "Calcule: 34 + 13",
+            "equation": "34 + 13",
+            "answer": 47,
+            "steps": [
+              "34 + 13 = 47"
+            ],
+            "difficulty": "hard",
+            "type": "basic_operations",
+            "topic": "Operações Básicas",
+            "id": "operacoes_basicas_hard_3",
+            "topic_id": "operacoes_basicas"
+          },
+          {
+            "problem": "Calcule: 21 × 13",
+            "equation": "21 × 13",
+            "answer": 273,
+            "steps": [
+              "21 × 13 = 273"
+            ],
+            "difficulty": "hard",
+            "type": "basic_operations",
+            "topic": "Operações Básicas",
+            "id": "operacoes_basicas_hard_4",
+            "topic_id": "operacoes_basicas"
+          },
+          {
+            "problem": "Calcule: 34 + 45",
+            "equation": "34 + 45",
+            "answer": 79,
+            "steps": [
+              "34 + 45 = 79"
+            ],
+            "difficulty": "hard",
+            "type": "basic_operations",
+            "topic": "Operações Básicas",
+            "id": "operacoes_basicas_hard_5",
+            "topic_id": "operacoes_basicas"
+          },
+          {
+            "problem": "Calcule: 73 - 38",
+            "equation": "73 - 38",
+            "answer": 35,
+            "steps": [
+              "73 - 38 = 35"
+            ],
+            "difficulty": "hard",
+            "type": "basic_operations",
+            "topic": "Operações Básicas",
+            "id": "operacoes_basicas_hard_6",
+            "topic_id": "operacoes_basicas"
+          },
+          {
+            "problem": "Calcule: 80 - 11",
+            "equation": "80 - 11",
+            "answer": 69,
+            "steps": [
+              "80 - 11 = 69"
+            ],
+            "difficulty": "hard",
+            "type": "basic_operations",
+            "topic": "Operações Básicas",
+            "id": "operacoes_basicas_hard_7",
+            "topic_id": "operacoes_basicas"
+          },
+          {
+            "problem": "Calcule: 96 - 30",
+            "equation": "96 - 30",
+            "answer": 66,
+            "steps": [
+              "96 - 30 = 66"
+            ],
+            "difficulty": "hard",
+            "type": "basic_operations",
+            "topic": "Operações Básicas",
+            "id": "operacoes_basicas_hard_8",
+            "topic_id": "operacoes_basicas"
+          },
+          {
+            "problem": "Calcule: 100 × 27",
+            "equation": "100 × 27",
+            "answer": 2700,
+            "steps": [
+              "100 × 27 = 2700"
+            ],
+            "difficulty": "hard",
+            "type": "basic_operations",
+            "topic": "Operações Básicas",
+            "id": "operacoes_basicas_hard_9",
+            "topic_id": "operacoes_basicas"
+          },
+          {
+            "problem": "Calcule: 1176 ÷ 21",
+            "equation": "1176 ÷ 21",
+            "answer": 56,
+            "steps": [
+              "1176 ÷ 21 = 56"
+            ],
+            "difficulty": "hard",
+            "type": "basic_operations",
+            "topic": "Operações Básicas",
+            "id": "operacoes_basicas_hard_10",
+            "topic_id": "operacoes_basicas"
+          }
+        ]
+      },
+      "total": 30
+    },
+    "numeros_inteiros": {
+      "topic_id": "numeros_inteiros",
+      "topic_name": "Números Inteiros",
+      "questions": {
+        "easy": [
+          {
+            "problem": "Calcule: Qual é maior: -3 ou 7?",
+            "equation": "Qual é maior: -3 ou 7?",
+            "answer": 7,
+            "steps": [
+              "Comparando -3 e 7",
+              "O maior é: 7"
+            ],
+            "difficulty": "easy",
+            "type": "integers",
+            "topic": "Números Inteiros",
+            "id": "numeros_inteiros_easy_1",
+            "topic_id": "numeros_inteiros"
+          },
+          {
+            "problem": "Calcule: Qual é maior: 10 ou 0?",
+            "equation": "Qual é maior: 10 ou 0?",
+            "answer": 10,
+            "steps": [
+              "Comparando 10 e 0",
+              "O maior é: 10"
+            ],
+            "difficulty": "easy",
+            "type": "integers",
+            "topic": "Números Inteiros",
+            "id": "numeros_inteiros_easy_2",
+            "topic_id": "numeros_inteiros"
+          },
+          {
+            "problem": "Calcule: Qual é maior: 8 ou -3?",
+            "equation": "Qual é maior: 8 ou -3?",
+            "answer": 8,
+            "steps": [
+              "Comparando 8 e -3",
+              "O maior é: 8"
+            ],
+            "difficulty": "easy",
+            "type": "integers",
+            "topic": "Números Inteiros",
+            "id": "numeros_inteiros_easy_3",
+            "topic_id": "numeros_inteiros"
+          },
+          {
+            "problem": "Calcule: Qual é maior: 3 ou -3?",
+            "equation": "Qual é maior: 3 ou -3?",
+            "answer": 3,
+            "steps": [
+              "Comparando 3 e -3",
+              "O maior é: 3"
+            ],
+            "difficulty": "easy",
+            "type": "integers",
+            "topic": "Números Inteiros",
+            "id": "numeros_inteiros_easy_4",
+            "topic_id": "numeros_inteiros"
+          },
+          {
+            "problem": "Calcule: |9|",
+            "equation": "|9|",
+            "answer": 9,
+            "steps": [
+              "Valor absoluto de 9",
+              "|9| = 9"
+            ],
+            "difficulty": "easy",
+            "type": "integers",
+            "topic": "Números Inteiros",
+            "id": "numeros_inteiros_easy_5",
+            "topic_id": "numeros_inteiros"
+          },
+          {
+            "problem": "Calcule: (5) + (-8)",
+            "equation": "(5) + (-8)",
+            "answer": -3,
+            "steps": [
+              "Somando números inteiros",
+              "(5) + (-8) = -3"
+            ],
+            "difficulty": "easy",
+            "type": "integers",
+            "topic": "Números Inteiros",
+            "id": "numeros_inteiros_easy_6",
+            "topic_id": "numeros_inteiros"
+          },
+          {
+            "problem": "Calcule: (9) - (8)",
+            "equation": "(9) - (8)",
+            "answer": 1,
+            "steps": [
+              "Subtraindo números inteiros",
+              "(9) - (8) = 1"
+            ],
+            "difficulty": "easy",
+            "type": "integers",
+            "topic": "Números Inteiros",
+            "id": "numeros_inteiros_easy_7",
+            "topic_id": "numeros_inteiros"
+          },
+          {
+            "problem": "Calcule: Qual é maior: 4 ou -4?",
+            "equation": "Qual é maior: 4 ou -4?",
+            "answer": 4,
+            "steps": [
+              "Comparando 4 e -4",
+              "O maior é: 4"
+            ],
+            "difficulty": "easy",
+            "type": "integers",
+            "topic": "Números Inteiros",
+            "id": "numeros_inteiros_easy_8",
+            "topic_id": "numeros_inteiros"
+          },
+          {
+            "problem": "Calcule: |-6|",
+            "equation": "|-6|",
+            "answer": 6,
+            "steps": [
+              "Valor absoluto de -6",
+              "|-6| = 6"
+            ],
+            "difficulty": "easy",
+            "type": "integers",
+            "topic": "Números Inteiros",
+            "id": "numeros_inteiros_easy_9",
+            "topic_id": "numeros_inteiros"
+          },
+          {
+            "problem": "Calcule: (2) + (8)",
+            "equation": "(2) + (8)",
+            "answer": 10,
+            "steps": [
+              "Somando números inteiros",
+              "(2) + (8) = 10"
+            ],
+            "difficulty": "easy",
+            "type": "integers",
+            "topic": "Números Inteiros",
+            "id": "numeros_inteiros_easy_10",
+            "topic_id": "numeros_inteiros"
+          }
+        ],
+        "medium": [
+          {
+            "problem": "Calcule: |7|",
+            "equation": "|7|",
+            "answer": 7,
+            "steps": [
+              "Valor absoluto de 7",
+              "|7| = 7"
+            ],
+            "difficulty": "medium",
+            "type": "integers",
+            "topic": "Números Inteiros",
+            "id": "numeros_inteiros_medium_1",
+            "topic_id": "numeros_inteiros"
+          },
+          {
+            "problem": "Calcule: Qual é maior: 17 ou -23?",
+            "equation": "Qual é maior: 17 ou -23?",
+            "answer": 17,
+            "steps": [
+              "Comparando 17 e -23",
+              "O maior é: 17"
+            ],
+            "difficulty": "medium",
+            "type": "integers",
+            "topic": "Números Inteiros",
+            "id": "numeros_inteiros_medium_2",
+            "topic_id": "numeros_inteiros"
+          },
+          {
+            "problem": "Calcule: (-28) - (21)",
+            "equation": "(-28) - (21)",
+            "answer": -49,
+            "steps": [
+              "Subtraindo números inteiros",
+              "(-28) - (21) = -49"
+            ],
+            "difficulty": "medium",
+            "type": "integers",
+            "topic": "Números Inteiros",
+            "id": "numeros_inteiros_medium_3",
+            "topic_id": "numeros_inteiros"
+          },
+          {
+            "problem": "Calcule: Qual é maior: 1 ou 4?",
+            "equation": "Qual é maior: 1 ou 4?",
+            "answer": 4,
+            "steps": [
+              "Comparando 1 e 4",
+              "O maior é: 4"
+            ],
+            "difficulty": "medium",
+            "type": "integers",
+            "topic": "Números Inteiros",
+            "id": "numeros_inteiros_medium_4",
+            "topic_id": "numeros_inteiros"
+          },
+          {
+            "problem": "Calcule: Qual é maior: 29 ou -1?",
+            "equation": "Qual é maior: 29 ou -1?",
+            "answer": 29,
+            "steps": [
+              "Comparando 29 e -1",
+              "O maior é: 29"
+            ],
+            "difficulty": "medium",
+            "type": "integers",
+            "topic": "Números Inteiros",
+            "id": "numeros_inteiros_medium_5",
+            "topic_id": "numeros_inteiros"
+          },
+          {
+            "problem": "Calcule: (20) - (11)",
+            "equation": "(20) - (11)",
+            "answer": 9,
+            "steps": [
+              "Subtraindo números inteiros",
+              "(20) - (11) = 9"
+            ],
+            "difficulty": "medium",
+            "type": "integers",
+            "topic": "Números Inteiros",
+            "id": "numeros_inteiros_medium_6",
+            "topic_id": "numeros_inteiros"
+          },
+          {
+            "problem": "Calcule: Qual é maior: -26 ou -11?",
+            "equation": "Qual é maior: -26 ou -11?",
+            "answer": -11,
+            "steps": [
+              "Comparando -26 e -11",
+              "O maior é: -11"
+            ],
+            "difficulty": "medium",
+            "type": "integers",
+            "topic": "Números Inteiros",
+            "id": "numeros_inteiros_medium_7",
+            "topic_id": "numeros_inteiros"
+          },
+          {
+            "problem": "Calcule: (16) - (0)",
+            "equation": "(16) - (0)",
+            "answer": 16,
+            "steps": [
+              "Subtraindo números inteiros",
+              "(16) - (0) = 16"
+            ],
+            "difficulty": "medium",
+            "type": "integers",
+            "topic": "Números Inteiros",
+            "id": "numeros_inteiros_medium_8",
+            "topic_id": "numeros_inteiros"
+          },
+          {
+            "problem": "Calcule: |23|",
+            "equation": "|23|",
+            "answer": 23,
+            "steps": [
+              "Valor absoluto de 23",
+              "|23| = 23"
+            ],
+            "difficulty": "medium",
+            "type": "integers",
+            "topic": "Números Inteiros",
+            "id": "numeros_inteiros_medium_9",
+            "topic_id": "numeros_inteiros"
+          },
+          {
+            "problem": "Calcule: Qual é maior: -21 ou 0?",
+            "equation": "Qual é maior: -21 ou 0?",
+            "answer": 0,
+            "steps": [
+              "Comparando -21 e 0",
+              "O maior é: 0"
+            ],
+            "difficulty": "medium",
+            "type": "integers",
+            "topic": "Números Inteiros",
+            "id": "numeros_inteiros_medium_10",
+            "topic_id": "numeros_inteiros"
+          }
+        ],
+        "hard": [
+          {
+            "problem": "Calcule: |-79|",
+            "equation": "|-79|",
+            "answer": 79,
+            "steps": [
+              "Valor absoluto de -79",
+              "|-79| = 79"
+            ],
+            "difficulty": "hard",
+            "type": "integers",
+            "topic": "Números Inteiros",
+            "id": "numeros_inteiros_hard_1",
+            "topic_id": "numeros_inteiros"
+          },
+          {
+            "problem": "Calcule: |99|",
+            "equation": "|99|",
+            "answer": 99,
+            "steps": [
+              "Valor absoluto de 99",
+              "|99| = 99"
+            ],
+            "difficulty": "hard",
+            "type": "integers",
+            "topic": "Números Inteiros",
+            "id": "numeros_inteiros_hard_2",
+            "topic_id": "numeros_inteiros"
+          },
+          {
+            "problem": "Calcule: |41|",
+            "equation": "|41|",
+            "answer": 41,
+            "steps": [
+              "Valor absoluto de 41",
+              "|41| = 41"
+            ],
+            "difficulty": "hard",
+            "type": "integers",
+            "topic": "Números Inteiros",
+            "id": "numeros_inteiros_hard_3",
+            "topic_id": "numeros_inteiros"
+          },
+          {
+            "problem": "Calcule: Qual é maior: 47 ou 88?",
+            "equation": "Qual é maior: 47 ou 88?",
+            "answer": 88,
+            "steps": [
+              "Comparando 47 e 88",
+              "O maior é: 88"
+            ],
+            "difficulty": "hard",
+            "type": "integers",
+            "topic": "Números Inteiros",
+            "id": "numeros_inteiros_hard_4",
+            "topic_id": "numeros_inteiros"
+          },
+          {
+            "problem": "Calcule: Qual é maior: -46 ou 84?",
+            "equation": "Qual é maior: -46 ou 84?",
+            "answer": 84,
+            "steps": [
+              "Comparando -46 e 84",
+              "O maior é: 84"
+            ],
+            "difficulty": "hard",
+            "type": "integers",
+            "topic": "Números Inteiros",
+            "id": "numeros_inteiros_hard_5",
+            "topic_id": "numeros_inteiros"
+          },
+          {
+            "problem": "Calcule: Qual é maior: -49 ou 1?",
+            "equation": "Qual é maior: -49 ou 1?",
+            "answer": 1,
+            "steps": [
+              "Comparando -49 e 1",
+              "O maior é: 1"
+            ],
+            "difficulty": "hard",
+            "type": "integers",
+            "topic": "Números Inteiros",
+            "id": "numeros_inteiros_hard_6",
+            "topic_id": "numeros_inteiros"
+          },
+          {
+            "problem": "Calcule: |81|",
+            "equation": "|81|",
+            "answer": 81,
+            "steps": [
+              "Valor absoluto de 81",
+              "|81| = 81"
+            ],
+            "difficulty": "hard",
+            "type": "integers",
+            "topic": "Números Inteiros",
+            "id": "numeros_inteiros_hard_7",
+            "topic_id": "numeros_inteiros"
+          },
+          {
+            "problem": "Calcule: |-22|",
+            "equation": "|-22|",
+            "answer": 22,
+            "steps": [
+              "Valor absoluto de -22",
+              "|-22| = 22"
+            ],
+            "difficulty": "hard",
+            "type": "integers",
+            "topic": "Números Inteiros",
+            "id": "numeros_inteiros_hard_8",
+            "topic_id": "numeros_inteiros"
+          },
+          {
+            "problem": "Calcule: (-12) - (-91)",
+            "equation": "(-12) - (-91)",
+            "answer": 79,
+            "steps": [
+              "Subtraindo números inteiros",
+              "(-12) - (-91) = 79"
+            ],
+            "difficulty": "hard",
+            "type": "integers",
+            "topic": "Números Inteiros",
+            "id": "numeros_inteiros_hard_9",
+            "topic_id": "numeros_inteiros"
+          },
+          {
+            "problem": "Calcule: (72) - (-1)",
+            "equation": "(72) - (-1)",
+            "answer": 73,
+            "steps": [
+              "Subtraindo números inteiros",
+              "(72) - (-1) = 73"
+            ],
+            "difficulty": "hard",
+            "type": "integers",
+            "topic": "Números Inteiros",
+            "id": "numeros_inteiros_hard_10",
+            "topic_id": "numeros_inteiros"
+          }
+        ]
+      },
+      "total": 30
+    },
+    "variaveis_expressoes": {
+      "topic_id": "variaveis_expressoes",
+      "topic_name": "Variáveis e Expressões",
+      "questions": {
+        "easy": [
+          {
+            "problem": "Avalie 2x + 5 para x = 2",
+            "equation": "2x + 5",
+            "answer": 9,
+            "steps": [
+              "Substitua x por 2",
+              "2(2) + 5",
+              "4 + 5",
+              "9"
+            ],
+            "difficulty": "easy",
+            "type": "variables_expressions",
+            "topic": "Variáveis e Expressões",
+            "id": "variaveis_expressoes_easy_1",
+            "topic_id": "variaveis_expressoes"
+          },
+          {
+            "problem": "Avalie 2x + 1 para x = 10",
+            "equation": "2x + 1",
+            "answer": 21,
+            "steps": [
+              "Substitua x por 10",
+              "2(10) + 1",
+              "20 + 1",
+              "21"
+            ],
+            "difficulty": "easy",
+            "type": "variables_expressions",
+            "topic": "Variáveis e Expressões",
+            "id": "variaveis_expressoes_easy_2",
+            "topic_id": "variaveis_expressoes"
+          },
+          {
+            "problem": "Avalie 3x + 9 para x = 4",
+            "equation": "3x + 9",
+            "answer": 21,
+            "steps": [
+              "Substitua x por 4",
+              "3(4) + 9",
+              "12 + 9",
+              "21"
+            ],
+            "difficulty": "easy",
+            "type": "variables_expressions",
+            "topic": "Variáveis e Expressões",
+            "id": "variaveis_expressoes_easy_3",
+            "topic_id": "variaveis_expressoes"
+          },
+          {
+            "problem": "Avalie 2x + 7 para x = 1",
+            "equation": "2x + 7",
+            "answer": 9,
+            "steps": [
+              "Substitua x por 1",
+              "2(1) + 7",
+              "2 + 7",
+              "9"
+            ],
+            "difficulty": "easy",
+            "type": "variables_expressions",
+            "topic": "Variáveis e Expressões",
+            "id": "variaveis_expressoes_easy_4",
+            "topic_id": "variaveis_expressoes"
+          },
+          {
+            "problem": "Avalie 3x + 7 para x = 9",
+            "equation": "3x + 7",
+            "answer": 34,
+            "steps": [
+              "Substitua x por 9",
+              "3(9) + 7",
+              "27 + 7",
+              "34"
+            ],
+            "difficulty": "easy",
+            "type": "variables_expressions",
+            "topic": "Variáveis e Expressões",
+            "id": "variaveis_expressoes_easy_5",
+            "topic_id": "variaveis_expressoes"
+          },
+          {
+            "problem": "Avalie 4x + 8 para x = 5",
+            "equation": "4x + 8",
+            "answer": 28,
+            "steps": [
+              "Substitua x por 5",
+              "4(5) + 8",
+              "20 + 8",
+              "28"
+            ],
+            "difficulty": "easy",
+            "type": "variables_expressions",
+            "topic": "Variáveis e Expressões",
+            "id": "variaveis_expressoes_easy_6",
+            "topic_id": "variaveis_expressoes"
+          },
+          {
+            "problem": "Avalie 4x + 1 para x = 8",
+            "equation": "4x + 1",
+            "answer": 33,
+            "steps": [
+              "Substitua x por 8",
+              "4(8) + 1",
+              "32 + 1",
+              "33"
+            ],
+            "difficulty": "easy",
+            "type": "variables_expressions",
+            "topic": "Variáveis e Expressões",
+            "id": "variaveis_expressoes_easy_7",
+            "topic_id": "variaveis_expressoes"
+          },
+          {
+            "problem": "Avalie 5x + 5 para x = 8",
+            "equation": "5x + 5",
+            "answer": 45,
+            "steps": [
+              "Substitua x por 8",
+              "5(8) + 5",
+              "40 + 5",
+              "45"
+            ],
+            "difficulty": "easy",
+            "type": "variables_expressions",
+            "topic": "Variáveis e Expressões",
+            "id": "variaveis_expressoes_easy_8",
+            "topic_id": "variaveis_expressoes"
+          },
+          {
+            "problem": "Avalie 5x + 6 para x = 7",
+            "equation": "5x + 6",
+            "answer": 41,
+            "steps": [
+              "Substitua x por 7",
+              "5(7) + 6",
+              "35 + 6",
+              "41"
+            ],
+            "difficulty": "easy",
+            "type": "variables_expressions",
+            "topic": "Variáveis e Expressões",
+            "id": "variaveis_expressoes_easy_9",
+            "topic_id": "variaveis_expressoes"
+          },
+          {
+            "problem": "Avalie 5x + 1 para x = 4",
+            "equation": "5x + 1",
+            "answer": 21,
+            "steps": [
+              "Substitua x por 4",
+              "5(4) + 1",
+              "20 + 1",
+              "21"
+            ],
+            "difficulty": "easy",
+            "type": "variables_expressions",
+            "topic": "Variáveis e Expressões",
+            "id": "variaveis_expressoes_easy_10",
+            "topic_id": "variaveis_expressoes"
+          }
+        ],
+        "medium": [
+          {
+            "problem": "Avalie 5x - 3 para x = 6",
+            "equation": "5x - 3",
+            "answer": 27,
+            "steps": [
+              "Substitua x por 6",
+              "5(6) + -3",
+              "30 + -3",
+              "27"
+            ],
+            "difficulty": "medium",
+            "type": "variables_expressions",
+            "topic": "Variáveis e Expressões",
+            "id": "variaveis_expressoes_medium_1",
+            "topic_id": "variaveis_expressoes"
+          },
+          {
+            "problem": "Avalie 3x + 8 para x = 9",
+            "equation": "3x + 8",
+            "answer": 35,
+            "steps": [
+              "Substitua x por 9",
+              "3(9) + 8",
+              "27 + 8",
+              "35"
+            ],
+            "difficulty": "medium",
+            "type": "variables_expressions",
+            "topic": "Variáveis e Expressões",
+            "id": "variaveis_expressoes_medium_2",
+            "topic_id": "variaveis_expressoes"
+          },
+          {
+            "problem": "Avalie 10x + 1 para x = 0",
+            "equation": "10x + 1",
+            "answer": 1,
+            "steps": [
+              "Substitua x por 0",
+              "10(0) + 1",
+              "0 + 1",
+              "1"
+            ],
+            "difficulty": "medium",
+            "type": "variables_expressions",
+            "topic": "Variáveis e Expressões",
+            "id": "variaveis_expressoes_medium_3",
+            "topic_id": "variaveis_expressoes"
+          },
+          {
+            "problem": "Avalie 4x + 8 para x = 5",
+            "equation": "4x + 8",
+            "answer": 28,
+            "steps": [
+              "Substitua x por 5",
+              "4(5) + 8",
+              "20 + 8",
+              "28"
+            ],
+            "difficulty": "medium",
+            "type": "variables_expressions",
+            "topic": "Variáveis e Expressões",
+            "id": "variaveis_expressoes_medium_4",
+            "topic_id": "variaveis_expressoes"
+          },
+          {
+            "problem": "Avalie 3x + 2 para x = 9",
+            "equation": "3x + 2",
+            "answer": 29,
+            "steps": [
+              "Substitua x por 9",
+              "3(9) + 2",
+              "27 + 2",
+              "29"
+            ],
+            "difficulty": "medium",
+            "type": "variables_expressions",
+            "topic": "Variáveis e Expressões",
+            "id": "variaveis_expressoes_medium_5",
+            "topic_id": "variaveis_expressoes"
+          },
+          {
+            "problem": "Avalie 3x + 10 para x = -2",
+            "equation": "3x + 10",
+            "answer": 4,
+            "steps": [
+              "Substitua x por -2",
+              "3(-2) + 10",
+              "-6 + 10",
+              "4"
+            ],
+            "difficulty": "medium",
+            "type": "variables_expressions",
+            "topic": "Variáveis e Expressões",
+            "id": "variaveis_expressoes_medium_6",
+            "topic_id": "variaveis_expressoes"
+          },
+          {
+            "problem": "Avalie 2x - 5 para x = -7",
+            "equation": "2x - 5",
+            "answer": -19,
+            "steps": [
+              "Substitua x por -7",
+              "2(-7) + -5",
+              "-14 + -5",
+              "-19"
+            ],
+            "difficulty": "medium",
+            "type": "variables_expressions",
+            "topic": "Variáveis e Expressões",
+            "id": "variaveis_expressoes_medium_7",
+            "topic_id": "variaveis_expressoes"
+          },
+          {
+            "problem": "Avalie 6x - 6 para x = 4",
+            "equation": "6x - 6",
+            "answer": 18,
+            "steps": [
+              "Substitua x por 4",
+              "6(4) + -6",
+              "24 + -6",
+              "18"
+            ],
+            "difficulty": "medium",
+            "type": "variables_expressions",
+            "topic": "Variáveis e Expressões",
+            "id": "variaveis_expressoes_medium_8",
+            "topic_id": "variaveis_expressoes"
+          },
+          {
+            "problem": "Avalie 2x + 5 para x = 4",
+            "equation": "2x + 5",
+            "answer": 13,
+            "steps": [
+              "Substitua x por 4",
+              "2(4) + 5",
+              "8 + 5",
+              "13"
+            ],
+            "difficulty": "medium",
+            "type": "variables_expressions",
+            "topic": "Variáveis e Expressões",
+            "id": "variaveis_expressoes_medium_9",
+            "topic_id": "variaveis_expressoes"
+          },
+          {
+            "problem": "Avalie 10x + 8 para x = -9",
+            "equation": "10x + 8",
+            "answer": -82,
+            "steps": [
+              "Substitua x por -9",
+              "10(-9) + 8",
+              "-90 + 8",
+              "-82"
+            ],
+            "difficulty": "medium",
+            "type": "variables_expressions",
+            "topic": "Variáveis e Expressões",
+            "id": "variaveis_expressoes_medium_10",
+            "topic_id": "variaveis_expressoes"
+          }
+        ],
+        "hard": [
+          {
+            "problem": "Avalie 13x + 11 para x = -10",
+            "equation": "13x + 11",
+            "answer": -119,
+            "steps": [
+              "Substitua x por -10",
+              "13(-10) + 11",
+              "-130 + 11",
+              "-119"
+            ],
+            "difficulty": "hard",
+            "type": "variables_expressions",
+            "topic": "Variáveis e Expressões",
+            "id": "variaveis_expressoes_hard_1",
+            "topic_id": "variaveis_expressoes"
+          },
+          {
+            "problem": "Avalie 2x + 4 para x = 16",
+            "equation": "2x + 4",
+            "answer": 36,
+            "steps": [
+              "Substitua x por 16",
+              "2(16) + 4",
+              "32 + 4",
+              "36"
+            ],
+            "difficulty": "hard",
+            "type": "variables_expressions",
+            "topic": "Variáveis e Expressões",
+            "id": "variaveis_expressoes_hard_2",
+            "topic_id": "variaveis_expressoes"
+          },
+          {
+            "problem": "Avalie 9x + 15 para x = 4",
+            "equation": "9x + 15",
+            "answer": 51,
+            "steps": [
+              "Substitua x por 4",
+              "9(4) + 15",
+              "36 + 15",
+              "51"
+            ],
+            "difficulty": "hard",
+            "type": "variables_expressions",
+            "topic": "Variáveis e Expressões",
+            "id": "variaveis_expressoes_hard_3",
+            "topic_id": "variaveis_expressoes"
+          },
+          {
+            "problem": "Avalie 14x - 19 para x = -9",
+            "equation": "14x - 19",
+            "answer": -145,
+            "steps": [
+              "Substitua x por -9",
+              "14(-9) + -19",
+              "-126 + -19",
+              "-145"
+            ],
+            "difficulty": "hard",
+            "type": "variables_expressions",
+            "topic": "Variáveis e Expressões",
+            "id": "variaveis_expressoes_hard_4",
+            "topic_id": "variaveis_expressoes"
+          },
+          {
+            "problem": "Avalie 5x + 6 para x = -19",
+            "equation": "5x + 6",
+            "answer": -89,
+            "steps": [
+              "Substitua x por -19",
+              "5(-19) + 6",
+              "-95 + 6",
+              "-89"
+            ],
+            "difficulty": "hard",
+            "type": "variables_expressions",
+            "topic": "Variáveis e Expressões",
+            "id": "variaveis_expressoes_hard_5",
+            "topic_id": "variaveis_expressoes"
+          },
+          {
+            "problem": "Avalie 11x - 20 para x = -20",
+            "equation": "11x - 20",
+            "answer": -240,
+            "steps": [
+              "Substitua x por -20",
+              "11(-20) + -20",
+              "-220 + -20",
+              "-240"
+            ],
+            "difficulty": "hard",
+            "type": "variables_expressions",
+            "topic": "Variáveis e Expressões",
+            "id": "variaveis_expressoes_hard_6",
+            "topic_id": "variaveis_expressoes"
+          },
+          {
+            "problem": "Avalie 8x + 8 para x = 4",
+            "equation": "8x + 8",
+            "answer": 40,
+            "steps": [
+              "Substitua x por 4",
+              "8(4) + 8",
+              "32 + 8",
+              "40"
+            ],
+            "difficulty": "hard",
+            "type": "variables_expressions",
+            "topic": "Variáveis e Expressões",
+            "id": "variaveis_expressoes_hard_7",
+            "topic_id": "variaveis_expressoes"
+          },
+          {
+            "problem": "Avalie 10x + 17 para x = 7",
+            "equation": "10x + 17",
+            "answer": 87,
+            "steps": [
+              "Substitua x por 7",
+              "10(7) + 17",
+              "70 + 17",
+              "87"
+            ],
+            "difficulty": "hard",
+            "type": "variables_expressions",
+            "topic": "Variáveis e Expressões",
+            "id": "variaveis_expressoes_hard_8",
+            "topic_id": "variaveis_expressoes"
+          },
+          {
+            "problem": "Avalie 13x + 3 para x = -19",
+            "equation": "13x + 3",
+            "answer": -244,
+            "steps": [
+              "Substitua x por -19",
+              "13(-19) + 3",
+              "-247 + 3",
+              "-244"
+            ],
+            "difficulty": "hard",
+            "type": "variables_expressions",
+            "topic": "Variáveis e Expressões",
+            "id": "variaveis_expressoes_hard_9",
+            "topic_id": "variaveis_expressoes"
+          },
+          {
+            "problem": "Avalie 13x + 14 para x = 13",
+            "equation": "13x + 14",
+            "answer": 183,
+            "steps": [
+              "Substitua x por 13",
+              "13(13) + 14",
+              "169 + 14",
+              "183"
+            ],
+            "difficulty": "hard",
+            "type": "variables_expressions",
+            "topic": "Variáveis e Expressões",
+            "id": "variaveis_expressoes_hard_10",
+            "topic_id": "variaveis_expressoes"
+          }
+        ]
+      },
+      "total": 30
+    },
+    "simplificacao_algebrica": {
+      "topic_id": "simplificacao_algebrica",
+      "topic_name": "Simplificação Algébrica",
+      "questions": {
+        "easy": [
+          {
+            "problem": "Simplifique: 4x + 3x + 4",
+            "equation": "4x + 3x + 4",
+            "answer": "7x + 4",
+            "steps": [
+              "Combine termos semelhantes",
+              "(4 + 3)x + 4",
+              "7x + 4",
+              "7x + 4"
+            ],
+            "difficulty": "easy",
+            "type": "algebraic_simplification",
+            "topic": "Simplificação Algébrica",
+            "id": "simplificacao_algebrica_easy_1",
+            "topic_id": "simplificacao_algebrica"
+          },
+          {
+            "problem": "Simplifique: 3x + 2x + 3",
+            "equation": "3x + 2x + 3",
+            "answer": "5x + 3",
+            "steps": [
+              "Combine termos semelhantes",
+              "(3 + 2)x + 3",
+              "5x + 3",
+              "5x + 3"
+            ],
+            "difficulty": "easy",
+            "type": "algebraic_simplification",
+            "topic": "Simplificação Algébrica",
+            "id": "simplificacao_algebrica_easy_2",
+            "topic_id": "simplificacao_algebrica"
+          },
+          {
+            "problem": "Simplifique: 2x + 5x + 4",
+            "equation": "2x + 5x + 4",
+            "answer": "7x + 4",
+            "steps": [
+              "Combine termos semelhantes",
+              "(2 + 5)x + 4",
+              "7x + 4",
+              "7x + 4"
+            ],
+            "difficulty": "easy",
+            "type": "algebraic_simplification",
+            "topic": "Simplificação Algébrica",
+            "id": "simplificacao_algebrica_easy_3",
+            "topic_id": "simplificacao_algebrica"
+          },
+          {
+            "problem": "Simplifique: 4x + 2x + 3",
+            "equation": "4x + 2x + 3",
+            "answer": "6x + 3",
+            "steps": [
+              "Combine termos semelhantes",
+              "(4 + 2)x + 3",
+              "6x + 3",
+              "6x + 3"
+            ],
+            "difficulty": "easy",
+            "type": "algebraic_simplification",
+            "topic": "Simplificação Algébrica",
+            "id": "simplificacao_algebrica_easy_4",
+            "topic_id": "simplificacao_algebrica"
+          },
+          {
+            "problem": "Simplifique: 4x + 1x + 1",
+            "equation": "4x + 1x + 1",
+            "answer": "5x + 1",
+            "steps": [
+              "Combine termos semelhantes",
+              "(4 + 1)x + 1",
+              "5x + 1",
+              "5x + 1"
+            ],
+            "difficulty": "easy",
+            "type": "algebraic_simplification",
+            "topic": "Simplificação Algébrica",
+            "id": "simplificacao_algebrica_easy_5",
+            "topic_id": "simplificacao_algebrica"
+          },
+          {
+            "problem": "Simplifique: 5x + 4x + 3",
+            "equation": "5x + 4x + 3",
+            "answer": "9x + 3",
+            "steps": [
+              "Combine termos semelhantes",
+              "(5 + 4)x + 3",
+              "9x + 3",
+              "9x + 3"
+            ],
+            "difficulty": "easy",
+            "type": "algebraic_simplification",
+            "topic": "Simplificação Algébrica",
+            "id": "simplificacao_algebrica_easy_6",
+            "topic_id": "simplificacao_algebrica"
+          },
+          {
+            "problem": "Simplifique: 5x + 1x + 5",
+            "equation": "5x + 1x + 5",
+            "answer": "6x + 5",
+            "steps": [
+              "Combine termos semelhantes",
+              "(5 + 1)x + 5",
+              "6x + 5",
+              "6x + 5"
+            ],
+            "difficulty": "easy",
+            "type": "algebraic_simplification",
+            "topic": "Simplificação Algébrica",
+            "id": "simplificacao_algebrica_easy_7",
+            "topic_id": "simplificacao_algebrica"
+          },
+          {
+            "problem": "Simplifique: 5x + 1x + 5",
+            "equation": "5x + 1x + 5",
+            "answer": "6x + 5",
+            "steps": [
+              "Combine termos semelhantes",
+              "(5 + 1)x + 5",
+              "6x + 5",
+              "6x + 5"
+            ],
+            "difficulty": "easy",
+            "type": "algebraic_simplification",
+            "topic": "Simplificação Algébrica",
+            "id": "simplificacao_algebrica_easy_8",
+            "topic_id": "simplificacao_algebrica"
+          },
+          {
+            "problem": "Simplifique: 5x + 5x + 3",
+            "equation": "5x + 5x + 3",
+            "answer": "10x + 3",
+            "steps": [
+              "Combine termos semelhantes",
+              "(5 + 5)x + 3",
+              "10x + 3",
+              "10x + 3"
+            ],
+            "difficulty": "easy",
+            "type": "algebraic_simplification",
+            "topic": "Simplificação Algébrica",
+            "id": "simplificacao_algebrica_easy_9",
+            "topic_id": "simplificacao_algebrica"
+          },
+          {
+            "problem": "Simplifique: 5x + 4x + 5",
+            "equation": "5x + 4x + 5",
+            "answer": "9x + 5",
+            "steps": [
+              "Combine termos semelhantes",
+              "(5 + 4)x + 5",
+              "9x + 5",
+              "9x + 5"
+            ],
+            "difficulty": "easy",
+            "type": "algebraic_simplification",
+            "topic": "Simplificação Algébrica",
+            "id": "simplificacao_algebrica_easy_10",
+            "topic_id": "simplificacao_algebrica"
+          }
+        ],
+        "medium": [
+          {
+            "problem": "Simplifique: 4x + 5x + 5",
+            "equation": "4x + 5x + 5",
+            "answer": "9x + 5",
+            "steps": [
+              "Combine termos semelhantes",
+              "(4 + 5)x + 5",
+              "9x + 5",
+              "9x + 5"
+            ],
+            "difficulty": "medium",
+            "type": "algebraic_simplification",
+            "topic": "Simplificação Algébrica",
+            "id": "simplificacao_algebrica_medium_1",
+            "topic_id": "simplificacao_algebrica"
+          },
+          {
+            "problem": "Simplifique: 6x + 9x - 7",
+            "equation": "6x + 9x - 7",
+            "answer": "15x - 7",
+            "steps": [
+              "Combine termos semelhantes",
+              "(6 + 9)x - 7",
+              "15x - 7",
+              "15x - 7"
+            ],
+            "difficulty": "medium",
+            "type": "algebraic_simplification",
+            "topic": "Simplificação Algébrica",
+            "id": "simplificacao_algebrica_medium_2",
+            "topic_id": "simplificacao_algebrica"
+          },
+          {
+            "problem": "Simplifique: 7x + - 4x + 1",
+            "equation": "7x + - 4x + 1",
+            "answer": "3x + 1",
+            "steps": [
+              "Combine termos semelhantes",
+              "(7 + -4)x + 1",
+              "3x + 1",
+              "3x + 1"
+            ],
+            "difficulty": "medium",
+            "type": "algebraic_simplification",
+            "topic": "Simplificação Algébrica",
+            "id": "simplificacao_algebrica_medium_3",
+            "topic_id": "simplificacao_algebrica"
+          },
+          {
+            "problem": "Simplifique: 9x + 9x + 3",
+            "equation": "9x + 9x + 3",
+            "answer": "18x + 3",
+            "steps": [
+              "Combine termos semelhantes",
+              "(9 + 9)x + 3",
+              "18x + 3",
+              "18x + 3"
+            ],
+            "difficulty": "medium",
+            "type": "algebraic_simplification",
+            "topic": "Simplificação Algébrica",
+            "id": "simplificacao_algebrica_medium_4",
+            "topic_id": "simplificacao_algebrica"
+          },
+          {
+            "problem": "Simplifique: 6x + - 4x - 4",
+            "equation": "6x + - 4x - 4",
+            "answer": "2x - 4",
+            "steps": [
+              "Combine termos semelhantes",
+              "(6 + -4)x - 4",
+              "2x - 4",
+              "2x - 4"
+            ],
+            "difficulty": "medium",
+            "type": "algebraic_simplification",
+            "topic": "Simplificação Algébrica",
+            "id": "simplificacao_algebrica_medium_5",
+            "topic_id": "simplificacao_algebrica"
+          },
+          {
+            "problem": "Simplifique: 3x + - 1x - 4",
+            "equation": "3x + - 1x - 4",
+            "answer": "2x - 4",
+            "steps": [
+              "Combine termos semelhantes",
+              "(3 + -1)x - 4",
+              "2x - 4",
+              "2x - 4"
+            ],
+            "difficulty": "medium",
+            "type": "algebraic_simplification",
+            "topic": "Simplificação Algébrica",
+            "id": "simplificacao_algebrica_medium_6",
+            "topic_id": "simplificacao_algebrica"
+          },
+          {
+            "problem": "Simplifique: 6x + 3x - 6",
+            "equation": "6x + 3x - 6",
+            "answer": "9x - 6",
+            "steps": [
+              "Combine termos semelhantes",
+              "(6 + 3)x - 6",
+              "9x - 6",
+              "9x - 6"
+            ],
+            "difficulty": "medium",
+            "type": "algebraic_simplification",
+            "topic": "Simplificação Algébrica",
+            "id": "simplificacao_algebrica_medium_7",
+            "topic_id": "simplificacao_algebrica"
+          },
+          {
+            "problem": "Simplifique: 4x + - 2x + 1",
+            "equation": "4x + - 2x + 1",
+            "answer": "2x + 1",
+            "steps": [
+              "Combine termos semelhantes",
+              "(4 + -2)x + 1",
+              "2x + 1",
+              "2x + 1"
+            ],
+            "difficulty": "medium",
+            "type": "algebraic_simplification",
+            "topic": "Simplificação Algébrica",
+            "id": "simplificacao_algebrica_medium_8",
+            "topic_id": "simplificacao_algebrica"
+          },
+          {
+            "problem": "Simplifique: 2x + 2x - 10",
+            "equation": "2x + 2x - 10",
+            "answer": "4x - 10",
+            "steps": [
+              "Combine termos semelhantes",
+              "(2 + 2)x - 10",
+              "4x - 10",
+              "4x - 10"
+            ],
+            "difficulty": "medium",
+            "type": "algebraic_simplification",
+            "topic": "Simplificação Algébrica",
+            "id": "simplificacao_algebrica_medium_9",
+            "topic_id": "simplificacao_algebrica"
+          },
+          {
+            "problem": "Simplifique: 9x + 1x - 6",
+            "equation": "9x + 1x - 6",
+            "answer": "10x - 6",
+            "steps": [
+              "Combine termos semelhantes",
+              "(9 + 1)x - 6",
+              "10x - 6",
+              "10x - 6"
+            ],
+            "difficulty": "medium",
+            "type": "algebraic_simplification",
+            "topic": "Simplificação Algébrica",
+            "id": "simplificacao_algebrica_medium_10",
+            "topic_id": "simplificacao_algebrica"
+          }
+        ],
+        "hard": [
+          {
+            "problem": "Simplifique: 6x + 10x - 4",
+            "equation": "6x + 10x - 4",
+            "answer": "16x - 4",
+            "steps": [
+              "Combine termos semelhantes",
+              "(6 + 10)x - 4",
+              "16x - 4",
+              "16x - 4"
+            ],
+            "difficulty": "hard",
+            "type": "algebraic_simplification",
+            "topic": "Simplificação Algébrica",
+            "id": "simplificacao_algebrica_hard_1",
+            "topic_id": "simplificacao_algebrica"
+          },
+          {
+            "problem": "Simplifique: 3x + - 16x + 3",
+            "equation": "3x + - 16x + 3",
+            "answer": "-13x + 3",
+            "steps": [
+              "Combine termos semelhantes",
+              "(3 + -16)x + 3",
+              "-13x + 3",
+              "-13x + 3"
+            ],
+            "difficulty": "hard",
+            "type": "algebraic_simplification",
+            "topic": "Simplificação Algébrica",
+            "id": "simplificacao_algebrica_hard_2",
+            "topic_id": "simplificacao_algebrica"
+          },
+          {
+            "problem": "Simplifique: 3x + 1x - 12",
+            "equation": "3x + 1x - 12",
+            "answer": "4x - 12",
+            "steps": [
+              "Combine termos semelhantes",
+              "(3 + 1)x - 12",
+              "4x - 12",
+              "4x - 12"
+            ],
+            "difficulty": "hard",
+            "type": "algebraic_simplification",
+            "topic": "Simplificação Algébrica",
+            "id": "simplificacao_algebrica_hard_3",
+            "topic_id": "simplificacao_algebrica"
+          },
+          {
+            "problem": "Simplifique: 7x + - 13x + 8",
+            "equation": "7x + - 13x + 8",
+            "answer": "-6x + 8",
+            "steps": [
+              "Combine termos semelhantes",
+              "(7 + -13)x + 8",
+              "-6x + 8",
+              "-6x + 8"
+            ],
+            "difficulty": "hard",
+            "type": "algebraic_simplification",
+            "topic": "Simplificação Algébrica",
+            "id": "simplificacao_algebrica_hard_4",
+            "topic_id": "simplificacao_algebrica"
+          },
+          {
+            "problem": "Simplifique: 5x + - 15x - 6",
+            "equation": "5x + - 15x - 6",
+            "answer": "-10x - 6",
+            "steps": [
+              "Combine termos semelhantes",
+              "(5 + -15)x - 6",
+              "-10x - 6",
+              "-10x - 6"
+            ],
+            "difficulty": "hard",
+            "type": "algebraic_simplification",
+            "topic": "Simplificação Algébrica",
+            "id": "simplificacao_algebrica_hard_5",
+            "topic_id": "simplificacao_algebrica"
+          },
+          {
+            "problem": "Simplifique: 15x + 7x + 14",
+            "equation": "15x + 7x + 14",
+            "answer": "22x + 14",
+            "steps": [
+              "Combine termos semelhantes",
+              "(15 + 7)x + 14",
+              "22x + 14",
+              "22x + 14"
+            ],
+            "difficulty": "hard",
+            "type": "algebraic_simplification",
+            "topic": "Simplificação Algébrica",
+            "id": "simplificacao_algebrica_hard_6",
+            "topic_id": "simplificacao_algebrica"
+          },
+          {
+            "problem": "Simplifique: 3x + 12x + 12",
+            "equation": "3x + 12x + 12",
+            "answer": "15x + 12",
+            "steps": [
+              "Combine termos semelhantes",
+              "(3 + 12)x + 12",
+              "15x + 12",
+              "15x + 12"
+            ],
+            "difficulty": "hard",
+            "type": "algebraic_simplification",
+            "topic": "Simplificação Algébrica",
+            "id": "simplificacao_algebrica_hard_7",
+            "topic_id": "simplificacao_algebrica"
+          },
+          {
+            "problem": "Simplifique: 7x + 2x + 5",
+            "equation": "7x + 2x + 5",
+            "answer": "9x + 5",
+            "steps": [
+              "Combine termos semelhantes",
+              "(7 + 2)x + 5",
+              "9x + 5",
+              "9x + 5"
+            ],
+            "difficulty": "hard",
+            "type": "algebraic_simplification",
+            "topic": "Simplificação Algébrica",
+            "id": "simplificacao_algebrica_hard_8",
+            "topic_id": "simplificacao_algebrica"
+          },
+          {
+            "problem": "Simplifique: 2x + 7x - 4",
+            "equation": "2x + 7x - 4",
+            "answer": "9x - 4",
+            "steps": [
+              "Combine termos semelhantes",
+              "(2 + 7)x - 4",
+              "9x - 4",
+              "9x - 4"
+            ],
+            "difficulty": "hard",
+            "type": "algebraic_simplification",
+            "topic": "Simplificação Algébrica",
+            "id": "simplificacao_algebrica_hard_9",
+            "topic_id": "simplificacao_algebrica"
+          },
+          {
+            "problem": "Simplifique: 9x + - 19x + 10",
+            "equation": "9x + - 19x + 10",
+            "answer": "-10x + 10",
+            "steps": [
+              "Combine termos semelhantes",
+              "(9 + -19)x + 10",
+              "-10x + 10",
+              "-10x + 10"
+            ],
+            "difficulty": "hard",
+            "type": "algebraic_simplification",
+            "topic": "Simplificação Algébrica",
+            "id": "simplificacao_algebrica_hard_10",
+            "topic_id": "simplificacao_algebrica"
+          }
+        ]
+      },
+      "total": 30
+    },
+    "operacoes_inversas": {
+      "topic_id": "operacoes_inversas",
+      "topic_name": "Operações Inversas",
+      "questions": {
+        "easy": [
+          {
+            "problem": "Qual é o inverso multiplicativo de 6?",
+            "equation": "6",
+            "answer": "1/6",
+            "steps": [
+              "O inverso multiplicativo é o número que, multiplicado por 6, resulta em 1",
+              "6 × (1/6) = 1",
+              "Resposta: 1/6"
+            ],
+            "difficulty": "easy",
+            "type": "inverse_operations",
+            "topic": "Operações Inversas",
+            "id": "operacoes_inversas_easy_1",
+            "topic_id": "operacoes_inversas"
+          },
+          {
+            "problem": "Qual é o inverso aditivo de 2?",
+            "equation": "2",
+            "answer": -2,
+            "steps": [
+              "O inverso aditivo é o número que, somado a 2, resulta em 0",
+              "2 + (-2) = 0",
+              "Resposta: -2"
+            ],
+            "difficulty": "easy",
+            "type": "inverse_operations",
+            "topic": "Operações Inversas",
+            "id": "operacoes_inversas_easy_2",
+            "topic_id": "operacoes_inversas"
+          },
+          {
+            "problem": "Qual é o inverso multiplicativo de 9?",
+            "equation": "9",
+            "answer": "1/9",
+            "steps": [
+              "O inverso multiplicativo é o número que, multiplicado por 9, resulta em 1",
+              "9 × (1/9) = 1",
+              "Resposta: 1/9"
+            ],
+            "difficulty": "easy",
+            "type": "inverse_operations",
+            "topic": "Operações Inversas",
+            "id": "operacoes_inversas_easy_3",
+            "topic_id": "operacoes_inversas"
+          },
+          {
+            "problem": "Qual é o inverso aditivo de 8?",
+            "equation": "8",
+            "answer": -8,
+            "steps": [
+              "O inverso aditivo é o número que, somado a 8, resulta em 0",
+              "8 + (-8) = 0",
+              "Resposta: -8"
+            ],
+            "difficulty": "easy",
+            "type": "inverse_operations",
+            "topic": "Operações Inversas",
+            "id": "operacoes_inversas_easy_4",
+            "topic_id": "operacoes_inversas"
+          },
+          {
+            "problem": "Qual é o inverso aditivo de 6?",
+            "equation": "6",
+            "answer": -6,
+            "steps": [
+              "O inverso aditivo é o número que, somado a 6, resulta em 0",
+              "6 + (-6) = 0",
+              "Resposta: -6"
+            ],
+            "difficulty": "easy",
+            "type": "inverse_operations",
+            "topic": "Operações Inversas",
+            "id": "operacoes_inversas_easy_5",
+            "topic_id": "operacoes_inversas"
+          },
+          {
+            "problem": "Qual é o inverso aditivo de 17?",
+            "equation": "17",
+            "answer": -17,
+            "steps": [
+              "O inverso aditivo é o número que, somado a 17, resulta em 0",
+              "17 + (-17) = 0",
+              "Resposta: -17"
+            ],
+            "difficulty": "easy",
+            "type": "inverse_operations",
+            "topic": "Operações Inversas",
+            "id": "operacoes_inversas_easy_6",
+            "topic_id": "operacoes_inversas"
+          },
+          {
+            "problem": "Qual é o inverso aditivo de 11?",
+            "equation": "11",
+            "answer": -11,
+            "steps": [
+              "O inverso aditivo é o número que, somado a 11, resulta em 0",
+              "11 + (-11) = 0",
+              "Resposta: -11"
+            ],
+            "difficulty": "easy",
+            "type": "inverse_operations",
+            "topic": "Operações Inversas",
+            "id": "operacoes_inversas_easy_7",
+            "topic_id": "operacoes_inversas"
+          },
+          {
+            "problem": "Qual é o inverso multiplicativo de 12?",
+            "equation": "12",
+            "answer": "1/12",
+            "steps": [
+              "O inverso multiplicativo é o número que, multiplicado por 12, resulta em 1",
+              "12 × (1/12) = 1",
+              "Resposta: 1/12"
+            ],
+            "difficulty": "easy",
+            "type": "inverse_operations",
+            "topic": "Operações Inversas",
+            "id": "operacoes_inversas_easy_8",
+            "topic_id": "operacoes_inversas"
+          },
+          {
+            "problem": "Qual é o inverso aditivo de 7?",
+            "equation": "7",
+            "answer": -7,
+            "steps": [
+              "O inverso aditivo é o número que, somado a 7, resulta em 0",
+              "7 + (-7) = 0",
+              "Resposta: -7"
+            ],
+            "difficulty": "easy",
+            "type": "inverse_operations",
+            "topic": "Operações Inversas",
+            "id": "operacoes_inversas_easy_9",
+            "topic_id": "operacoes_inversas"
+          },
+          {
+            "problem": "Qual é o inverso multiplicativo de 14?",
+            "equation": "14",
+            "answer": "1/14",
+            "steps": [
+              "O inverso multiplicativo é o número que, multiplicado por 14, resulta em 1",
+              "14 × (1/14) = 1",
+              "Resposta: 1/14"
+            ],
+            "difficulty": "easy",
+            "type": "inverse_operations",
+            "topic": "Operações Inversas",
+            "id": "operacoes_inversas_easy_10",
+            "topic_id": "operacoes_inversas"
+          }
+        ],
+        "medium": [
+          {
+            "problem": "Qual é o inverso multiplicativo de 23?",
+            "equation": "23",
+            "answer": "1/23",
+            "steps": [
+              "O inverso multiplicativo é o número que, multiplicado por 23, resulta em 1",
+              "23 × (1/23) = 1",
+              "Resposta: 1/23"
+            ],
+            "difficulty": "medium",
+            "type": "inverse_operations",
+            "topic": "Operações Inversas",
+            "id": "operacoes_inversas_medium_1",
+            "topic_id": "operacoes_inversas"
+          },
+          {
+            "problem": "Qual é o inverso multiplicativo de -7?",
+            "equation": "-7",
+            "answer": "-1/7",
+            "steps": [
+              "O inverso multiplicativo é o número que, multiplicado por -7, resulta em 1",
+              "-7 × (-1/7) = 1",
+              "Resposta: -1/7"
+            ],
+            "difficulty": "medium",
+            "type": "inverse_operations",
+            "topic": "Operações Inversas",
+            "id": "operacoes_inversas_medium_2",
+            "topic_id": "operacoes_inversas"
+          },
+          {
+            "problem": "Qual é o inverso multiplicativo de 25?",
+            "equation": "25",
+            "answer": "1/25",
+            "steps": [
+              "O inverso multiplicativo é o número que, multiplicado por 25, resulta em 1",
+              "25 × (1/25) = 1",
+              "Resposta: 1/25"
+            ],
+            "difficulty": "medium",
+            "type": "inverse_operations",
+            "topic": "Operações Inversas",
+            "id": "operacoes_inversas_medium_3",
+            "topic_id": "operacoes_inversas"
+          },
+          {
+            "problem": "Qual é o inverso multiplicativo de 10?",
+            "equation": "10",
+            "answer": "1/10",
+            "steps": [
+              "O inverso multiplicativo é o número que, multiplicado por 10, resulta em 1",
+              "10 × (1/10) = 1",
+              "Resposta: 1/10"
+            ],
+            "difficulty": "medium",
+            "type": "inverse_operations",
+            "topic": "Operações Inversas",
+            "id": "operacoes_inversas_medium_4",
+            "topic_id": "operacoes_inversas"
+          },
+          {
+            "problem": "Qual é o inverso aditivo de -1?",
+            "equation": "-1",
+            "answer": 1,
+            "steps": [
+              "O inverso aditivo é o número que, somado a -1, resulta em 0",
+              "-1 + (1) = 0",
+              "Resposta: 1"
+            ],
+            "difficulty": "medium",
+            "type": "inverse_operations",
+            "topic": "Operações Inversas",
+            "id": "operacoes_inversas_medium_5",
+            "topic_id": "operacoes_inversas"
+          },
+          {
+            "problem": "Qual é o inverso multiplicativo de -5?",
+            "equation": "-5",
+            "answer": "-1/5",
+            "steps": [
+              "O inverso multiplicativo é o número que, multiplicado por -5, resulta em 1",
+              "-5 × (-1/5) = 1",
+              "Resposta: -1/5"
+            ],
+            "difficulty": "medium",
+            "type": "inverse_operations",
+            "topic": "Operações Inversas",
+            "id": "operacoes_inversas_medium_6",
+            "topic_id": "operacoes_inversas"
+          },
+          {
+            "problem": "Qual é o inverso aditivo de -3?",
+            "equation": "-3",
+            "answer": 3,
+            "steps": [
+              "O inverso aditivo é o número que, somado a -3, resulta em 0",
+              "-3 + (3) = 0",
+              "Resposta: 3"
+            ],
+            "difficulty": "medium",
+            "type": "inverse_operations",
+            "topic": "Operações Inversas",
+            "id": "operacoes_inversas_medium_7",
+            "topic_id": "operacoes_inversas"
+          },
+          {
+            "problem": "Qual é o inverso aditivo de 4?",
+            "equation": "4",
+            "answer": -4,
+            "steps": [
+              "O inverso aditivo é o número que, somado a 4, resulta em 0",
+              "4 + (-4) = 0",
+              "Resposta: -4"
+            ],
+            "difficulty": "medium",
+            "type": "inverse_operations",
+            "topic": "Operações Inversas",
+            "id": "operacoes_inversas_medium_8",
+            "topic_id": "operacoes_inversas"
+          },
+          {
+            "problem": "Qual é o inverso multiplicativo de 13?",
+            "equation": "13",
+            "answer": "1/13",
+            "steps": [
+              "O inverso multiplicativo é o número que, multiplicado por 13, resulta em 1",
+              "13 × (1/13) = 1",
+              "Resposta: 1/13"
+            ],
+            "difficulty": "medium",
+            "type": "inverse_operations",
+            "topic": "Operações Inversas",
+            "id": "operacoes_inversas_medium_9",
+            "topic_id": "operacoes_inversas"
+          },
+          {
+            "problem": "Qual é o inverso aditivo de 9?",
+            "equation": "9",
+            "answer": -9,
+            "steps": [
+              "O inverso aditivo é o número que, somado a 9, resulta em 0",
+              "9 + (-9) = 0",
+              "Resposta: -9"
+            ],
+            "difficulty": "medium",
+            "type": "inverse_operations",
+            "topic": "Operações Inversas",
+            "id": "operacoes_inversas_medium_10",
+            "topic_id": "operacoes_inversas"
+          }
+        ],
+        "hard": [
+          {
+            "problem": "Qual é o inverso multiplicativo de -73?",
+            "equation": "-73",
+            "answer": "-1/73",
+            "steps": [
+              "O inverso multiplicativo é o número que, multiplicado por -73, resulta em 1",
+              "-73 × (-1/73) = 1",
+              "Resposta: -1/73"
+            ],
+            "difficulty": "hard",
+            "type": "inverse_operations",
+            "topic": "Operações Inversas",
+            "id": "operacoes_inversas_hard_1",
+            "topic_id": "operacoes_inversas"
+          },
+          {
+            "problem": "Qual é o inverso aditivo de 78?",
+            "equation": "78",
+            "answer": -78,
+            "steps": [
+              "O inverso aditivo é o número que, somado a 78, resulta em 0",
+              "78 + (-78) = 0",
+              "Resposta: -78"
+            ],
+            "difficulty": "hard",
+            "type": "inverse_operations",
+            "topic": "Operações Inversas",
+            "id": "operacoes_inversas_hard_2",
+            "topic_id": "operacoes_inversas"
+          },
+          {
+            "problem": "Qual é o inverso aditivo de 2?",
+            "equation": "2",
+            "answer": -2,
+            "steps": [
+              "O inverso aditivo é o número que, somado a 2, resulta em 0",
+              "2 + (-2) = 0",
+              "Resposta: -2"
+            ],
+            "difficulty": "hard",
+            "type": "inverse_operations",
+            "topic": "Operações Inversas",
+            "id": "operacoes_inversas_hard_3",
+            "topic_id": "operacoes_inversas"
+          },
+          {
+            "problem": "Qual é o inverso aditivo de 3?",
+            "equation": "3",
+            "answer": -3,
+            "steps": [
+              "O inverso aditivo é o número que, somado a 3, resulta em 0",
+              "3 + (-3) = 0",
+              "Resposta: -3"
+            ],
+            "difficulty": "hard",
+            "type": "inverse_operations",
+            "topic": "Operações Inversas",
+            "id": "operacoes_inversas_hard_4",
+            "topic_id": "operacoes_inversas"
+          },
+          {
+            "problem": "Qual é o inverso multiplicativo de -96?",
+            "equation": "-96",
+            "answer": "-1/96",
+            "steps": [
+              "O inverso multiplicativo é o número que, multiplicado por -96, resulta em 1",
+              "-96 × (-1/96) = 1",
+              "Resposta: -1/96"
+            ],
+            "difficulty": "hard",
+            "type": "inverse_operations",
+            "topic": "Operações Inversas",
+            "id": "operacoes_inversas_hard_5",
+            "topic_id": "operacoes_inversas"
+          },
+          {
+            "problem": "Qual é o inverso aditivo de -29?",
+            "equation": "-29",
+            "answer": 29,
+            "steps": [
+              "O inverso aditivo é o número que, somado a -29, resulta em 0",
+              "-29 + (29) = 0",
+              "Resposta: 29"
+            ],
+            "difficulty": "hard",
+            "type": "inverse_operations",
+            "topic": "Operações Inversas",
+            "id": "operacoes_inversas_hard_6",
+            "topic_id": "operacoes_inversas"
+          },
+          {
+            "problem": "Qual é o inverso aditivo de 12?",
+            "equation": "12",
+            "answer": -12,
+            "steps": [
+              "O inverso aditivo é o número que, somado a 12, resulta em 0",
+              "12 + (-12) = 0",
+              "Resposta: -12"
+            ],
+            "difficulty": "hard",
+            "type": "inverse_operations",
+            "topic": "Operações Inversas",
+            "id": "operacoes_inversas_hard_7",
+            "topic_id": "operacoes_inversas"
+          },
+          {
+            "problem": "Qual é o inverso aditivo de -38?",
+            "equation": "-38",
+            "answer": 38,
+            "steps": [
+              "O inverso aditivo é o número que, somado a -38, resulta em 0",
+              "-38 + (38) = 0",
+              "Resposta: 38"
+            ],
+            "difficulty": "hard",
+            "type": "inverse_operations",
+            "topic": "Operações Inversas",
+            "id": "operacoes_inversas_hard_8",
+            "topic_id": "operacoes_inversas"
+          },
+          {
+            "problem": "Qual é o inverso multiplicativo de 19?",
+            "equation": "19",
+            "answer": "1/19",
+            "steps": [
+              "O inverso multiplicativo é o número que, multiplicado por 19, resulta em 1",
+              "19 × (1/19) = 1",
+              "Resposta: 1/19"
+            ],
+            "difficulty": "hard",
+            "type": "inverse_operations",
+            "topic": "Operações Inversas",
+            "id": "operacoes_inversas_hard_9",
+            "topic_id": "operacoes_inversas"
+          },
+          {
+            "problem": "Qual é o inverso aditivo de -29?",
+            "equation": "-29",
+            "answer": 29,
+            "steps": [
+              "O inverso aditivo é o número que, somado a -29, resulta em 0",
+              "-29 + (29) = 0",
+              "Resposta: 29"
+            ],
+            "difficulty": "hard",
+            "type": "inverse_operations",
+            "topic": "Operações Inversas",
+            "id": "operacoes_inversas_hard_10",
+            "topic_id": "operacoes_inversas"
+          }
+        ]
+      },
+      "total": 30
+    },
+    "equacoes_lineares_uma_etapa": {
+      "topic_id": "equacoes_lineares_uma_etapa",
+      "topic_name": "Equações Lineares - Uma Etapa",
+      "questions": {
+        "easy": [
+          {
+            "problem": "Resolva para x: x + 9 = 18",
+            "equation": "x + 9 = 18",
+            "answer": 9,
+            "steps": [
+              "Subtraia 9 de ambos os lados",
+              "x = 18 - 9",
+              "x = 9"
+            ],
+            "difficulty": "easy",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_easy_1",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          },
+          {
+            "problem": "Resolva para x: x / 10 = 10",
+            "equation": "x / 10 = 10",
+            "answer": 100,
+            "steps": [
+              "Multiplique ambos os lados por 10",
+              "x = 10 × 10",
+              "x = 100"
+            ],
+            "difficulty": "easy",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_easy_2",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          },
+          {
+            "problem": "Resolva para x: x + 6 = 7",
+            "equation": "x + 6 = 7",
+            "answer": 1,
+            "steps": [
+              "Subtraia 6 de ambos os lados",
+              "x = 7 - 6",
+              "x = 1"
+            ],
+            "difficulty": "easy",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_easy_3",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          },
+          {
+            "problem": "Resolva para x: 6x = 24",
+            "equation": "6x = 24",
+            "answer": 4,
+            "steps": [
+              "Divida ambos os lados por 6",
+              "x = 24 / 6",
+              "x = 4"
+            ],
+            "difficulty": "easy",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_easy_4",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          },
+          {
+            "problem": "Resolva para x: x - 5 = 4",
+            "equation": "x - 5 = 4",
+            "answer": 9,
+            "steps": [
+              "Adicione 5 a ambos os lados",
+              "x = 4 + 5",
+              "x = 9"
+            ],
+            "difficulty": "easy",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_easy_5",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          },
+          {
+            "problem": "Resolva para x: x + 3 = 10",
+            "equation": "x + 3 = 10",
+            "answer": 7,
+            "steps": [
+              "Subtraia 3 de ambos os lados",
+              "x = 10 - 3",
+              "x = 7"
+            ],
+            "difficulty": "easy",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_easy_6",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          },
+          {
+            "problem": "Resolva para x: 6x = 12",
+            "equation": "6x = 12",
+            "answer": 2,
+            "steps": [
+              "Divida ambos os lados por 6",
+              "x = 12 / 6",
+              "x = 2"
+            ],
+            "difficulty": "easy",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_easy_7",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          },
+          {
+            "problem": "Resolva para x: x - 2 = 2",
+            "equation": "x - 2 = 2",
+            "answer": 4,
+            "steps": [
+              "Adicione 2 a ambos os lados",
+              "x = 2 + 2",
+              "x = 4"
+            ],
+            "difficulty": "easy",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_easy_8",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          },
+          {
+            "problem": "Resolva para x: x - 7 = 1",
+            "equation": "x - 7 = 1",
+            "answer": 8,
+            "steps": [
+              "Adicione 7 a ambos os lados",
+              "x = 1 + 7",
+              "x = 8"
+            ],
+            "difficulty": "easy",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_easy_9",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          },
+          {
+            "problem": "Resolva para x: x + 8 = 9",
+            "equation": "x + 8 = 9",
+            "answer": 1,
+            "steps": [
+              "Subtraia 8 de ambos os lados",
+              "x = 9 - 8",
+              "x = 1"
+            ],
+            "difficulty": "easy",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_easy_10",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          },
+          {
+            "problem": "Resolva para x: x / 5 = 5",
+            "equation": "x / 5 = 5",
+            "answer": 25,
+            "steps": [
+              "Multiplique ambos os lados por 5",
+              "x = 5 × 5",
+              "x = 25"
+            ],
+            "difficulty": "easy",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_easy_11",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          },
+          {
+            "problem": "Resolva para x: 5x = 35",
+            "equation": "5x = 35",
+            "answer": 7,
+            "steps": [
+              "Divida ambos os lados por 5",
+              "x = 35 / 5",
+              "x = 7"
+            ],
+            "difficulty": "easy",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_easy_12",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          },
+          {
+            "problem": "Resolva para x: x - 6 = 0",
+            "equation": "x - 6 = 0",
+            "answer": 6,
+            "steps": [
+              "Adicione 6 a ambos os lados",
+              "x = 0 + 6",
+              "x = 6"
+            ],
+            "difficulty": "easy",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_easy_13",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          },
+          {
+            "problem": "Resolva para x: 7x = 63",
+            "equation": "7x = 63",
+            "answer": 9,
+            "steps": [
+              "Divida ambos os lados por 7",
+              "x = 63 / 7",
+              "x = 9"
+            ],
+            "difficulty": "easy",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_easy_14",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          },
+          {
+            "problem": "Resolva para x: x - 9 = -8",
+            "equation": "x - 9 = -8",
+            "answer": 1,
+            "steps": [
+              "Adicione 9 a ambos os lados",
+              "x = -8 + 9",
+              "x = 1"
+            ],
+            "difficulty": "easy",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_easy_15",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          }
+        ],
+        "medium": [
+          {
+            "problem": "Resolva para x: 4x = 76",
+            "equation": "4x = 76",
+            "answer": 19,
+            "steps": [
+              "Divida ambos os lados por 4",
+              "x = 76 / 4",
+              "x = 19"
+            ],
+            "difficulty": "medium",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_medium_1",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          },
+          {
+            "problem": "Resolva para x: 9x = -153",
+            "equation": "9x = -153",
+            "answer": -17,
+            "steps": [
+              "Divida ambos os lados por 9",
+              "x = -153 / 9",
+              "x = -17"
+            ],
+            "difficulty": "medium",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_medium_2",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          },
+          {
+            "problem": "Resolva para x: 7x = -70",
+            "equation": "7x = -70",
+            "answer": -10,
+            "steps": [
+              "Divida ambos os lados por 7",
+              "x = -70 / 7",
+              "x = -10"
+            ],
+            "difficulty": "medium",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_medium_3",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          },
+          {
+            "problem": "Resolva para x: 5x = -30",
+            "equation": "5x = -30",
+            "answer": -6,
+            "steps": [
+              "Divida ambos os lados por 5",
+              "x = -30 / 5",
+              "x = -6"
+            ],
+            "difficulty": "medium",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_medium_4",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          },
+          {
+            "problem": "Resolva para x: 6x = 0",
+            "equation": "6x = 0",
+            "answer": 0,
+            "steps": [
+              "Divida ambos os lados por 6",
+              "x = 0 / 6",
+              "x = 0"
+            ],
+            "difficulty": "medium",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_medium_5",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          },
+          {
+            "problem": "Resolva para x: 2x = -24",
+            "equation": "2x = -24",
+            "answer": -12,
+            "steps": [
+              "Divida ambos os lados por 2",
+              "x = -24 / 2",
+              "x = -12"
+            ],
+            "difficulty": "medium",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_medium_6",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          },
+          {
+            "problem": "Resolva para x: 7x = -105",
+            "equation": "7x = -105",
+            "answer": -15,
+            "steps": [
+              "Divida ambos os lados por 7",
+              "x = -105 / 7",
+              "x = -15"
+            ],
+            "difficulty": "medium",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_medium_7",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          },
+          {
+            "problem": "Resolva para x: x - 0 = -13",
+            "equation": "x - 0 = -13",
+            "answer": -13,
+            "steps": [
+              "Adicione 0 a ambos os lados",
+              "x = -13 + 0",
+              "x = -13"
+            ],
+            "difficulty": "medium",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_medium_8",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          },
+          {
+            "problem": "Resolva para x: x + 20 = 23",
+            "equation": "x + 20 = 23",
+            "answer": 3,
+            "steps": [
+              "Subtraia 20 de ambos os lados",
+              "x = 23 - 20",
+              "x = 3"
+            ],
+            "difficulty": "medium",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_medium_9",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          },
+          {
+            "problem": "Resolva para x: x / 10 = -14",
+            "equation": "x / 10 = -14",
+            "answer": -140,
+            "steps": [
+              "Multiplique ambos os lados por 10",
+              "x = -14 × 10",
+              "x = -140"
+            ],
+            "difficulty": "medium",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_medium_10",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          },
+          {
+            "problem": "Resolva para x: 9x = 72",
+            "equation": "9x = 72",
+            "answer": 8,
+            "steps": [
+              "Divida ambos os lados por 9",
+              "x = 72 / 9",
+              "x = 8"
+            ],
+            "difficulty": "medium",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_medium_11",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          },
+          {
+            "problem": "Resolva para x: 4x = 52",
+            "equation": "4x = 52",
+            "answer": 13,
+            "steps": [
+              "Divida ambos os lados por 4",
+              "x = 52 / 4",
+              "x = 13"
+            ],
+            "difficulty": "medium",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_medium_12",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          },
+          {
+            "problem": "Resolva para x: x / 4 = 1",
+            "equation": "x / 4 = 1",
+            "answer": 4,
+            "steps": [
+              "Multiplique ambos os lados por 4",
+              "x = 1 × 4",
+              "x = 4"
+            ],
+            "difficulty": "medium",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_medium_13",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          },
+          {
+            "problem": "Resolva para x: 2x = -18",
+            "equation": "2x = -18",
+            "answer": -9,
+            "steps": [
+              "Divida ambos os lados por 2",
+              "x = -18 / 2",
+              "x = -9"
+            ],
+            "difficulty": "medium",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_medium_14",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          },
+          {
+            "problem": "Resolva para x: x + -17 = -12",
+            "equation": "x + -17 = -12",
+            "answer": 5,
+            "steps": [
+              "Subtraia -17 de ambos os lados",
+              "x = -12 - -17",
+              "x = 5"
+            ],
+            "difficulty": "medium",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_medium_15",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          }
+        ],
+        "hard": [
+          {
+            "problem": "Resolva para x: 13x = -247",
+            "equation": "13x = -247",
+            "answer": -19,
+            "steps": [
+              "Divida ambos os lados por 13",
+              "x = -247 / 13",
+              "x = -19"
+            ],
+            "difficulty": "hard",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_hard_1",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          },
+          {
+            "problem": "Resolva para x: x / 16 = -50",
+            "equation": "x / 16 = -50",
+            "answer": -800,
+            "steps": [
+              "Multiplique ambos os lados por 16",
+              "x = -50 × 16",
+              "x = -800"
+            ],
+            "difficulty": "hard",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_hard_2",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          },
+          {
+            "problem": "Resolva para x: 8x = -152",
+            "equation": "8x = -152",
+            "answer": -19,
+            "steps": [
+              "Divida ambos os lados por 8",
+              "x = -152 / 8",
+              "x = -19"
+            ],
+            "difficulty": "hard",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_hard_3",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          },
+          {
+            "problem": "Resolva para x: x - 27 = -61",
+            "equation": "x - 27 = -61",
+            "answer": -34,
+            "steps": [
+              "Adicione 27 a ambos os lados",
+              "x = -61 + 27",
+              "x = -34"
+            ],
+            "difficulty": "hard",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_hard_4",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          },
+          {
+            "problem": "Resolva para x: x + -38 = 7",
+            "equation": "x + -38 = 7",
+            "answer": 45,
+            "steps": [
+              "Subtraia -38 de ambos os lados",
+              "x = 7 - -38",
+              "x = 45"
+            ],
+            "difficulty": "hard",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_hard_5",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          },
+          {
+            "problem": "Resolva para x: 6x = 198",
+            "equation": "6x = 198",
+            "answer": 33,
+            "steps": [
+              "Divida ambos os lados por 6",
+              "x = 198 / 6",
+              "x = 33"
+            ],
+            "difficulty": "hard",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_hard_6",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          },
+          {
+            "problem": "Resolva para x: x - 7 = -32",
+            "equation": "x - 7 = -32",
+            "answer": -25,
+            "steps": [
+              "Adicione 7 a ambos os lados",
+              "x = -32 + 7",
+              "x = -25"
+            ],
+            "difficulty": "hard",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_hard_7",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          },
+          {
+            "problem": "Resolva para x: x / 11 = 19",
+            "equation": "x / 11 = 19",
+            "answer": 209,
+            "steps": [
+              "Multiplique ambos os lados por 11",
+              "x = 19 × 11",
+              "x = 209"
+            ],
+            "difficulty": "hard",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_hard_8",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          },
+          {
+            "problem": "Resolva para x: x - -1 = 27",
+            "equation": "x - -1 = 27",
+            "answer": 26,
+            "steps": [
+              "Adicione -1 a ambos os lados",
+              "x = 27 + -1",
+              "x = 26"
+            ],
+            "difficulty": "hard",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_hard_9",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          },
+          {
+            "problem": "Resolva para x: x + -39 = -16",
+            "equation": "x + -39 = -16",
+            "answer": 23,
+            "steps": [
+              "Subtraia -39 de ambos os lados",
+              "x = -16 - -39",
+              "x = 23"
+            ],
+            "difficulty": "hard",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_hard_10",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          },
+          {
+            "problem": "Resolva para x: x + 49 = 86",
+            "equation": "x + 49 = 86",
+            "answer": 37,
+            "steps": [
+              "Subtraia 49 de ambos os lados",
+              "x = 86 - 49",
+              "x = 37"
+            ],
+            "difficulty": "hard",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_hard_11",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          },
+          {
+            "problem": "Resolva para x: x + -23 = -33",
+            "equation": "x + -23 = -33",
+            "answer": -10,
+            "steps": [
+              "Subtraia -23 de ambos os lados",
+              "x = -33 - -23",
+              "x = -10"
+            ],
+            "difficulty": "hard",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_hard_12",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          },
+          {
+            "problem": "Resolva para x: x / 14 = 40",
+            "equation": "x / 14 = 40",
+            "answer": 560,
+            "steps": [
+              "Multiplique ambos os lados por 14",
+              "x = 40 × 14",
+              "x = 560"
+            ],
+            "difficulty": "hard",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_hard_13",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          },
+          {
+            "problem": "Resolva para x: 4x = 88",
+            "equation": "4x = 88",
+            "answer": 22,
+            "steps": [
+              "Divida ambos os lados por 4",
+              "x = 88 / 4",
+              "x = 22"
+            ],
+            "difficulty": "hard",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_hard_14",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          },
+          {
+            "problem": "Resolva para x: 4x = 188",
+            "equation": "4x = 188",
+            "answer": 47,
+            "steps": [
+              "Divida ambos os lados por 4",
+              "x = 188 / 4",
+              "x = 47"
+            ],
+            "difficulty": "hard",
+            "type": "one_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_uma_etapa_hard_15",
+            "topic_id": "equacoes_lineares_uma_etapa"
+          }
+        ]
+      },
+      "total": 45
+    },
+    "equacoes_lineares_duas_etapas": {
+      "topic_id": "equacoes_lineares_duas_etapas",
+      "topic_name": "Equações Lineares - Duas Etapas",
+      "questions": {
+        "easy": [
+          {
+            "problem": "Resolva para x: 2x + 4 = 6",
+            "equation": "2x + 4 = 6",
+            "answer": 1,
+            "steps": [
+              "Subtraia 4 de ambos os lados",
+              "2x = 2",
+              "Divida ambos os lados por 2",
+              "x = 1.0",
+              "x = 1"
+            ],
+            "difficulty": "easy",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_easy_1",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          },
+          {
+            "problem": "Resolva para x: 3x + 10 = 31",
+            "equation": "3x + 10 = 31",
+            "answer": 7,
+            "steps": [
+              "Subtraia 10 de ambos os lados",
+              "3x = 21",
+              "Divida ambos os lados por 3",
+              "x = 7.0",
+              "x = 7"
+            ],
+            "difficulty": "easy",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_easy_2",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          },
+          {
+            "problem": "Resolva para x: 4x + 2 = 10",
+            "equation": "4x + 2 = 10",
+            "answer": 2,
+            "steps": [
+              "Subtraia 2 de ambos os lados",
+              "4x = 8",
+              "Divida ambos os lados por 4",
+              "x = 2.0",
+              "x = 2"
+            ],
+            "difficulty": "easy",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_easy_3",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          },
+          {
+            "problem": "Resolva para x: 3x + 8 = 32",
+            "equation": "3x + 8 = 32",
+            "answer": 8,
+            "steps": [
+              "Subtraia 8 de ambos os lados",
+              "3x = 24",
+              "Divida ambos os lados por 3",
+              "x = 8.0",
+              "x = 8"
+            ],
+            "difficulty": "easy",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_easy_4",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          },
+          {
+            "problem": "Resolva para x: 3x + 7 = 37",
+            "equation": "3x + 7 = 37",
+            "answer": 10,
+            "steps": [
+              "Subtraia 7 de ambos os lados",
+              "3x = 30",
+              "Divida ambos os lados por 3",
+              "x = 10.0",
+              "x = 10"
+            ],
+            "difficulty": "easy",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_easy_5",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          },
+          {
+            "problem": "Resolva para x: 3x + 10 = 34",
+            "equation": "3x + 10 = 34",
+            "answer": 8,
+            "steps": [
+              "Subtraia 10 de ambos os lados",
+              "3x = 24",
+              "Divida ambos os lados por 3",
+              "x = 8.0",
+              "x = 8"
+            ],
+            "difficulty": "easy",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_easy_6",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          },
+          {
+            "problem": "Resolva para x: 5x + 4 = 19",
+            "equation": "5x + 4 = 19",
+            "answer": 3,
+            "steps": [
+              "Subtraia 4 de ambos os lados",
+              "5x = 15",
+              "Divida ambos os lados por 5",
+              "x = 3.0",
+              "x = 3"
+            ],
+            "difficulty": "easy",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_easy_7",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          },
+          {
+            "problem": "Resolva para x: 4x + 9 = 49",
+            "equation": "4x + 9 = 49",
+            "answer": 10,
+            "steps": [
+              "Subtraia 9 de ambos os lados",
+              "4x = 40",
+              "Divida ambos os lados por 4",
+              "x = 10.0",
+              "x = 10"
+            ],
+            "difficulty": "easy",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_easy_8",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          },
+          {
+            "problem": "Resolva para x: 5x + 8 = 18",
+            "equation": "5x + 8 = 18",
+            "answer": 2,
+            "steps": [
+              "Subtraia 8 de ambos os lados",
+              "5x = 10",
+              "Divida ambos os lados por 5",
+              "x = 2.0",
+              "x = 2"
+            ],
+            "difficulty": "easy",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_easy_9",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          },
+          {
+            "problem": "Resolva para x: 3x + 1 = 13",
+            "equation": "3x + 1 = 13",
+            "answer": 4,
+            "steps": [
+              "Subtraia 1 de ambos os lados",
+              "3x = 12",
+              "Divida ambos os lados por 3",
+              "x = 4.0",
+              "x = 4"
+            ],
+            "difficulty": "easy",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_easy_10",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          },
+          {
+            "problem": "Resolva para x: 4x + 4 = 40",
+            "equation": "4x + 4 = 40",
+            "answer": 9,
+            "steps": [
+              "Subtraia 4 de ambos os lados",
+              "4x = 36",
+              "Divida ambos os lados por 4",
+              "x = 9.0",
+              "x = 9"
+            ],
+            "difficulty": "easy",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_easy_11",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          },
+          {
+            "problem": "Resolva para x: 4x + 10 = 46",
+            "equation": "4x + 10 = 46",
+            "answer": 9,
+            "steps": [
+              "Subtraia 10 de ambos os lados",
+              "4x = 36",
+              "Divida ambos os lados por 4",
+              "x = 9.0",
+              "x = 9"
+            ],
+            "difficulty": "easy",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_easy_12",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          },
+          {
+            "problem": "Resolva para x: 2x + 4 = 16",
+            "equation": "2x + 4 = 16",
+            "answer": 6,
+            "steps": [
+              "Subtraia 4 de ambos os lados",
+              "2x = 12",
+              "Divida ambos os lados por 2",
+              "x = 6.0",
+              "x = 6"
+            ],
+            "difficulty": "easy",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_easy_13",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          },
+          {
+            "problem": "Resolva para x: 5x + 7 = 47",
+            "equation": "5x + 7 = 47",
+            "answer": 8,
+            "steps": [
+              "Subtraia 7 de ambos os lados",
+              "5x = 40",
+              "Divida ambos os lados por 5",
+              "x = 8.0",
+              "x = 8"
+            ],
+            "difficulty": "easy",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_easy_14",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          },
+          {
+            "problem": "Resolva para x: 4x + 3 = 39",
+            "equation": "4x + 3 = 39",
+            "answer": 9,
+            "steps": [
+              "Subtraia 3 de ambos os lados",
+              "4x = 36",
+              "Divida ambos os lados por 4",
+              "x = 9.0",
+              "x = 9"
+            ],
+            "difficulty": "easy",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_easy_15",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          }
+        ],
+        "medium": [
+          {
+            "problem": "Resolva para x: 10x + 13 = 43",
+            "equation": "10x + 13 = 43",
+            "answer": 3,
+            "steps": [
+              "Subtraia 13 de ambos os lados",
+              "10x = 30",
+              "Divida ambos os lados por 10",
+              "x = 3.0",
+              "x = 3"
+            ],
+            "difficulty": "medium",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_medium_1",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          },
+          {
+            "problem": "Resolva para x: 3x - 12 = -27",
+            "equation": "3x - 12 = -27",
+            "answer": -5,
+            "steps": [
+              "Adicione 12 a ambos os lados",
+              "3x = -15",
+              "Divida ambos os lados por 3",
+              "x = -5.0",
+              "x = -5"
+            ],
+            "difficulty": "medium",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_medium_2",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          },
+          {
+            "problem": "Resolva para x: 9x - 11 = 25",
+            "equation": "9x - 11 = 25",
+            "answer": 4,
+            "steps": [
+              "Adicione 11 a ambos os lados",
+              "9x = 36",
+              "Divida ambos os lados por 9",
+              "x = 4.0",
+              "x = 4"
+            ],
+            "difficulty": "medium",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_medium_3",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          },
+          {
+            "problem": "Resolva para x: 4x - 6 = -74",
+            "equation": "4x - 6 = -74",
+            "answer": -17,
+            "steps": [
+              "Adicione 6 a ambos os lados",
+              "4x = -68",
+              "Divida ambos os lados por 4",
+              "x = -17.0",
+              "x = -17"
+            ],
+            "difficulty": "medium",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_medium_4",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          },
+          {
+            "problem": "Resolva para x: 5x - 18 = -43",
+            "equation": "5x - 18 = -43",
+            "answer": -5,
+            "steps": [
+              "Adicione 18 a ambos os lados",
+              "5x = -25",
+              "Divida ambos os lados por 5",
+              "x = -5.0",
+              "x = -5"
+            ],
+            "difficulty": "medium",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_medium_5",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          },
+          {
+            "problem": "Resolva para x: 8x + 13 = 61",
+            "equation": "8x + 13 = 61",
+            "answer": 6,
+            "steps": [
+              "Subtraia 13 de ambos os lados",
+              "8x = 48",
+              "Divida ambos os lados por 8",
+              "x = 6.0",
+              "x = 6"
+            ],
+            "difficulty": "medium",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_medium_6",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          },
+          {
+            "problem": "Resolva para x: 4x - 6 = 74",
+            "equation": "4x - 6 = 74",
+            "answer": 20,
+            "steps": [
+              "Adicione 6 a ambos os lados",
+              "4x = 80",
+              "Divida ambos os lados por 4",
+              "x = 20.0",
+              "x = 20"
+            ],
+            "difficulty": "medium",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_medium_7",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          },
+          {
+            "problem": "Resolva para x: 4x - 13 = -37",
+            "equation": "4x - 13 = -37",
+            "answer": -6,
+            "steps": [
+              "Adicione 13 a ambos os lados",
+              "4x = -24",
+              "Divida ambos os lados por 4",
+              "x = -6.0",
+              "x = -6"
+            ],
+            "difficulty": "medium",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_medium_8",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          },
+          {
+            "problem": "Resolva para x: 6x + 1 = 97",
+            "equation": "6x + 1 = 97",
+            "answer": 16,
+            "steps": [
+              "Subtraia 1 de ambos os lados",
+              "6x = 96",
+              "Divida ambos os lados por 6",
+              "x = 16.0",
+              "x = 16"
+            ],
+            "difficulty": "medium",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_medium_9",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          },
+          {
+            "problem": "Resolva para x: 2x - 15 = -15",
+            "equation": "2x - 15 = -15",
+            "answer": 0,
+            "steps": [
+              "Adicione 15 a ambos os lados",
+              "2x = 0",
+              "Divida ambos os lados por 2",
+              "x = 0.0",
+              "x = 0"
+            ],
+            "difficulty": "medium",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_medium_10",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          },
+          {
+            "problem": "Resolva para x: 7x + 2 = 135",
+            "equation": "7x + 2 = 135",
+            "answer": 19,
+            "steps": [
+              "Subtraia 2 de ambos os lados",
+              "7x = 133",
+              "Divida ambos os lados por 7",
+              "x = 19.0",
+              "x = 19"
+            ],
+            "difficulty": "medium",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_medium_11",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          },
+          {
+            "problem": "Resolva para x: 9x + 3 = 93",
+            "equation": "9x + 3 = 93",
+            "answer": 10,
+            "steps": [
+              "Subtraia 3 de ambos os lados",
+              "9x = 90",
+              "Divida ambos os lados por 9",
+              "x = 10.0",
+              "x = 10"
+            ],
+            "difficulty": "medium",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_medium_12",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          },
+          {
+            "problem": "Resolva para x: 3x + 10 = -17",
+            "equation": "3x + 10 = -17",
+            "answer": -9,
+            "steps": [
+              "Subtraia 10 de ambos os lados",
+              "3x = -27",
+              "Divida ambos os lados por 3",
+              "x = -9.0",
+              "x = -9"
+            ],
+            "difficulty": "medium",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_medium_13",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          },
+          {
+            "problem": "Resolva para x: 3x + 5 = 2",
+            "equation": "3x + 5 = 2",
+            "answer": -1,
+            "steps": [
+              "Subtraia 5 de ambos os lados",
+              "3x = -3",
+              "Divida ambos os lados por 3",
+              "x = -1.0",
+              "x = -1"
+            ],
+            "difficulty": "medium",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_medium_14",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          },
+          {
+            "problem": "Resolva para x: 5x + 4 = -81",
+            "equation": "5x + 4 = -81",
+            "answer": -17,
+            "steps": [
+              "Subtraia 4 de ambos os lados",
+              "5x = -85",
+              "Divida ambos os lados por 5",
+              "x = -17.0",
+              "x = -17"
+            ],
+            "difficulty": "medium",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_medium_15",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          }
+        ],
+        "hard": [
+          {
+            "problem": "Resolva para x: 11x - 30 = 201",
+            "equation": "11x - 30 = 201",
+            "answer": 21,
+            "steps": [
+              "Adicione 30 a ambos os lados",
+              "11x = 231",
+              "Divida ambos os lados por 11",
+              "x = 21.0",
+              "x = 21"
+            ],
+            "difficulty": "hard",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_hard_1",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          },
+          {
+            "problem": "Resolva para x: 14x - 8 = 538",
+            "equation": "14x - 8 = 538",
+            "answer": 39,
+            "steps": [
+              "Adicione 8 a ambos os lados",
+              "14x = 546",
+              "Divida ambos os lados por 14",
+              "x = 39.0",
+              "x = 39"
+            ],
+            "difficulty": "hard",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_hard_2",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          },
+          {
+            "problem": "Resolva para x: 10x + 10 = 160",
+            "equation": "10x + 10 = 160",
+            "answer": 15,
+            "steps": [
+              "Subtraia 10 de ambos os lados",
+              "10x = 150",
+              "Divida ambos os lados por 10",
+              "x = 15.0",
+              "x = 15"
+            ],
+            "difficulty": "hard",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_hard_3",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          },
+          {
+            "problem": "Resolva para x: 11x + 10 = -155",
+            "equation": "11x + 10 = -155",
+            "answer": -15,
+            "steps": [
+              "Subtraia 10 de ambos os lados",
+              "11x = -165",
+              "Divida ambos os lados por 11",
+              "x = -15.0",
+              "x = -15"
+            ],
+            "difficulty": "hard",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_hard_4",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          },
+          {
+            "problem": "Resolva para x: 7x + 30 = -61",
+            "equation": "7x + 30 = -61",
+            "answer": -13,
+            "steps": [
+              "Subtraia 30 de ambos os lados",
+              "7x = -91",
+              "Divida ambos os lados por 7",
+              "x = -13.0",
+              "x = -13"
+            ],
+            "difficulty": "hard",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_hard_5",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          },
+          {
+            "problem": "Resolva para x: 12x - 35 = 289",
+            "equation": "12x - 35 = 289",
+            "answer": 27,
+            "steps": [
+              "Adicione 35 a ambos os lados",
+              "12x = 324",
+              "Divida ambos os lados por 12",
+              "x = 27.0",
+              "x = 27"
+            ],
+            "difficulty": "hard",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_hard_6",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          },
+          {
+            "problem": "Resolva para x: 5x - 7 = 143",
+            "equation": "5x - 7 = 143",
+            "answer": 30,
+            "steps": [
+              "Adicione 7 a ambos os lados",
+              "5x = 150",
+              "Divida ambos os lados por 5",
+              "x = 30.0",
+              "x = 30"
+            ],
+            "difficulty": "hard",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_hard_7",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          },
+          {
+            "problem": "Resolva para x: 5x - 37 = -137",
+            "equation": "5x - 37 = -137",
+            "answer": -20,
+            "steps": [
+              "Adicione 37 a ambos os lados",
+              "5x = -100",
+              "Divida ambos os lados por 5",
+              "x = -20.0",
+              "x = -20"
+            ],
+            "difficulty": "hard",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_hard_8",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          },
+          {
+            "problem": "Resolva para x: 4x - 24 = -136",
+            "equation": "4x - 24 = -136",
+            "answer": -28,
+            "steps": [
+              "Adicione 24 a ambos os lados",
+              "4x = -112",
+              "Divida ambos os lados por 4",
+              "x = -28.0",
+              "x = -28"
+            ],
+            "difficulty": "hard",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_hard_9",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          },
+          {
+            "problem": "Resolva para x: 4x - 31 = 145",
+            "equation": "4x - 31 = 145",
+            "answer": 44,
+            "steps": [
+              "Adicione 31 a ambos os lados",
+              "4x = 176",
+              "Divida ambos os lados por 4",
+              "x = 44.0",
+              "x = 44"
+            ],
+            "difficulty": "hard",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_hard_10",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          },
+          {
+            "problem": "Resolva para x: 10x + 28 = 88",
+            "equation": "10x + 28 = 88",
+            "answer": 6,
+            "steps": [
+              "Subtraia 28 de ambos os lados",
+              "10x = 60",
+              "Divida ambos os lados por 10",
+              "x = 6.0",
+              "x = 6"
+            ],
+            "difficulty": "hard",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_hard_11",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          },
+          {
+            "problem": "Resolva para x: 9x - 10 = 431",
+            "equation": "9x - 10 = 431",
+            "answer": 49,
+            "steps": [
+              "Adicione 10 a ambos os lados",
+              "9x = 441",
+              "Divida ambos os lados por 9",
+              "x = 49.0",
+              "x = 49"
+            ],
+            "difficulty": "hard",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_hard_12",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          },
+          {
+            "problem": "Resolva para x: 3x + 1 = -125",
+            "equation": "3x + 1 = -125",
+            "answer": -42,
+            "steps": [
+              "Subtraia 1 de ambos os lados",
+              "3x = -126",
+              "Divida ambos os lados por 3",
+              "x = -42.0",
+              "x = -42"
+            ],
+            "difficulty": "hard",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_hard_13",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          },
+          {
+            "problem": "Resolva para x: 14x - 17 = 249",
+            "equation": "14x - 17 = 249",
+            "answer": 19,
+            "steps": [
+              "Adicione 17 a ambos os lados",
+              "14x = 266",
+              "Divida ambos os lados por 14",
+              "x = 19.0",
+              "x = 19"
+            ],
+            "difficulty": "hard",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_hard_14",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          },
+          {
+            "problem": "Resolva para x: 6x + 9 = 243",
+            "equation": "6x + 9 = 243",
+            "answer": 39,
+            "steps": [
+              "Subtraia 9 de ambos os lados",
+              "6x = 234",
+              "Divida ambos os lados por 6",
+              "x = 39.0",
+              "x = 39"
+            ],
+            "difficulty": "hard",
+            "type": "two_step",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_duas_etapas_hard_15",
+            "topic_id": "equacoes_lineares_duas_etapas"
+          }
+        ]
+      },
+      "total": 45
+    },
+    "equacoes_lineares_variaveis_ambos_lados": {
+      "topic_id": "equacoes_lineares_variaveis_ambos_lados",
+      "topic_name": "Equações Lineares - Variáveis em Ambos os Lados",
+      "questions": {
+        "easy": [
+          {
+            "problem": "Resolva para x: 9x - 18 = 6x + 27",
+            "equation": "9x - 18 = 6x + 27",
+            "answer": 15,
+            "steps": [
+              "Subtraia 6x de ambos os lados",
+              "3x + - 18 = 27",
+              "Adicione 18 a ambos os lados",
+              "3x = 45",
+              "Divida ambos os lados por 3",
+              "x = 15"
+            ],
+            "difficulty": "easy",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_easy_1",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          },
+          {
+            "problem": "Resolva para x: 4x - 10 = 6x + 48",
+            "equation": "4x - 10 = 6x + 48",
+            "answer": -29,
+            "steps": [
+              "Subtraia 6x de ambos os lados",
+              "-2x + - 10 = 48",
+              "Adicione 10 a ambos os lados",
+              "-2x = 58",
+              "Divida ambos os lados por -2",
+              "x = -29"
+            ],
+            "difficulty": "easy",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_easy_2",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          },
+          {
+            "problem": "Resolva para x: 7x + 5 = 8x + 27",
+            "equation": "7x + 5 = 8x + 27",
+            "answer": -22,
+            "steps": [
+              "Subtraia 8x de ambos os lados",
+              "-1x + 5 = 27",
+              "Subtraia 5 de ambos os lados",
+              "-1x = 22",
+              "Divida ambos os lados por -1",
+              "x = -22"
+            ],
+            "difficulty": "easy",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_easy_3",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          },
+          {
+            "problem": "Resolva para x: 4x + 9 = 7x - 51",
+            "equation": "4x + 9 = 7x - 51",
+            "answer": 20,
+            "steps": [
+              "Subtraia 7x de ambos os lados",
+              "-3x + 9 = -51",
+              "Subtraia 9 de ambos os lados",
+              "-3x = -60",
+              "Divida ambos os lados por -3",
+              "x = 20"
+            ],
+            "difficulty": "easy",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_easy_4",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          },
+          {
+            "problem": "Resolva para x: 6x - 9 = 4x + 15",
+            "equation": "6x - 9 = 4x + 15",
+            "answer": 12,
+            "steps": [
+              "Subtraia 4x de ambos os lados",
+              "2x + - 9 = 15",
+              "Adicione 9 a ambos os lados",
+              "2x = 24",
+              "Divida ambos os lados por 2",
+              "x = 12"
+            ],
+            "difficulty": "easy",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_easy_5",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          },
+          {
+            "problem": "Resolva para x: 6x + 6 = 2x + 82",
+            "equation": "6x + 6 = 2x + 82",
+            "answer": 19,
+            "steps": [
+              "Subtraia 2x de ambos os lados",
+              "4x + 6 = 82",
+              "Subtraia 6 de ambos os lados",
+              "4x = 76",
+              "Divida ambos os lados por 4",
+              "x = 19"
+            ],
+            "difficulty": "easy",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_easy_6",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          },
+          {
+            "problem": "Resolva para x: 6x + 8 = 8x - 8",
+            "equation": "6x + 8 = 8x - 8",
+            "answer": 8,
+            "steps": [
+              "Subtraia 8x de ambos os lados",
+              "-2x + 8 = -8",
+              "Subtraia 8 de ambos os lados",
+              "-2x = -16",
+              "Divida ambos os lados por -2",
+              "x = 8"
+            ],
+            "difficulty": "easy",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_easy_7",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          },
+          {
+            "problem": "Resolva para x: 10x + 2 = 7x - 52",
+            "equation": "10x + 2 = 7x - 52",
+            "answer": -18,
+            "steps": [
+              "Subtraia 7x de ambos os lados",
+              "3x + 2 = -52",
+              "Subtraia 2 de ambos os lados",
+              "3x = -54",
+              "Divida ambos os lados por 3",
+              "x = -18"
+            ],
+            "difficulty": "easy",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_easy_8",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          },
+          {
+            "problem": "Resolva para x: 6x - 5 = 7x + 4",
+            "equation": "6x - 5 = 7x + 4",
+            "answer": -9,
+            "steps": [
+              "Subtraia 7x de ambos os lados",
+              "-1x + - 5 = 4",
+              "Adicione 5 a ambos os lados",
+              "-1x = 9",
+              "Divida ambos os lados por -1",
+              "x = -9"
+            ],
+            "difficulty": "easy",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_easy_9",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          },
+          {
+            "problem": "Resolva para x: 10x + 19 = 3x - 163",
+            "equation": "10x + 19 = 3x - 163",
+            "answer": -26,
+            "steps": [
+              "Subtraia 3x de ambos os lados",
+              "7x + 19 = -163",
+              "Subtraia 19 de ambos os lados",
+              "7x = -182",
+              "Divida ambos os lados por 7",
+              "x = -26"
+            ],
+            "difficulty": "easy",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_easy_10",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          },
+          {
+            "problem": "Resolva para x: 9x - 4 = 5x - 92",
+            "equation": "9x - 4 = 5x - 92",
+            "answer": -22,
+            "steps": [
+              "Subtraia 5x de ambos os lados",
+              "4x + - 4 = -92",
+              "Adicione 4 a ambos os lados",
+              "4x = -88",
+              "Divida ambos os lados por 4",
+              "x = -22"
+            ],
+            "difficulty": "easy",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_easy_11",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          },
+          {
+            "problem": "Resolva para x: 10x + 3 = 5x - 82",
+            "equation": "10x + 3 = 5x - 82",
+            "answer": -17,
+            "steps": [
+              "Subtraia 5x de ambos os lados",
+              "5x + 3 = -82",
+              "Subtraia 3 de ambos os lados",
+              "5x = -85",
+              "Divida ambos os lados por 5",
+              "x = -17"
+            ],
+            "difficulty": "easy",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_easy_12",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          },
+          {
+            "problem": "Resolva para x: 7x + 10 = 6x - 15",
+            "equation": "7x + 10 = 6x - 15",
+            "answer": -25,
+            "steps": [
+              "Subtraia 6x de ambos os lados",
+              "1x + 10 = -15",
+              "Subtraia 10 de ambos os lados",
+              "1x = -25",
+              "Divida ambos os lados por 1",
+              "x = -25"
+            ],
+            "difficulty": "easy",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_easy_13",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          },
+          {
+            "problem": "Resolva para x: 3x + 19 = 2x + 17",
+            "equation": "3x + 19 = 2x + 17",
+            "answer": -2,
+            "steps": [
+              "Subtraia 2x de ambos os lados",
+              "1x + 19 = 17",
+              "Subtraia 19 de ambos os lados",
+              "1x = -2",
+              "Divida ambos os lados por 1",
+              "x = -2"
+            ],
+            "difficulty": "easy",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_easy_14",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          },
+          {
+            "problem": "Resolva para x: 3x + 8 = 5x + 2",
+            "equation": "3x + 8 = 5x + 2",
+            "answer": 3,
+            "steps": [
+              "Subtraia 5x de ambos os lados",
+              "-2x + 8 = 2",
+              "Subtraia 8 de ambos os lados",
+              "-2x = -6",
+              "Divida ambos os lados por -2",
+              "x = 3"
+            ],
+            "difficulty": "easy",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_easy_15",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          }
+        ],
+        "medium": [
+          {
+            "problem": "Resolva para x: 2x + 8 = 3x - 5",
+            "equation": "2x + 8 = 3x - 5",
+            "answer": 13,
+            "steps": [
+              "Subtraia 3x de ambos os lados",
+              "-1x + 8 = -5",
+              "Subtraia 8 de ambos os lados",
+              "-1x = -13",
+              "Divida ambos os lados por -1",
+              "x = 13"
+            ],
+            "difficulty": "medium",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_medium_1",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          },
+          {
+            "problem": "Resolva para x: 2x + 6 = 1x + 17",
+            "equation": "2x + 6 = 1x + 17",
+            "answer": 11,
+            "steps": [
+              "Subtraia 1x de ambos os lados",
+              "1x + 6 = 17",
+              "Subtraia 6 de ambos os lados",
+              "1x = 11",
+              "Divida ambos os lados por 1",
+              "x = 11"
+            ],
+            "difficulty": "medium",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_medium_2",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          },
+          {
+            "problem": "Resolva para x: 2x + 2 = 1x + 6",
+            "equation": "2x + 2 = 1x + 6",
+            "answer": 4,
+            "steps": [
+              "Subtraia 1x de ambos os lados",
+              "1x + 2 = 6",
+              "Subtraia 2 de ambos os lados",
+              "1x = 4",
+              "Divida ambos os lados por 1",
+              "x = 4"
+            ],
+            "difficulty": "medium",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_medium_3",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          },
+          {
+            "problem": "Resolva para x: 2x + 1 = 3x - 8",
+            "equation": "2x + 1 = 3x - 8",
+            "answer": 9,
+            "steps": [
+              "Subtraia 3x de ambos os lados",
+              "-1x + 1 = -8",
+              "Subtraia 1 de ambos os lados",
+              "-1x = -9",
+              "Divida ambos os lados por -1",
+              "x = 9"
+            ],
+            "difficulty": "medium",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_medium_4",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          },
+          {
+            "problem": "Resolva para x: 2x + 10 = 1x + 19",
+            "equation": "2x + 10 = 1x + 19",
+            "answer": 9,
+            "steps": [
+              "Subtraia 1x de ambos os lados",
+              "1x + 10 = 19",
+              "Subtraia 10 de ambos os lados",
+              "1x = 9",
+              "Divida ambos os lados por 1",
+              "x = 9"
+            ],
+            "difficulty": "medium",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_medium_5",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          },
+          {
+            "problem": "Resolva para x: 2x + 10 = 3x + 7",
+            "equation": "2x + 10 = 3x + 7",
+            "answer": 3,
+            "steps": [
+              "Subtraia 3x de ambos os lados",
+              "-1x + 10 = 7",
+              "Subtraia 10 de ambos os lados",
+              "-1x = -3",
+              "Divida ambos os lados por -1",
+              "x = 3"
+            ],
+            "difficulty": "medium",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_medium_6",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          },
+          {
+            "problem": "Resolva para x: 3x + 6 = 4x + 4",
+            "equation": "3x + 6 = 4x + 4",
+            "answer": 2,
+            "steps": [
+              "Subtraia 4x de ambos os lados",
+              "-1x + 6 = 4",
+              "Subtraia 6 de ambos os lados",
+              "-1x = -2",
+              "Divida ambos os lados por -1",
+              "x = 2"
+            ],
+            "difficulty": "medium",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_medium_7",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          },
+          {
+            "problem": "Resolva para x: 4x + 5 = 2x + 17",
+            "equation": "4x + 5 = 2x + 17",
+            "answer": 6,
+            "steps": [
+              "Subtraia 2x de ambos os lados",
+              "2x + 5 = 17",
+              "Subtraia 5 de ambos os lados",
+              "2x = 12",
+              "Divida ambos os lados por 2",
+              "x = 6"
+            ],
+            "difficulty": "medium",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_medium_8",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          },
+          {
+            "problem": "Resolva para x: 2x + 3 = 4x - 19",
+            "equation": "2x + 3 = 4x - 19",
+            "answer": 11,
+            "steps": [
+              "Subtraia 4x de ambos os lados",
+              "-2x + 3 = -19",
+              "Subtraia 3 de ambos os lados",
+              "-2x = -22",
+              "Divida ambos os lados por -2",
+              "x = 11"
+            ],
+            "difficulty": "medium",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_medium_9",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          },
+          {
+            "problem": "Resolva para x: 3x + 4 = 4x - 6",
+            "equation": "3x + 4 = 4x - 6",
+            "answer": 10,
+            "steps": [
+              "Subtraia 4x de ambos os lados",
+              "-1x + 4 = -6",
+              "Subtraia 4 de ambos os lados",
+              "-1x = -10",
+              "Divida ambos os lados por -1",
+              "x = 10"
+            ],
+            "difficulty": "medium",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_medium_10",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          },
+          {
+            "problem": "Resolva para x: 3x + 8 = 2x + 11",
+            "equation": "3x + 8 = 2x + 11",
+            "answer": 3,
+            "steps": [
+              "Subtraia 2x de ambos os lados",
+              "1x + 8 = 11",
+              "Subtraia 8 de ambos os lados",
+              "1x = 3",
+              "Divida ambos os lados por 1",
+              "x = 3"
+            ],
+            "difficulty": "medium",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_medium_11",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          },
+          {
+            "problem": "Resolva para x: 3x + 8 = 4x + 1",
+            "equation": "3x + 8 = 4x + 1",
+            "answer": 7,
+            "steps": [
+              "Subtraia 4x de ambos os lados",
+              "-1x + 8 = 1",
+              "Subtraia 8 de ambos os lados",
+              "-1x = -7",
+              "Divida ambos os lados por -1",
+              "x = 7"
+            ],
+            "difficulty": "medium",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_medium_12",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          },
+          {
+            "problem": "Resolva para x: 4x + 8 = 5x - 4",
+            "equation": "4x + 8 = 5x - 4",
+            "answer": 12,
+            "steps": [
+              "Subtraia 5x de ambos os lados",
+              "-1x + 8 = -4",
+              "Subtraia 8 de ambos os lados",
+              "-1x = -12",
+              "Divida ambos os lados por -1",
+              "x = 12"
+            ],
+            "difficulty": "medium",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_medium_13",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          },
+          {
+            "problem": "Resolva para x: 2x + 4 = 4x - 10",
+            "equation": "2x + 4 = 4x - 10",
+            "answer": 7,
+            "steps": [
+              "Subtraia 4x de ambos os lados",
+              "-2x + 4 = -10",
+              "Subtraia 4 de ambos os lados",
+              "-2x = -14",
+              "Divida ambos os lados por -2",
+              "x = 7"
+            ],
+            "difficulty": "medium",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_medium_14",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          },
+          {
+            "problem": "Resolva para x: 3x + 8 = 1x + 28",
+            "equation": "3x + 8 = 1x + 28",
+            "answer": 10,
+            "steps": [
+              "Subtraia 1x de ambos os lados",
+              "2x + 8 = 28",
+              "Subtraia 8 de ambos os lados",
+              "2x = 20",
+              "Divida ambos os lados por 2",
+              "x = 10"
+            ],
+            "difficulty": "medium",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_medium_15",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          }
+        ],
+        "hard": [
+          {
+            "problem": "Resolva para x: 3x + 12 = 8x - 118",
+            "equation": "3x + 12 = 8x - 118",
+            "answer": 26,
+            "steps": [
+              "Subtraia 8x de ambos os lados",
+              "-5x + 12 = -118",
+              "Subtraia 12 de ambos os lados",
+              "-5x = -130",
+              "Divida ambos os lados por -5",
+              "x = 26"
+            ],
+            "difficulty": "hard",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_hard_1",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          },
+          {
+            "problem": "Resolva para x: 10x + 7 = 1x - 218",
+            "equation": "10x + 7 = 1x - 218",
+            "answer": -25,
+            "steps": [
+              "Subtraia 1x de ambos os lados",
+              "9x + 7 = -218",
+              "Subtraia 7 de ambos os lados",
+              "9x = -225",
+              "Divida ambos os lados por 9",
+              "x = -25"
+            ],
+            "difficulty": "hard",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_hard_2",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          },
+          {
+            "problem": "Resolva para x: 10x - 3 = 7x - 15",
+            "equation": "10x - 3 = 7x - 15",
+            "answer": -4,
+            "steps": [
+              "Subtraia 7x de ambos os lados",
+              "3x + - 3 = -15",
+              "Adicione 3 a ambos os lados",
+              "3x = -12",
+              "Divida ambos os lados por 3",
+              "x = -4"
+            ],
+            "difficulty": "hard",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_hard_3",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          },
+          {
+            "problem": "Resolva para x: 6x - 17 = 7x - 47",
+            "equation": "6x - 17 = 7x - 47",
+            "answer": 30,
+            "steps": [
+              "Subtraia 7x de ambos os lados",
+              "-1x + - 17 = -47",
+              "Adicione 17 a ambos os lados",
+              "-1x = -30",
+              "Divida ambos os lados por -1",
+              "x = 30"
+            ],
+            "difficulty": "hard",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_hard_4",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          },
+          {
+            "problem": "Resolva para x: 7x + 4 = 5x + 34",
+            "equation": "7x + 4 = 5x + 34",
+            "answer": 15,
+            "steps": [
+              "Subtraia 5x de ambos os lados",
+              "2x + 4 = 34",
+              "Subtraia 4 de ambos os lados",
+              "2x = 30",
+              "Divida ambos os lados por 2",
+              "x = 15"
+            ],
+            "difficulty": "hard",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_hard_5",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          },
+          {
+            "problem": "Resolva para x: 8x + 13 = 3x + 158",
+            "equation": "8x + 13 = 3x + 158",
+            "answer": 29,
+            "steps": [
+              "Subtraia 3x de ambos os lados",
+              "5x + 13 = 158",
+              "Subtraia 13 de ambos os lados",
+              "5x = 145",
+              "Divida ambos os lados por 5",
+              "x = 29"
+            ],
+            "difficulty": "hard",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_hard_6",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          },
+          {
+            "problem": "Resolva para x: 10x + 7 = 2x - 121",
+            "equation": "10x + 7 = 2x - 121",
+            "answer": -16,
+            "steps": [
+              "Subtraia 2x de ambos os lados",
+              "8x + 7 = -121",
+              "Subtraia 7 de ambos os lados",
+              "8x = -128",
+              "Divida ambos os lados por 8",
+              "x = -16"
+            ],
+            "difficulty": "hard",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_hard_7",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          },
+          {
+            "problem": "Resolva para x: 10x - 15 = 6x - 123",
+            "equation": "10x - 15 = 6x - 123",
+            "answer": -27,
+            "steps": [
+              "Subtraia 6x de ambos os lados",
+              "4x + - 15 = -123",
+              "Adicione 15 a ambos os lados",
+              "4x = -108",
+              "Divida ambos os lados por 4",
+              "x = -27"
+            ],
+            "difficulty": "hard",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_hard_8",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          },
+          {
+            "problem": "Resolva para x: 10x - 11 = 3x - 214",
+            "equation": "10x - 11 = 3x - 214",
+            "answer": -29,
+            "steps": [
+              "Subtraia 3x de ambos os lados",
+              "7x + - 11 = -214",
+              "Adicione 11 a ambos os lados",
+              "7x = -203",
+              "Divida ambos os lados por 7",
+              "x = -29"
+            ],
+            "difficulty": "hard",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_hard_9",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          },
+          {
+            "problem": "Resolva para x: 4x + 2 = 7x + 32",
+            "equation": "4x + 2 = 7x + 32",
+            "answer": -10,
+            "steps": [
+              "Subtraia 7x de ambos os lados",
+              "-3x + 2 = 32",
+              "Subtraia 2 de ambos os lados",
+              "-3x = 30",
+              "Divida ambos os lados por -3",
+              "x = -10"
+            ],
+            "difficulty": "hard",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_hard_10",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          },
+          {
+            "problem": "Resolva para x: 4x + 20 = 3x + 9",
+            "equation": "4x + 20 = 3x + 9",
+            "answer": -11,
+            "steps": [
+              "Subtraia 3x de ambos os lados",
+              "1x + 20 = 9",
+              "Subtraia 20 de ambos os lados",
+              "1x = -11",
+              "Divida ambos os lados por 1",
+              "x = -11"
+            ],
+            "difficulty": "hard",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_hard_11",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          },
+          {
+            "problem": "Resolva para x: 2x - 4 = 3x - 9",
+            "equation": "2x - 4 = 3x - 9",
+            "answer": 5,
+            "steps": [
+              "Subtraia 3x de ambos os lados",
+              "-1x + - 4 = -9",
+              "Adicione 4 a ambos os lados",
+              "-1x = -5",
+              "Divida ambos os lados por -1",
+              "x = 5"
+            ],
+            "difficulty": "hard",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_hard_12",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          },
+          {
+            "problem": "Resolva para x: 6x - 20 = 7x - 3",
+            "equation": "6x - 20 = 7x - 3",
+            "answer": -17,
+            "steps": [
+              "Subtraia 7x de ambos os lados",
+              "-1x + - 20 = -3",
+              "Adicione 20 a ambos os lados",
+              "-1x = 17",
+              "Divida ambos os lados por -1",
+              "x = -17"
+            ],
+            "difficulty": "hard",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_hard_13",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          },
+          {
+            "problem": "Resolva para x: 3x + 6 = 1x + 10",
+            "equation": "3x + 6 = 1x + 10",
+            "answer": 2,
+            "steps": [
+              "Subtraia 1x de ambos os lados",
+              "2x + 6 = 10",
+              "Subtraia 6 de ambos os lados",
+              "2x = 4",
+              "Divida ambos os lados por 2",
+              "x = 2"
+            ],
+            "difficulty": "hard",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_hard_14",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          },
+          {
+            "problem": "Resolva para x: 6x + 20 = 5x + 5",
+            "equation": "6x + 20 = 5x + 5",
+            "answer": -15,
+            "steps": [
+              "Subtraia 5x de ambos os lados",
+              "1x + 20 = 5",
+              "Subtraia 20 de ambos os lados",
+              "1x = -15",
+              "Divida ambos os lados por 1",
+              "x = -15"
+            ],
+            "difficulty": "hard",
+            "type": "variables_both_sides",
+            "topic": "Equações Lineares",
+            "id": "equacoes_lineares_variaveis_ambos_lados_hard_15",
+            "topic_id": "equacoes_lineares_variaveis_ambos_lados"
+          }
+        ]
+      },
+      "total": 45
+    }
+  }
+}

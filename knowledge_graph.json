@@ -1,0 +1,245 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "created_at": "2025-01-08",
+    "description": "Grafo de conhecimento para Equações Lineares e pré-requisitos",
+    "language": "pt-BR"
+  },
+  "topics": {
+    "operacoes_basicas": {
+      "id": "operacoes_basicas",
+      "name": "Operações Básicas",
+      "description": "Adição, subtração, multiplicação e divisão de números",
+      "prerequisites": [],
+      "difficulty": 1,
+      "mastery_threshold": 0.80,
+      "min_questions": 5,
+      "concepts": [
+        "adicao",
+        "subtracao",
+        "multiplicacao",
+        "divisao",
+        "ordem_operacoes"
+      ],
+      "subtopics": []
+    },
+    "numeros_inteiros": {
+      "id": "numeros_inteiros",
+      "name": "Números Inteiros",
+      "description": "Trabalhar com números positivos e negativos",
+      "prerequisites": ["operacoes_basicas"],
+      "difficulty": 1,
+      "mastery_threshold": 0.80,
+      "min_questions": 5,
+      "concepts": [
+        "numeros_negativos",
+        "valor_absoluto",
+        "comparacao",
+        "operacoes_com_negativos"
+      ],
+      "subtopics": []
+    },
+    "fracoes": {
+      "id": "fracoes",
+      "name": "Frações",
+      "description": "Operações com frações e números decimais",
+      "prerequisites": ["operacoes_basicas"],
+      "difficulty": 2,
+      "mastery_threshold": 0.75,
+      "min_questions": 5,
+      "concepts": [
+        "simplificacao_fracoes",
+        "adicao_fracoes",
+        "multiplicacao_fracoes",
+        "divisao_fracoes"
+      ],
+      "subtopics": []
+    },
+    "variaveis_expressoes": {
+      "id": "variaveis_expressoes",
+      "name": "Variáveis e Expressões",
+      "description": "Entender variáveis e expressões algébricas",
+      "prerequisites": ["operacoes_basicas", "numeros_inteiros"],
+      "difficulty": 2,
+      "mastery_threshold": 0.75,
+      "min_questions": 5,
+      "concepts": [
+        "variaveis",
+        "expressoes_algebricas",
+        "substituicao",
+        "avaliacao_expressoes"
+      ],
+      "subtopics": []
+    },
+    "simplificacao_algebrica": {
+      "id": "simplificacao_algebrica",
+      "name": "Simplificação Algébrica",
+      "description": "Combinar termos semelhantes e simplificar expressões",
+      "prerequisites": ["variaveis_expressoes"],
+      "difficulty": 2,
+      "mastery_threshold": 0.75,
+      "min_questions": 5,
+      "concepts": [
+        "termos_semelhantes",
+        "propriedade_distributiva",
+        "fatoracao_simples",
+        "simplificacao"
+      ],
+      "subtopics": []
+    },
+    "operacoes_inversas": {
+      "id": "operacoes_inversas",
+      "name": "Operações Inversas",
+      "description": "Entender operações inversas (adição/subtração, multiplicação/divisão)",
+      "prerequisites": ["operacoes_basicas"],
+      "difficulty": 2,
+      "mastery_threshold": 0.80,
+      "min_questions": 5,
+      "concepts": [
+        "inverso_aditivo",
+        "inverso_multiplicativo",
+        "cancelamento",
+        "isolamento"
+      ],
+      "subtopics": []
+    },
+    "manipulacao_equacoes": {
+      "id": "manipulacao_equacoes",
+      "name": "Manipulação de Equações",
+      "description": "Princípios de manter equações balanceadas",
+      "prerequisites": ["operacoes_inversas", "simplificacao_algebrica"],
+      "difficulty": 2,
+      "mastery_threshold": 0.75,
+      "min_questions": 5,
+      "concepts": [
+        "balanceamento",
+        "propriedade_igualdade",
+        "transposicao_termos",
+        "ambos_os_lados"
+      ],
+      "subtopics": []
+    },
+    "equacoes_lineares_uma_etapa": {
+      "id": "equacoes_lineares_uma_etapa",
+      "name": "Equações Lineares - Uma Etapa",
+      "description": "Resolver equações que requerem uma única operação",
+      "prerequisites": ["operacoes_inversas", "manipulacao_equacoes"],
+      "difficulty": 2,
+      "mastery_threshold": 0.80,
+      "min_questions": 6,
+      "concepts": [
+        "x_mais_a",
+        "x_menos_a",
+        "ax_equals_b",
+        "x_sobre_a"
+      ],
+      "subtopics": []
+    },
+    "equacoes_lineares_duas_etapas": {
+      "id": "equacoes_lineares_duas_etapas",
+      "name": "Equações Lineares - Duas Etapas",
+      "description": "Resolver equações que requerem duas operações",
+      "prerequisites": ["equacoes_lineares_uma_etapa", "simplificacao_algebrica"],
+      "difficulty": 3,
+      "mastery_threshold": 0.75,
+      "min_questions": 6,
+      "concepts": [
+        "ax_mais_b",
+        "forma_padrao",
+        "isolamento_variavel",
+        "verificacao"
+      ],
+      "subtopics": []
+    },
+    "equacoes_lineares_variaveis_ambos_lados": {
+      "id": "equacoes_lineares_variaveis_ambos_lados",
+      "name": "Equações com Variáveis em Ambos os Lados",
+      "description": "Resolver equações com variáveis em ambos os lados",
+      "prerequisites": ["equacoes_lineares_duas_etapas"],
+      "difficulty": 4,
+      "mastery_threshold": 0.75,
+      "min_questions": 6,
+      "concepts": [
+        "coleta_variaveis",
+        "coleta_constantes",
+        "multiplas_etapas",
+        "verificacao_solucao"
+      ],
+      "subtopics": []
+    },
+    "equacoes_lineares": {
+      "id": "equacoes_lineares",
+      "name": "Equações Lineares (Geral)",
+      "description": "Domínio completo de equações lineares em uma variável",
+      "prerequisites": [
+        "equacoes_lineares_uma_etapa",
+        "equacoes_lineares_duas_etapas",
+        "equacoes_lineares_variaveis_ambos_lados"
+      ],
+      "difficulty": 4,
+      "mastery_threshold": 0.80,
+      "min_questions": 8,
+      "concepts": [
+        "resolucao_completa",
+        "aplicacoes",
+        "problemas_palavra",
+        "verificacao_sistematica"
+      ],
+      "subtopics": [
+        "uma_variavel",
+        "aplicacoes",
+        "problemas_contextualizados"
+      ]
+    }
+  },
+  "learning_paths": {
+    "beginner": {
+      "name": "Iniciante",
+      "description": "Para estudantes começando do zero",
+      "start_topic": "operacoes_basicas",
+      "path": [
+        "operacoes_basicas",
+        "numeros_inteiros",
+        "variaveis_expressoes",
+        "operacoes_inversas",
+        "simplificacao_algebrica",
+        "manipulacao_equacoes",
+        "equacoes_lineares_uma_etapa",
+        "equacoes_lineares_duas_etapas",
+        "equacoes_lineares_variaveis_ambos_lados"
+      ]
+    },
+    "intermediate": {
+      "name": "Intermediário",
+      "description": "Para estudantes com base em operações básicas",
+      "start_topic": "variaveis_expressoes",
+      "path": [
+        "variaveis_expressoes",
+        "simplificacao_algebrica",
+        "operacoes_inversas",
+        "manipulacao_equacoes",
+        "equacoes_lineares_uma_etapa",
+        "equacoes_lineares_duas_etapas",
+        "equacoes_lineares_variaveis_ambos_lados"
+      ]
+    },
+    "advanced": {
+      "name": "Avançado",
+      "description": "Para estudantes prontos para equações lineares",
+      "start_topic": "equacoes_lineares_uma_etapa",
+      "path": [
+        "equacoes_lineares_uma_etapa",
+        "equacoes_lineares_duas_etapas",
+        "equacoes_lineares_variaveis_ambos_lados",
+        "equacoes_lineares"
+      ]
+    }
+  },
+  "diagnostic_topics": [
+    "operacoes_basicas",
+    "numeros_inteiros",
+    "variaveis_expressoes",
+    "operacoes_inversas",
+    "simplificacao_algebrica"
+  ]
+}
