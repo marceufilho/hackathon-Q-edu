@@ -17,3 +17,6 @@ sessions/
 
 # Question bank data
 questions.json
+.claude/
+.idea/
+NUL

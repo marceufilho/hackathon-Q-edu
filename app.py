@@ -9,6 +9,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from dotenv import load_dotenv
 from flasgger import Swagger
+from flask_cors import CORS
 
 from socratic_solver import SocraticTeacher
 from conversation_manager import SessionManager
