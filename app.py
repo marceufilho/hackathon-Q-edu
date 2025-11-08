@@ -8,6 +8,7 @@ import os
 from flask import Flask, request, jsonify
 from dotenv import load_dotenv
 from flasgger import Swagger
+from flask_cors import CORS
 
 from socratic_solver import SocraticTeacher
 from conversation_manager import SessionManager
@@ -25,6 +26,9 @@ load_dotenv()
 # Initialize Flask app
 app = Flask(__name__)
 app.config['JSON_SORT_KEYS'] = False
+
+# Enable CORS for all routes
+CORS(app)
 
 # Swagger configuration
 swagger_config = {
