@@ -743,6 +743,72 @@ def submit_diagnostic_answer(student_id):
         return jsonify({"error": str(e)}), 500
 
 
+@app.route('/diagnostic/<student_id>/status', methods=['GET'])
+def get_diagnostic_status(student_id):
+    """Get diagnostic completion status for a student
+    ---
+    tags:
+      - Diagnostic Test
+    parameters:
+      - name: student_id
+        in: path
+        type: string
+        required: true
+        description: Student ID to check
+    responses:
+      200:
+        description: Diagnostic status retrieved
+        schema:
+          type: object
+          properties:
+            student_id:
+              type: string
+              example: "student_123"
+            diagnostic_completed:
+              type: boolean
+              example: true
+            student_exists:
+              type: boolean
+              example: true
+            current_path:
+              type: string
+              example: "beginner"
+            mastered_topics:
+              type: array
+              items:
+                type: string
+            created_at:
+              type: string
+              format: date-time
+      500:
+        description: Error
+    """
+    try:
+        # Create tracker to check persistent storage
+        tracker = MasteryTracker(student_id)
+
+        # Check if student exists and diagnostic status
+        student_data = tracker._get_student_data()
+        diagnostic_completed = tracker.is_diagnostic_completed()
+
+        # Check if student has any data
+        student_exists = student_data.get("created_at") is not None
+
+        result = {
+            "student_id": student_id,
+            "diagnostic_completed": diagnostic_completed,
+            "student_exists": student_exists,
+            "current_path": student_data.get("current_path"),
+            "mastered_topics": student_data.get("mastered_topics", []),
+            "created_at": student_data.get("created_at")
+        }
+
+        return jsonify(result), 200
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
 # ============================================================================
 # ADAPTIVE LEARNING ENDPOINTS
 # ============================================================================
@@ -772,6 +838,8 @@ def start_adaptive_session():
     responses:
       201:
         description: Adaptive session started
+      400:
+        description: Bad request - student_id missing or diagnostic not completed
       500:
         description: Error
     """
@@ -784,11 +852,32 @@ def start_adaptive_session():
 
         learning_path = data.get('learning_path')
 
+        # Check student existence and diagnostic status
+        tracker = MasteryTracker(student_id)
+        student_data = tracker._get_student_data()
+        student_exists = student_data.get("created_at") is not None
+        diagnostic_completed = tracker.is_diagnostic_completed()
+
+        # If student doesn't exist or diagnostic not completed, provide helpful error
+        if not student_exists:
+            return jsonify({
+                "error": f"Aluno '{student_id}' não encontrado no sistema",
+                "student_id": student_id,
+                "student_exists": False,
+                "diagnostic_completed": False,
+                "action": "start_diagnostic",
+                "help": f"Primeiro complete o diagnóstico usando POST /diagnostic/start com student_id='{student_id}'"
+            }), 400
+
         # Create adaptive engine
         api_key = os.environ.get("GEMINI_API_KEY")
         engine = AdaptiveEngine(student_id, api_key=api_key)
 
         result = engine.start_new_session(learning_path)
+
+        # Check if diagnostic is required (this will now have improved error message)
+        if result.get("status") == "diagnostic_required":
+            return jsonify(result), 400
 
         # Store in session
         adaptive_sessions[student_id] = engine

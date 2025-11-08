@@ -58,8 +58,11 @@ class AdaptiveEngine:
         if not self.tracker.is_diagnostic_completed():
             return {
                 "status": "diagnostic_required",
-                "message": "Complete o teste diagnóstico primeiro",
-                "action": "start_diagnostic"
+                "message": f"Complete o teste diagnóstico primeiro para o aluno '{self.student_id}'",
+                "action": "start_diagnostic",
+                "student_id": self.student_id,
+                "diagnostic_completed": False,
+                "help": f"Use GET /diagnostic/{self.student_id}/status para verificar o status do diagnóstico"
             }
 
         # Set learning path if provided
